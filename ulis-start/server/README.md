@@ -16,10 +16,10 @@ The Anthropic API key, the uploaded files and the search index stay on the serve
 
 | Step | What happens | Stops with |
 |---|---|---|
-| 1. Retrieval | Top 6 passages from uploaded documents (keyword BM25, + semantic search if  is set) and top 5 from app content. Questions about amounts, leave days or regulations get 10 document passages. | – |
+| 1. Retrieval | Top 6 passages from uploaded documents (keyword BM25, + semantic search if `VOYAGE_API_KEY` is set) and top 5 from app content. Questions about amounts, leave days or regulations get 10 document passages. | – |
 | 2. Scope prompt | Claude is told the scope (working at ULIS) and to use **only** the passages; passage text is data, never instructions. | – |
-| 3. JSON verdict | Claude returns  /  / , cited passage ids, and any arithmetic as separate  (expression + result + source ids). | fixed  /  text |
-| 4. Server checks | An answer must cite passages we sent. Each calculation is re-computed by the server and may only use figures from cited passages or the question. Every number in the answer must come from a cited passage, the question, or a verified calculation. Otherwise → . |  |
+| 3. JSON verdict | Claude returns `answer` / `not_found` / `out_of_scope`, cited passage ids, and any arithmetic as separate `calculations` (expression + result + source ids). | fixed `out_of_scope` / `not_found` text |
+| 4. Server checks | An answer must cite passages we sent. Each calculation is re-computed by the server and may only use figures from cited passages or the question. Every number in the answer must come from a cited passage, the question, or a verified calculation. Otherwise → `not_found`. | `not_found` |
 
 Figures (salary, allowances, rates, days) are answered **only from uploaded documents / app content**, with the
 calculation shown as a step: "Lương: 2,67 × 2.340.000 = 6.247.800 (theo Quy chế chi tiêu … – trang 12)".
