@@ -1,0 +1,42 @@
+[
+  {
+    "id": "preboard",
+    "order": 0,
+    "title": "Trước ngày đầu",
+    "goal": "Chuẩn bị hồ sơ, biết ngày đầu đi đâu, gặp ai",
+    "startDay": -7,
+    "endDay": 0
+  },
+  {
+    "id": "welcome",
+    "order": 1,
+    "title": "Chào mừng & làm quen",
+    "goal": "Nhận việc, làm quen đơn vị, hoàn tất thủ tục ban đầu",
+    "startDay": 1,
+    "endDay": 3
+  },
+  {
+    "id": "ready",
+    "order": 2,
+    "title": "Sẵn sàng làm việc",
+    "goal": "Có tài khoản, biết hệ thống, biết đầu mối hỗ trợ",
+    "startDay": 4,
+    "endDay": 7
+  },
+  {
+    "id": "integrate",
+    "order": 3,
+    "title": "Hòa nhập chuyên môn",
+    "goal": "Hiểu vị trí việc làm, quy trình phối hợp, biểu mẫu",
+    "startDay": 8,
+    "endDay": 15
+  },
+  {
+    "id": "grow",
+    "order": 4,
+    "title": "Chủ động & phát triển",
+    "goal": "Tự thực hiện nhiệm vụ, phản hồi, kế hoạch phát triển",
+    "startDay": 16,
+    "endDay": 30
+  }
+]

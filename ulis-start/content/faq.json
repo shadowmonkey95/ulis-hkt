@@ -1,0 +1,741 @@
+[
+  {
+    "id": "faq-01",
+    "q": "Ngày đầu tiên tôi cần đến đâu, gặp ai?",
+    "a": "Bạn đến đơn vị theo lịch trong email/ tin nhắn nhận từ đơn vị hoặc Phòng TCTT. Thường bạn sẽ gặp lãnh đạo đơn vị để nhận phân công. Nếu chưa nhận được lịch, hãy liên hệ Phòng TCTT.",
+    "keywords": [
+      "ngày đầu",
+      "đi đâu",
+      "gặp ai",
+      "có mặt",
+      "địa điểm"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-preboard-first-day"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-hr"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-02",
+    "q": "Tôi cần chuẩn bị những giấy tờ gì cho hồ sơ nhân sự?",
+    "a": "Bạn tải Danh mục hồ sơ nhân sự trong mục Tài liệu. Thông thường gồm sơ yếu lý lịch, bản sao văn bằng, chứng chỉ và giấy tờ tùy thân; số lượng bản theo quy định hiện hành của Trường – cần xác nhận với Phòng TCTT.",
+    "keywords": [
+      "hồ sơ",
+      "giấy tờ",
+      "sơ yếu lý lịch",
+      "văn bằng",
+      "chuẩn bị"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-hr-dossier"
+      },
+      {
+        "kind": "resource",
+        "id": "r-form-dossier-checklist"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-03",
+    "q": "Nộp hồ sơ nhân sự ở đâu và hạn khi nào?",
+    "a": "Bạn nộp trực tiếp tại Phòng TCTT trong giờ hành chính. Trong ứng dụng, việc này được đặt hạn vào ngày làm việc thứ 2 để Trường kịp làm thủ tục lương và bảo hiểm cho bạn.",
+    "keywords": [
+      "nộp hồ sơ",
+      "hạn nộp",
+      "TCTT",
+      "ở đâu"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-welcome-submit-dossier"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-hr"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-04",
+    "q": "Tôi chưa nhận được quyết định/ hợp đồng thì làm sao?",
+    "a": "Bạn liên hệ Phòng TCTT, cung cấp họ tên, vị trí và đơn vị để được kiểm tra tiến độ.",
+    "keywords": [
+      "quyết định",
+      "hợp đồng",
+      "chưa nhận",
+      "tuyển dụng"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-preboard-contract"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-hr"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-05",
+    "q": "Tôi chưa có email công vụ, phải làm gì?",
+    "a": "Email công vụ được bộ phận CNTT tạo sau khi nhận thông tin từ Phòng TCTT. Nếu đến ngày làm việc thứ 4 vẫn chưa có, bạn gửi phiếu yêu cầu hỗ trợ cho bộ phận CNTT.",
+    "keywords": [
+      "email",
+      "email công vụ",
+      "chưa có email",
+      "tài khoản"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-email-account"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-it"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-06",
+    "q": "Tôi quên mật khẩu email hoặc tài khoản hệ thống?",
+    "a": "Bạn dùng chức năng quên mật khẩu (nếu có) hoặc liên hệ bộ phận CNTT kèm họ tên, đơn vị để được cấp lại.",
+    "keywords": [
+      "quên mật khẩu",
+      "mật khẩu",
+      "đăng nhập",
+      "khóa tài khoản"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-email-account"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-it"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-08",
+    "q": "Tôi muốn xin nghỉ phép thì làm thế nào?",
+    "a": "Bạn trao đổi trước với lãnh đạo đơn vị, điền mẫu đơn xin nghỉ phép, ghi rõ người nhận bàn giao và gửi để được duyệt. Thời hạn gửi đơn theo quy định hiện hành của Trường – cần xác nhận.",
+    "keywords": [
+      "nghỉ phép",
+      "xin nghỉ",
+      "đơn xin nghỉ",
+      "phép"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-leave"
+      },
+      {
+        "kind": "resource",
+        "id": "r-form-leave"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-09",
+    "q": "Tôi có bao nhiêu ngày phép mỗi năm?",
+    "a": "Số ngày phép được tính theo quy định hiện hành của Trường và pháp luật lao động – cần xác nhận với Phòng TCTT. Trợ lý không tự đưa ra con số để tránh sai lệch.",
+    "keywords": [
+      "bao nhiêu ngày phép",
+      "ngày phép",
+      "phép năm",
+      "số ngày nghỉ"
+    ],
+    "links": [
+      {
+        "kind": "contact",
+        "id": "ct-hr"
+      },
+      {
+        "kind": "resource",
+        "id": "r-reg-leave"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-10",
+    "q": "Tôi bị ốm đột xuất, cần báo nghỉ thế nào?",
+    "a": "Bạn báo ngay cho quản lý trực tiếp hoặc lãnh đạo đơn vị qua điện thoại/ tin nhắn, sau đó bổ sung đơn khi đi làm lại. Để được hưởng trợ cấp ốm đau từ BHXH, xem hướng dẫn \"Nghỉ ốm và hưởng trợ cấp ốm đau (BHXH)\".",
+    "keywords": [
+      "ốm",
+      "nghỉ ốm",
+      "đột xuất",
+      "báo nghỉ"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-sick-leave"
+      },
+      {
+        "kind": "guide",
+        "id": "g-leave"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-11",
+    "q": "Tôi cần thanh toán công tác phí, hỏi ai?",
+    "a": "Bạn liên hệ Phòng Kế hoạch – Tài chính. Chuẩn bị giấy đề nghị thanh toán, quyết định cử đi công tác và hóa đơn, chứng từ hợp lệ. Mức chi theo Quy chế chi tiêu nội bộ – cần xác nhận.",
+    "keywords": [
+      "công tác phí",
+      "thanh toán",
+      "đi công tác",
+      "hỏi ai"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-travel-allowance"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-finance"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-12",
+    "q": "Tôi muốn tạm ứng trước khi đi công tác?",
+    "a": "Bạn điền mẫu giấy đề nghị tạm ứng, xin xác nhận của lãnh đạo đơn vị và nộp cho Phòng Kế hoạch – Tài chính. Sau chuyến đi, bạn thanh toán hoàn ứng kèm chứng từ.",
+    "keywords": [
+      "tạm ứng",
+      "hoàn ứng",
+      "ứng trước",
+      "công tác"
+    ],
+    "links": [
+      {
+        "kind": "resource",
+        "id": "r-form-advance"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-finance"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-13",
+    "q": "Khi nào tôi nhận lương tháng đầu tiên?",
+    "a": "Thời điểm chi trả lương theo quy định hiện hành của Trường – cần xác nhận với Phòng Kế hoạch – Tài chính. Hãy chắc chắn bạn đã nộp đủ hồ sơ và cung cấp tài khoản ngân hàng.",
+    "keywords": [
+      "lương",
+      "lương tháng đầu",
+      "nhận lương",
+      "trả lương"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-salary"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-finance"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-14",
+    "q": "Tôi muốn đổi tài khoản ngân hàng nhận lương?",
+    "a": "Bạn gửi thông tin tài khoản mới (chính chủ) cho Phòng Kế hoạch – Tài chính và hỏi thời điểm áp dụng.",
+    "keywords": [
+      "tài khoản ngân hàng",
+      "đổi tài khoản",
+      "số tài khoản",
+      "nhận lương"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-salary"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-finance"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-15",
+    "q": "Tôi cần trình ký một công văn, làm thế nào?",
+    "a": "Bạn dùng đúng mẫu trong bộ mẫu văn bản hành chính, trình lãnh đạo đơn vị duyệt trên eOffice, sau đó Phòng Hành chính – Tổng hợp kiểm tra thể thức và phát hành.",
+    "keywords": [
+      "trình ký",
+      "công văn",
+      "văn bản",
+      "ký duyệt"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-document-signing"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-admin"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-16",
+    "q": "Mẫu công văn của Trường lấy ở đâu?",
+    "a": "Bộ mẫu văn bản hành chính nằm trong mục Tài liệu của ứng dụng. Nếu chưa có mẫu bạn cần, hãy hỏi Phòng Hành chính – Tổng hợp.",
+    "keywords": [
+      "mẫu công văn",
+      "biểu mẫu",
+      "mẫu văn bản",
+      "thể thức"
+    ],
+    "links": [
+      {
+        "kind": "resource",
+        "id": "r-form-admin-templates"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-admin"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-17",
+    "q": "eOffice là gì và tôi đăng nhập thế nào?",
+    "a": "eOffice là hệ thống quản lý văn bản điện tử để nhận, xử lý và trình ký văn bản. Bộ phận CNTT cấp tài khoản theo đề nghị của đơn vị; xem hướng dẫn sử dụng trong mục Tài liệu.",
+    "keywords": [
+      "eOffice",
+      "quản lý văn bản",
+      "văn bản điện tử",
+      "đăng nhập"
+    ],
+    "links": [
+      {
+        "kind": "resource",
+        "id": "r-manual-eoffice"
+      },
+      {
+        "kind": "task",
+        "id": "t-spec-eoffice"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-18",
+    "q": "Tôi chưa nhận được phân công giảng dạy?",
+    "a": "Bạn hỏi Văn phòng Khoa hoặc trưởng Bộ môn. Phân công giảng dạy thường được Khoa gửi trong tuần đầu để bạn có thời gian chuẩn bị.",
+    "keywords": [
+      "phân công giảng dạy",
+      "lớp",
+      "học phần",
+      "giảng dạy"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-lec-teaching-assignment"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-faculty-english"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-19",
+    "q": "Xem lịch giảng và phòng học ở đâu?",
+    "a": "Bạn xem thời khóa biểu trên hệ thống quản lý đào tạo. Nếu có thay đổi phòng hoặc lịch, liên hệ Phòng Đào tạo.",
+    "keywords": [
+      "lịch giảng",
+      "thời khóa biểu",
+      "phòng học",
+      "lịch dạy"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-teaching-start"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-academic"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-20",
+    "q": "Tôi chưa vào được LMS để đăng tài liệu cho lớp?",
+    "a": "Tài khoản LMS được cấp sau khi có phân công giảng dạy. Nếu vẫn chưa đăng nhập được, gửi phiếu yêu cầu hỗ trợ cho bộ phận CNTT.",
+    "keywords": [
+      "LMS",
+      "đăng tài liệu",
+      "khóa học",
+      "lớp học trực tuyến"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-lec-lms"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-it"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-21",
+    "q": "Tôi được phân công coi thi, cần lưu ý gì?",
+    "a": "Bạn đọc quy định coi thi, chấm thi, có mặt đúng giờ theo phân công và xử lý vi phạm theo đúng quy trình. Thời hạn nộp điểm theo quy định hiện hành của Trường – cần xác nhận.",
+    "keywords": [
+      "coi thi",
+      "chấm thi",
+      "lưu ý",
+      "quy chế thi"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-exam"
+      },
+      {
+        "kind": "resource",
+        "id": "r-reg-exam"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-22",
+    "q": "Wifi hoặc máy chiếu không hoạt động thì gọi ai?",
+    "a": "Bạn liên hệ bộ phận CNTT. Nếu đang trong giờ dạy, hãy gọi trực tiếp để được hỗ trợ nhanh.",
+    "keywords": [
+      "wifi",
+      "máy chiếu",
+      "mạng",
+      "hỏng",
+      "kỹ thuật"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-it-support"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-it"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-23",
+    "q": "Phòng làm việc bị hỏng điều hòa, rò nước thì báo ai?",
+    "a": "Bạn báo Phòng Hành chính – Tổng hợp kèm vị trí, mô tả và ảnh chụp. Với sự cố lớn, điền mẫu báo cáo sự cố.",
+    "keywords": [
+      "sự cố",
+      "điều hòa",
+      "rò nước",
+      "hỏng",
+      "cơ sở vật chất"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-incident"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-admin"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-24",
+    "q": "Khi có cháy hoặc sự cố khẩn cấp tôi cần làm gì?",
+    "a": "Giữ bình tĩnh, báo động cho người xung quanh, gọi số khẩn cấp và di chuyển theo lối thoát hiểm, không dùng thang máy. Sau khi an toàn, báo Phòng Hành chính – Tổng hợp.",
+    "keywords": [
+      "cháy",
+      "khẩn cấp",
+      "PCCC",
+      "thoát hiểm"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-safety"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-admin"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-25",
+    "q": "Buddy (người đồng hành) là ai và giúp gì cho tôi?",
+    "a": "Buddy là một đồng nghiệp được đơn vị phân công để đồng hành cùng bạn trong 30 ngày đầu: trả lời câu hỏi nhanh, giới thiệu đồng nghiệp và văn hóa đơn vị.",
+    "keywords": [
+      "buddy",
+      "người đồng hành",
+      "người hướng dẫn",
+      "mentor"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-ready-buddy"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-buddy"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-26",
+    "q": "Cán bộ mới có được tham gia Công đoàn không?",
+    "a": "Bạn liên hệ Công đoàn Trường để được hướng dẫn thủ tục gia nhập và các hoạt động dành cho đoàn viên (theo quy định hiện hành của Trường – cần xác nhận).",
+    "keywords": [
+      "công đoàn",
+      "đoàn viên",
+      "gia nhập",
+      "phúc lợi"
+    ],
+    "links": [
+      {
+        "kind": "contact",
+        "id": "ct-union"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-27",
+    "q": "Cán bộ mới có được xét thi đua – khen thưởng không?",
+    "a": "Điều kiện xét thi đua cho cán bộ mới theo quy định hiện hành của Trường – cần xác nhận với Phòng TCTT. Bạn nên đọc quy chế thi đua – khen thưởng và đăng ký danh hiệu với đơn vị.",
+    "keywords": [
+      "thi đua",
+      "khen thưởng",
+      "danh hiệu",
+      "cán bộ mới"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-emulation"
+      },
+      {
+        "kind": "resource",
+        "id": "r-reg-emulation"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-28",
+    "q": "Quy định nghỉ phép bản cũ còn dùng được không?",
+    "a": "Không. Bản cũ đã được thay thế; bạn hãy dùng Quy định nghỉ phép hiện hành trong mục Tài liệu.",
+    "keywords": [
+      "quy định cũ",
+      "bản cũ",
+      "hết hiệu lực",
+      "nghỉ phép"
+    ],
+    "links": [
+      {
+        "kind": "resource",
+        "id": "r-reg-leave"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-29",
+    "q": "Kế hoạch phát triển cá nhân là gì, nộp cho ai?",
+    "a": "Đây là bản kế hoạch ngắn gồm 2–3 mục tiêu cho 3 tháng tới và nhu cầu bồi dưỡng. Bạn trao đổi với lãnh đạo đơn vị để hoàn thiện; cách nộp theo hướng dẫn của đơn vị.",
+    "keywords": [
+      "kế hoạch phát triển",
+      "mục tiêu",
+      "bồi dưỡng",
+      "phát triển cá nhân"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-grow-pdp"
+      },
+      {
+        "kind": "resource",
+        "id": "r-form-pdp"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-30",
+    "q": "Tôi là người lao động, ca làm việc của tôi thế nào?",
+    "a": "Ca và giờ làm việc do quản lý trực tiếp thông báo theo vị trí việc làm. Bạn nên hỏi thêm cách đổi ca và cách chấm công ngay tuần đầu.",
+    "keywords": [
+      "ca làm",
+      "giờ làm việc",
+      "đổi ca",
+      "người lao động"
+    ],
+    "links": [
+      {
+        "kind": "task",
+        "id": "t-staff-shift"
+      }
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-31",
+    "q": "Tôi bị ốm thì thủ tục hưởng BHXH thế nào?",
+    "a": "Bạn báo nghỉ cho quản lý trực tiếp, xin cơ sở y tế cấp giấy chứng nhận nghỉ việc hưởng BHXH (ngoại trú) hoặc giấy ra viện/ tóm tắt hồ sơ bệnh án (nội trú), rồi nộp cho Phòng TCTT khi đi làm lại. Trường lập danh sách gửi cơ quan BHXH để giải quyết. Mức hưởng và thời hạn nộp xem trong infographic của BHXH Việt Nam ở hướng dẫn và xác nhận với Phòng TCTT.",
+    "keywords": [
+      "ốm",
+      "ốm đau",
+      "nghỉ ốm",
+      "BHXH",
+      "trợ cấp ốm đau",
+      "thủ tục"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-sick-leave"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-hr"
+      }
+    ],
+    "source": "Bảo hiểm xã hội Việt Nam (infographic) + Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "faq-32",
+    "q": "Nghỉ chăm con ốm có được hưởng trợ cấp không?",
+    "a": "Có, nghỉ chăm con ốm thuộc chế độ ốm đau của BHXH. Bạn chuẩn bị giấy tờ khám chữa bệnh của con và nộp cho Phòng TCTT. Điều kiện, mức hưởng cụ thể (theo quy định hiện hành – cần xác nhận với Phòng TCTT).",
+    "keywords": [
+      "chăm con ốm",
+      "con ốm",
+      "nghỉ chăm con",
+      "trợ cấp",
+      "BHXH"
+    ],
+    "links": [
+      {
+        "kind": "guide",
+        "id": "g-sick-leave"
+      },
+      {
+        "kind": "contact",
+        "id": "ct-hr"
+      }
+    ],
+    "source": "Bảo hiểm xã hội Việt Nam (infographic) + Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  }
+]

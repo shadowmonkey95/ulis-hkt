@@ -1,0 +1,1333 @@
+[
+  {
+    "id": "t-preboard-contract",
+    "phaseId": "preboard",
+    "title": "Nhận quyết định tuyển dụng/ hợp đồng từ Phòng TCTT",
+    "why": "Bạn nắm rõ vị trí, đơn vị và ngày bắt đầu chính thức để yên tâm chuẩn bị.",
+    "dueDay": -3,
+    "owner": "hr",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "text": "Phòng TCTT gửi quyết định/ hợp đồng qua email hoặc hẹn bạn đến nhận trực tiếp."
+      },
+      {
+        "text": "Bạn kiểm tra họ tên, vị trí, đơn vị công tác và ngày bắt đầu."
+      },
+      {
+        "text": "Nếu có thông tin chưa đúng, phản hồi ngay cho Phòng TCTT trước ngày đầu tiên."
+      }
+    ],
+    "guideId": "g-hr-dossier",
+    "contactId": "ct-hr",
+    "formIds": [],
+    "keywords": [
+      "quyết định",
+      "hợp đồng",
+      "tuyển dụng",
+      "ngày bắt đầu",
+      "TCTT"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-preboard-dossier",
+    "phaseId": "preboard",
+    "title": "Chuẩn bị hồ sơ nhân sự theo danh mục",
+    "why": "Chuẩn bị sẵn giấy tờ giúp bạn hoàn tất thủ tục nhanh trong tuần đầu, không phải đi lại nhiều lần.",
+    "dueDay": -2,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 60,
+    "steps": [
+      {
+        "text": "Tải danh mục hồ sơ nhân sự và mẫu sơ yếu lý lịch.",
+        "link": "https://ulis.vnu.edu.vn"
+      },
+      {
+        "text": "Chuẩn bị bản sao văn bằng, chứng chỉ, giấy tờ tùy thân (số lượng bản theo quy định hiện hành của Trường – cần xác nhận)."
+      },
+      {
+        "text": "Điền sơ yếu lý lịch, dán ảnh và để sẵn trong một túi hồ sơ."
+      }
+    ],
+    "guideId": "g-hr-dossier",
+    "contactId": "ct-hr",
+    "formIds": [
+      "r-form-dossier-checklist",
+      "r-form-personal-record"
+    ],
+    "keywords": [
+      "hồ sơ",
+      "sơ yếu lý lịch",
+      "giấy tờ",
+      "văn bằng",
+      "chuẩn bị"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-preboard-about",
+    "phaseId": "preboard",
+    "title": "Tìm hiểu nhanh về ULIS và đơn vị của bạn",
+    "why": "Biết trước đôi nét về Trường và đơn vị giúp bạn tự tin hơn trong buổi gặp đầu tiên.",
+    "dueDay": -1,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": false,
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "text": "Mở mục \"Về ULIS\" trong ứng dụng để đọc lịch sử, sứ mạng và các đơn vị."
+      },
+      {
+        "text": "Xem video chào mừng cán bộ mới (nếu có)."
+      },
+      {
+        "text": "Ghi lại 1–2 câu hỏi muốn hỏi lãnh đạo đơn vị."
+      }
+    ],
+    "formIds": [
+      "r-video-welcome"
+    ],
+    "keywords": [
+      "giới thiệu",
+      "về ULIS",
+      "lịch sử",
+      "sứ mạng",
+      "đơn vị"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-preboard-first-day",
+    "phaseId": "preboard",
+    "title": "Xác nhận lịch ngày đầu: đi đâu, gặp ai",
+    "why": "Bạn sẽ đến đúng nơi, đúng giờ và biết ai đang chờ đón mình trong ngày đầu tiên.",
+    "dueDay": 0,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 10,
+    "steps": [
+      {
+        "text": "Kiểm tra email/ tin nhắn từ đơn vị về giờ và địa điểm có mặt ngày đầu."
+      },
+      {
+        "text": "Lưu địa chỉ Trường: đường Phạm Văn Đồng, Cầu Giấy, Hà Nội và xem trước đường đi."
+      },
+      {
+        "text": "Lưu số điện thoại đầu mối của đơn vị trong mục Danh bạ."
+      }
+    ],
+    "contactId": "ct-hr",
+    "formIds": [],
+    "keywords": [
+      "ngày đầu",
+      "lịch",
+      "địa điểm",
+      "gặp ai",
+      "đi đâu"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-welcome-meet-leader",
+    "phaseId": "welcome",
+    "title": "Gặp lãnh đạo đơn vị và nhận phân công",
+    "why": "Buổi gặp giúp bạn hiểu kỳ vọng của đơn vị và những việc ưu tiên trong tháng đầu.",
+    "dueDay": 1,
+    "owner": "unit",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 45,
+    "steps": [
+      {
+        "text": "Đơn vị sắp xếp buổi gặp với lãnh đạo đơn vị trong ngày đầu."
+      },
+      {
+        "text": "Bạn mang theo câu hỏi đã chuẩn bị và sổ ghi chép."
+      },
+      {
+        "text": "Ghi lại nhiệm vụ được giao và người hướng dẫn trực tiếp."
+      }
+    ],
+    "contactId": "ct-faculty-english",
+    "formIds": [],
+    "keywords": [
+      "lãnh đạo",
+      "trưởng đơn vị",
+      "phân công",
+      "nhận việc",
+      "gặp mặt"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-welcome-submit-dossier",
+    "phaseId": "welcome",
+    "title": "Nộp hồ sơ nhân sự cho Phòng TCTT",
+    "why": "Hồ sơ đầy đủ là cơ sở để Trường làm các thủ tục lương, bảo hiểm và quyền lợi cho bạn.",
+    "dueDay": 2,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 30,
+    "steps": [
+      {
+        "text": "Đối chiếu túi hồ sơ với danh mục hồ sơ nhân sự."
+      },
+      {
+        "text": "Mang hồ sơ đến Phòng TCTT trong giờ hành chính."
+      },
+      {
+        "text": "Hỏi cán bộ tiếp nhận về các giấy tờ còn thiếu (nếu có) và hạn bổ sung."
+      }
+    ],
+    "guideId": "g-hr-dossier",
+    "contactId": "ct-hr",
+    "formIds": [
+      "r-form-dossier-checklist",
+      "r-form-personal-record"
+    ],
+    "keywords": [
+      "nộp hồ sơ",
+      "hồ sơ nhân sự",
+      "TCTT",
+      "bảo hiểm",
+      "lương"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-welcome-code-of-conduct",
+    "phaseId": "welcome",
+    "title": "Đọc quy tắc ứng xử của Trường",
+    "why": "Hiểu cách ứng xử chung giúp bạn tự tin khi làm việc với đồng nghiệp, sinh viên và đối tác.",
+    "dueDay": 3,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Mở văn bản Quy tắc ứng xử trong mục Tài liệu.",
+        "link": "https://ulis.vnu.edu.vn"
+      },
+      {
+        "text": "Đánh dấu những điểm liên quan trực tiếp tới công việc của bạn."
+      },
+      {
+        "text": "Hỏi Buddy nếu có điểm chưa rõ."
+      }
+    ],
+    "formIds": [
+      "r-reg-code-of-conduct"
+    ],
+    "keywords": [
+      "quy tắc ứng xử",
+      "văn hóa",
+      "trang phục",
+      "giao tiếp"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-welcome-checkin-d3",
+    "phaseId": "welcome",
+    "title": "Trả lời check-in ngày 3",
+    "why": "Một câu trả lời ngắn giúp đơn vị biết sớm nếu bạn cần hỗ trợ thêm.",
+    "dueDay": 3,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": false,
+    "estimatedMinutes": 1,
+    "steps": [
+      {
+        "text": "Chọn biểu tượng cảm xúc phù hợp với những ngày đầu của bạn."
+      },
+      {
+        "text": "Thêm ghi chú nếu muốn chia sẻ điều gì."
+      }
+    ],
+    "formIds": [],
+    "keywords": [
+      "check-in",
+      "phản hồi",
+      "cảm nhận",
+      "ngày 3"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-ready-email",
+    "phaseId": "ready",
+    "title": "Nhận tài khoản email công vụ",
+    "why": "Email công vụ là kênh nhận thông báo chính thức và đăng nhập nhiều hệ thống của Trường.",
+    "dueDay": 4,
+    "owner": "it",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "text": "Bộ phận CNTT tạo tài khoản sau khi nhận thông tin từ Phòng TCTT."
+      },
+      {
+        "text": "Bạn đăng nhập lần đầu và đổi mật khẩu."
+      },
+      {
+        "text": "Bật xác thực hai bước và cài email trên điện thoại."
+      }
+    ],
+    "guideId": "g-email-account",
+    "contactId": "ct-it",
+    "formIds": [
+      "r-manual-email"
+    ],
+    "keywords": [
+      "email",
+      "email công vụ",
+      "tài khoản",
+      "mật khẩu",
+      "đăng nhập"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-ready-buddy",
+    "phaseId": "ready",
+    "title": "Gặp người đồng hành (Buddy) lần đầu",
+    "why": "Có một người để hỏi những điều nhỏ nhất giúp bạn hòa nhập nhanh và bớt bỡ ngỡ.",
+    "dueDay": 5,
+    "owner": "buddy",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 30,
+    "steps": [
+      {
+        "text": "Buddy chủ động hẹn bạn một buổi cà phê hoặc trò chuyện ngắn."
+      },
+      {
+        "text": "Cùng Buddy đi một vòng các phòng ban bạn hay làm việc."
+      },
+      {
+        "text": "Thống nhất cách liên lạc khi bạn cần hỏi nhanh."
+      }
+    ],
+    "contactId": "ct-buddy",
+    "formIds": [],
+    "keywords": [
+      "buddy",
+      "người đồng hành",
+      "người hướng dẫn",
+      "làm quen"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-ready-leave-timekeeping",
+    "phaseId": "ready",
+    "title": "Tìm hiểu cách chấm công và xin nghỉ phép",
+    "why": "Biết trước thủ tục giúp bạn chủ động khi cần nghỉ mà không ảnh hưởng công việc chung.",
+    "dueDay": 6,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "text": "Hỏi đơn vị về cách chấm công đang áp dụng."
+      },
+      {
+        "text": "Đọc hướng dẫn xin nghỉ phép và tải mẫu đơn."
+      },
+      {
+        "text": "Ghi nhớ người duyệt nghỉ phép của đơn vị bạn."
+      }
+    ],
+    "guideId": "g-leave",
+    "contactId": "ct-hr",
+    "formIds": [
+      "r-form-leave",
+      "r-reg-leave"
+    ],
+    "keywords": [
+      "chấm công",
+      "nghỉ phép",
+      "xin nghỉ",
+      "giờ làm việc"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-ready-safety",
+    "phaseId": "ready",
+    "title": "Xem hướng dẫn an toàn PCCC tại tòa nhà",
+    "why": "Biết lối thoát hiểm và cách xử lý khi có sự cố giúp bạn và mọi người an toàn hơn.",
+    "dueDay": 7,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Xem tài liệu tập huấn an toàn PCCC."
+      },
+      {
+        "text": "Xác định lối thoát hiểm và bình chữa cháy gần nơi làm việc."
+      },
+      {
+        "text": "Lưu số liên hệ khẩn cấp của Phòng Hành chính – Tổng hợp."
+      }
+    ],
+    "guideId": "g-safety",
+    "contactId": "ct-admin",
+    "formIds": [
+      "r-training-pccc"
+    ],
+    "keywords": [
+      "PCCC",
+      "an toàn",
+      "thoát hiểm",
+      "cháy nổ",
+      "khẩn cấp"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-ready-checkin-d7",
+    "phaseId": "ready",
+    "title": "Trả lời check-in ngày 7",
+    "why": "Cho đơn vị biết bạn đã tìm được đầu mối hỗ trợ hay chưa để được giúp kịp thời.",
+    "dueDay": 7,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": false,
+    "estimatedMinutes": 1,
+    "steps": [
+      {
+        "text": "Chọn mức độ bạn đã biết cần hỏi ai khi gặp khó khăn."
+      },
+      {
+        "text": "Thêm ghi chú nếu cần."
+      }
+    ],
+    "formIds": [],
+    "keywords": [
+      "check-in",
+      "phản hồi",
+      "ngày 7"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-integrate-checkin-d15",
+    "phaseId": "integrate",
+    "title": "Trả lời check-in ngày 15",
+    "why": "Phản hồi giữa chặng giúp đơn vị điều chỉnh hỗ trợ chuyên môn phù hợp với bạn.",
+    "dueDay": 15,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": false,
+    "estimatedMinutes": 1,
+    "steps": [
+      {
+        "text": "Đánh giá mức độ rõ ràng của công việc chuyên môn hiện tại."
+      },
+      {
+        "text": "Thêm ghi chú nếu cần."
+      }
+    ],
+    "formIds": [],
+    "keywords": [
+      "check-in",
+      "phản hồi",
+      "ngày 15"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-grow-pdp",
+    "phaseId": "grow",
+    "title": "Lập kế hoạch phát triển cá nhân",
+    "why": "Một kế hoạch rõ ràng giúp bạn và lãnh đạo đơn vị cùng thống nhất mục tiêu cho giai đoạn tiếp theo.",
+    "dueDay": 28,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 45,
+    "steps": [
+      {
+        "text": "Tải mẫu kế hoạch phát triển cá nhân."
+      },
+      {
+        "text": "Viết 2–3 mục tiêu cho 3 tháng tới và nhu cầu bồi dưỡng."
+      },
+      {
+        "text": "Trao đổi với lãnh đạo đơn vị hoặc Buddy để hoàn thiện."
+      }
+    ],
+    "contactId": "ct-hr",
+    "formIds": [
+      "r-form-pdp"
+    ],
+    "keywords": [
+      "kế hoạch phát triển",
+      "mục tiêu",
+      "bồi dưỡng",
+      "đào tạo",
+      "phát triển"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-grow-checkin-d30",
+    "phaseId": "grow",
+    "title": "Hoàn thành check-in 30 ngày và góp ý",
+    "why": "Góp ý của bạn giúp hành trình của người đến sau suôn sẻ hơn.",
+    "dueDay": 30,
+    "owner": "me",
+    "tracks": [
+      "all"
+    ],
+    "required": true,
+    "estimatedMinutes": 5,
+    "steps": [
+      {
+        "text": "Trả lời câu hỏi check-in ngày 30."
+      },
+      {
+        "text": "Chia sẻ một điều nên cải thiện cho người đến sau."
+      }
+    ],
+    "formIds": [],
+    "keywords": [
+      "check-in",
+      "góp ý",
+      "ngày 30",
+      "phản hồi"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-teaching-assignment",
+    "phaseId": "welcome",
+    "title": "Nhận phân công giảng dạy học kỳ này",
+    "why": "Biết sớm học phần, lớp và thời gian giúp bạn có đủ thời gian chuẩn bị bài giảng.",
+    "dueDay": 3,
+    "owner": "unit",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": true,
+    "estimatedMinutes": 30,
+    "steps": [
+      {
+        "text": "Khoa/ Bộ môn gửi bạn phân công giảng dạy."
+      },
+      {
+        "text": "Bạn kiểm tra tên học phần, lớp, số tiết và thời gian bắt đầu."
+      },
+      {
+        "text": "Hỏi Bộ môn về giáo trình và tài liệu đang dùng."
+      }
+    ],
+    "guideId": "g-teaching-start",
+    "contactId": "ct-faculty-english",
+    "formIds": [],
+    "keywords": [
+      "phân công giảng dạy",
+      "học phần",
+      "lớp",
+      "giảng dạy",
+      "bộ môn"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-lms",
+    "phaseId": "ready",
+    "title": "Kích hoạt tài khoản hệ thống đào tạo và LMS",
+    "why": "Có tài khoản, bạn xem được danh sách lớp, đăng tài liệu và nhập điểm đúng hạn.",
+    "dueDay": 5,
+    "owner": "it",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Bộ phận CNTT/ Phòng Đào tạo cấp tài khoản sau khi có phân công giảng dạy."
+      },
+      {
+        "text": "Bạn đăng nhập, kiểm tra các lớp được giao."
+      },
+      {
+        "text": "Xem hướng dẫn sử dụng LMS để tạo khóa học đầu tiên."
+      }
+    ],
+    "guideId": "g-teaching-start",
+    "contactId": "ct-it",
+    "formIds": [
+      "r-manual-lms"
+    ],
+    "keywords": [
+      "LMS",
+      "hệ thống đào tạo",
+      "tài khoản",
+      "lớp học",
+      "nhập điểm"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-schedule-room",
+    "phaseId": "ready",
+    "title": "Kiểm tra lịch giảng và phòng học",
+    "why": "Nắm chắc lịch và phòng học giúp buổi lên lớp đầu tiên diễn ra suôn sẻ.",
+    "dueDay": 6,
+    "owner": "me",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Xem thời khóa biểu trên hệ thống quản lý đào tạo."
+      },
+      {
+        "text": "Đến xem trước phòng học và thiết bị trình chiếu."
+      },
+      {
+        "text": "Lưu đầu mối hỗ trợ thiết bị phòng học."
+      }
+    ],
+    "guideId": "g-teaching-start",
+    "contactId": "ct-academic",
+    "formIds": [],
+    "keywords": [
+      "lịch giảng",
+      "thời khóa biểu",
+      "phòng học",
+      "máy chiếu"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-syllabus",
+    "phaseId": "integrate",
+    "title": "Đọc đề cương các học phần được giao",
+    "why": "Đề cương giúp bạn bám sát chuẩn đầu ra và cách đánh giá mà sinh viên mong đợi.",
+    "dueDay": 10,
+    "owner": "me",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": true,
+    "estimatedMinutes": 60,
+    "steps": [
+      {
+        "text": "Xin đề cương học phần từ Bộ môn."
+      },
+      {
+        "text": "Ghi chú chuẩn đầu ra, hình thức đánh giá và tài liệu bắt buộc."
+      },
+      {
+        "text": "Trao đổi với giảng viên cùng học phần nếu có điểm chưa rõ."
+      }
+    ],
+    "guideId": "g-teaching-start",
+    "contactId": "ct-faculty-english",
+    "formIds": [],
+    "keywords": [
+      "đề cương",
+      "học phần",
+      "chuẩn đầu ra",
+      "đánh giá"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-peer-observation",
+    "phaseId": "integrate",
+    "title": "Dự giờ một tiết của đồng nghiệp",
+    "why": "Quan sát lớp học thực tế giúp bạn hiểu nhanh phong cách giảng dạy của Khoa.",
+    "dueDay": 12,
+    "owner": "me",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": false,
+    "estimatedMinutes": 90,
+    "steps": [
+      {
+        "text": "Nhờ Buddy hoặc Bộ môn giới thiệu một tiết học phù hợp."
+      },
+      {
+        "text": "Xin phép giảng viên trước khi dự giờ."
+      },
+      {
+        "text": "Ghi lại 2–3 điều bạn muốn áp dụng."
+      }
+    ],
+    "contactId": "ct-buddy",
+    "formIds": [],
+    "keywords": [
+      "dự giờ",
+      "đồng nghiệp",
+      "phương pháp giảng dạy"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-exam-rules",
+    "phaseId": "integrate",
+    "title": "Đọc quy định coi thi, chấm thi",
+    "why": "Nắm quy định giúp bạn tự tin khi được phân công coi thi và chấm bài đúng quy trình.",
+    "dueDay": 14,
+    "owner": "me",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": true,
+    "estimatedMinutes": 30,
+    "steps": [
+      {
+        "text": "Mở quy định coi thi, chấm thi trong mục Tài liệu."
+      },
+      {
+        "text": "Chú ý trách nhiệm của cán bộ coi thi và thời hạn nộp điểm."
+      },
+      {
+        "text": "Hỏi Phòng Đào tạo nếu có tình huống chưa rõ."
+      }
+    ],
+    "guideId": "g-exam",
+    "contactId": "ct-academic",
+    "formIds": [
+      "r-reg-exam"
+    ],
+    "keywords": [
+      "coi thi",
+      "chấm thi",
+      "thi",
+      "điểm",
+      "kiểm tra"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-lec-research",
+    "phaseId": "grow",
+    "title": "Tìm hiểu hướng nghiên cứu khoa học của Khoa",
+    "why": "Kết nối sớm với nhóm nghiên cứu mở ra cơ hội tham gia đề tài và công bố.",
+    "dueDay": 25,
+    "owner": "me",
+    "tracks": [
+      "lecturer"
+    ],
+    "required": false,
+    "estimatedMinutes": 45,
+    "steps": [
+      {
+        "text": "Hỏi lãnh đạo Khoa về các nhóm nghiên cứu đang hoạt động."
+      },
+      {
+        "text": "Tham dự một buổi sinh hoạt học thuật/ seminar."
+      },
+      {
+        "text": "Ghi hướng nghiên cứu bạn quan tâm vào kế hoạch phát triển cá nhân."
+      }
+    ],
+    "contactId": "ct-faculty-english",
+    "formIds": [],
+    "keywords": [
+      "nghiên cứu khoa học",
+      "đề tài",
+      "seminar",
+      "công bố",
+      "NCKH"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-eoffice",
+    "phaseId": "ready",
+    "title": "Kích hoạt tài khoản quản lý văn bản (eOffice)",
+    "why": "eOffice là nơi bạn nhận, xử lý và theo dõi văn bản hằng ngày.",
+    "dueDay": 5,
+    "owner": "it",
+    "tracks": [
+      "specialist"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Bộ phận CNTT cấp tài khoản theo đề nghị của đơn vị."
+      },
+      {
+        "text": "Bạn đăng nhập và kiểm tra quyền truy cập."
+      },
+      {
+        "text": "Xem hướng dẫn sử dụng eOffice."
+      }
+    ],
+    "guideId": "g-email-account",
+    "contactId": "ct-it",
+    "formIds": [
+      "r-manual-eoffice"
+    ],
+    "keywords": [
+      "eOffice",
+      "quản lý văn bản",
+      "văn bản đến",
+      "văn bản đi",
+      "tài khoản"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-unit-software",
+    "phaseId": "ready",
+    "title": "Được hướng dẫn phần mềm nghiệp vụ của phòng",
+    "why": "Thành thạo phần mềm nghiệp vụ giúp bạn xử lý công việc chính xác ngay từ đầu.",
+    "dueDay": 7,
+    "owner": "unit",
+    "tracks": [
+      "specialist"
+    ],
+    "required": true,
+    "estimatedMinutes": 60,
+    "steps": [
+      {
+        "text": "Đơn vị phân công người hướng dẫn phần mềm nghiệp vụ."
+      },
+      {
+        "text": "Bạn thực hành trên một vài hồ sơ mẫu."
+      },
+      {
+        "text": "Ghi lại các bước hay dùng để tra cứu nhanh."
+      }
+    ],
+    "contactId": "ct-buddy",
+    "formIds": [],
+    "keywords": [
+      "phần mềm nghiệp vụ",
+      "phần mềm",
+      "hướng dẫn",
+      "nghiệp vụ"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-job-description",
+    "phaseId": "integrate",
+    "title": "Đọc bản mô tả vị trí việc làm của bạn",
+    "why": "Hiểu rõ phạm vi công việc giúp bạn biết việc nào mình chủ trì, việc nào phối hợp.",
+    "dueDay": 8,
+    "owner": "me",
+    "tracks": [
+      "specialist"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Xin bản mô tả vị trí việc làm từ lãnh đạo phòng."
+      },
+      {
+        "text": "Đánh dấu các nhiệm vụ thường xuyên và đầu mối phối hợp."
+      },
+      {
+        "text": "Trao đổi lại với lãnh đạo phòng nếu có điểm chưa rõ."
+      }
+    ],
+    "contactId": "ct-hr",
+    "formIds": [],
+    "keywords": [
+      "vị trí việc làm",
+      "mô tả công việc",
+      "nhiệm vụ",
+      "phạm vi"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-signing-process",
+    "phaseId": "integrate",
+    "title": "Nắm quy trình trình ký văn bản",
+    "why": "Đúng quy trình ngay từ đầu giúp văn bản của bạn không bị trả lại, tiết kiệm thời gian.",
+    "dueDay": 9,
+    "owner": "me",
+    "tracks": [
+      "specialist"
+    ],
+    "required": true,
+    "estimatedMinutes": 30,
+    "steps": [
+      {
+        "text": "Đọc hướng dẫn soạn và trình ký văn bản."
+      },
+      {
+        "text": "Hỏi Buddy về luồng trình ký thực tế của phòng."
+      },
+      {
+        "text": "Lưu danh sách người ký theo từng loại văn bản."
+      }
+    ],
+    "guideId": "g-document-signing",
+    "contactId": "ct-admin",
+    "formIds": [
+      "r-form-admin-templates"
+    ],
+    "keywords": [
+      "trình ký",
+      "ký duyệt",
+      "văn bản",
+      "công văn",
+      "quy trình"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-templates",
+    "phaseId": "integrate",
+    "title": "Tải bộ mẫu công văn của Trường",
+    "why": "Dùng đúng mẫu giúp văn bản của bạn đúng thể thức và được duyệt nhanh hơn.",
+    "dueDay": 10,
+    "owner": "me",
+    "tracks": [
+      "specialist"
+    ],
+    "required": true,
+    "estimatedMinutes": 10,
+    "steps": [
+      {
+        "text": "Mở bộ mẫu văn bản hành chính trong mục Tài liệu."
+      },
+      {
+        "text": "Lưu về máy tính các mẫu bạn dùng thường xuyên."
+      }
+    ],
+    "guideId": "g-document-signing",
+    "contactId": "ct-admin",
+    "formIds": [
+      "r-form-admin-templates"
+    ],
+    "keywords": [
+      "mẫu công văn",
+      "biểu mẫu",
+      "thể thức",
+      "văn bản hành chính"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-payment-process",
+    "phaseId": "integrate",
+    "title": "Tìm hiểu quy trình thanh toán và công tác phí",
+    "why": "Biết trước hồ sơ cần có giúp bạn thanh toán nhanh, không phải bổ sung nhiều lần.",
+    "dueDay": 14,
+    "owner": "me",
+    "tracks": [
+      "specialist"
+    ],
+    "required": false,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Đọc hướng dẫn thanh toán công tác phí."
+      },
+      {
+        "text": "Tải mẫu đề nghị thanh toán và đề nghị tạm ứng."
+      },
+      {
+        "text": "Lưu đầu mối Phòng Kế hoạch – Tài chính."
+      }
+    ],
+    "guideId": "g-travel-allowance",
+    "contactId": "ct-finance",
+    "formIds": [
+      "r-form-travel-payment",
+      "r-form-advance"
+    ],
+    "keywords": [
+      "thanh toán",
+      "công tác phí",
+      "tạm ứng",
+      "chứng từ"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-spec-first-document",
+    "phaseId": "grow",
+    "title": "Tự soạn và trình ký văn bản đầu tiên",
+    "why": "Hoàn thành một việc trọn vẹn giúp bạn tự tin làm chủ nhiệm vụ của mình.",
+    "dueDay": 20,
+    "owner": "me",
+    "tracks": [
+      "specialist"
+    ],
+    "required": false,
+    "estimatedMinutes": 60,
+    "steps": [
+      {
+        "text": "Chọn một văn bản thực tế được giao."
+      },
+      {
+        "text": "Soạn theo mẫu, nhờ Buddy xem trước."
+      },
+      {
+        "text": "Trình ký trên eOffice và theo dõi đến khi hoàn tất."
+      }
+    ],
+    "guideId": "g-document-signing",
+    "contactId": "ct-buddy",
+    "formIds": [
+      "r-form-admin-templates"
+    ],
+    "keywords": [
+      "soạn văn bản",
+      "trình ký",
+      "eOffice",
+      "văn bản đầu tiên"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-manager-contact",
+    "phaseId": "welcome",
+    "title": "Lưu liên hệ của quản lý trực tiếp",
+    "why": "Bạn biết ngay cần báo ai khi có việc gấp hoặc cần nghỉ đột xuất.",
+    "dueDay": 1,
+    "owner": "me",
+    "tracks": [
+      "staff"
+    ],
+    "required": true,
+    "estimatedMinutes": 5,
+    "steps": [
+      {
+        "text": "Xin số điện thoại và kênh liên lạc của quản lý trực tiếp."
+      },
+      {
+        "text": "Lưu vào danh bạ điện thoại và ghi chú giờ có thể liên lạc."
+      }
+    ],
+    "formIds": [],
+    "keywords": [
+      "quản lý trực tiếp",
+      "liên hệ",
+      "số điện thoại",
+      "báo cáo"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-shift",
+    "phaseId": "welcome",
+    "title": "Xác nhận ca và giờ làm việc với quản lý",
+    "why": "Nắm rõ ca làm giúp bạn sắp xếp việc riêng và không bị lỡ ca.",
+    "dueDay": 2,
+    "owner": "unit",
+    "tracks": [
+      "staff"
+    ],
+    "required": true,
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "text": "Quản lý trực tiếp thông báo ca/ giờ làm việc của bạn."
+      },
+      {
+        "text": "Bạn hỏi cách đổi ca và cách chấm công."
+      },
+      {
+        "text": "Ghi lịch ca vào điện thoại."
+      }
+    ],
+    "guideId": "g-leave",
+    "formIds": [],
+    "keywords": [
+      "ca làm",
+      "giờ làm việc",
+      "đổi ca",
+      "chấm công"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-work-rules",
+    "phaseId": "welcome",
+    "title": "Đọc nội quy làm việc của đơn vị",
+    "why": "Hiểu nội quy giúp bạn làm việc đúng, an toàn và tránh hiểu lầm không đáng có.",
+    "dueDay": 3,
+    "owner": "me",
+    "tracks": [
+      "staff"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Mở nội quy làm việc trong mục Tài liệu."
+      },
+      {
+        "text": "Hỏi quản lý trực tiếp về những quy định riêng của khu vực bạn làm."
+      }
+    ],
+    "contactId": "ct-admin",
+    "formIds": [
+      "r-reg-work-rules"
+    ],
+    "keywords": [
+      "nội quy",
+      "quy định",
+      "giờ giấc",
+      "trang phục"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-equipment",
+    "phaseId": "ready",
+    "title": "Nhận trang thiết bị và đồ bảo hộ",
+    "why": "Có đủ dụng cụ phù hợp giúp bạn làm việc hiệu quả và an toàn.",
+    "dueDay": 4,
+    "owner": "unit",
+    "tracks": [
+      "staff"
+    ],
+    "required": true,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Đơn vị bàn giao trang thiết bị, đồ bảo hộ theo vị trí việc làm."
+      },
+      {
+        "text": "Bạn kiểm tra tình trạng và ký nhận."
+      },
+      {
+        "text": "Hỏi cách báo hỏng, đổi mới khi cần."
+      }
+    ],
+    "contactId": "ct-admin",
+    "formIds": [],
+    "keywords": [
+      "trang thiết bị",
+      "bảo hộ",
+      "dụng cụ",
+      "bàn giao"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-incident",
+    "phaseId": "ready",
+    "title": "Nắm quy trình báo sự cố",
+    "why": "Báo đúng người, đúng cách giúp sự cố được xử lý nhanh và không ảnh hưởng người khác.",
+    "dueDay": 7,
+    "owner": "me",
+    "tracks": [
+      "staff"
+    ],
+    "required": true,
+    "estimatedMinutes": 15,
+    "steps": [
+      {
+        "text": "Đọc hướng dẫn báo sự cố cơ sở vật chất."
+      },
+      {
+        "text": "Lưu đầu mối Phòng Hành chính – Tổng hợp."
+      },
+      {
+        "text": "Tải mẫu báo cáo sự cố."
+      }
+    ],
+    "guideId": "g-incident",
+    "contactId": "ct-admin",
+    "formIds": [
+      "r-form-incident"
+    ],
+    "keywords": [
+      "sự cố",
+      "báo hỏng",
+      "hỏng hóc",
+      "mất điện",
+      "rò rỉ"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-area-tour",
+    "phaseId": "integrate",
+    "title": "Đi một vòng khu vực phụ trách cùng quản lý",
+    "why": "Nắm rõ khu vực và đầu mối từng nơi giúp bạn chủ động trong công việc hằng ngày.",
+    "dueDay": 9,
+    "owner": "unit",
+    "tracks": [
+      "staff"
+    ],
+    "required": false,
+    "estimatedMinutes": 45,
+    "steps": [
+      {
+        "text": "Quản lý trực tiếp dẫn bạn đi các khu vực phụ trách."
+      },
+      {
+        "text": "Ghi lại vị trí kho, điểm tập kết và thiết bị quan trọng."
+      }
+    ],
+    "contactId": "ct-admin",
+    "formIds": [],
+    "keywords": [
+      "khu vực",
+      "tham quan",
+      "phụ trách",
+      "bản đồ"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "t-staff-self-check",
+    "phaseId": "grow",
+    "title": "Tự rà soát quy trình công việc hằng ngày",
+    "why": "Nhìn lại sau vài tuần giúp bạn phát hiện việc cần hỏi thêm hoặc làm tốt hơn.",
+    "dueDay": 20,
+    "owner": "me",
+    "tracks": [
+      "staff"
+    ],
+    "required": false,
+    "estimatedMinutes": 20,
+    "steps": [
+      {
+        "text": "Liệt kê các việc bạn làm hằng ngày."
+      },
+      {
+        "text": "Đánh dấu việc còn lúng túng và hỏi quản lý trực tiếp."
+      }
+    ],
+    "contactId": "ct-buddy",
+    "formIds": [],
+    "keywords": [
+      "rà soát",
+      "quy trình",
+      "công việc hằng ngày",
+      "tự đánh giá"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  }
+]

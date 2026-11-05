@@ -1,0 +1,530 @@
+[
+  {
+    "id": "g-hr-dossier",
+    "category": "hr",
+    "title": "Hoàn thiện hồ sơ nhân sự ban đầu",
+    "situations": [
+      "Tôi cần nộp hồ sơ nhân sự",
+      "Tôi chưa biết cần chuẩn bị giấy tờ gì",
+      "Tôi chưa nhận được quyết định/ hợp đồng"
+    ],
+    "purpose": "Giúp bạn nộp đủ hồ sơ một lần để Trường kịp làm thủ tục lương, bảo hiểm và các quyền lợi.",
+    "whoDoes": "Bạn chuẩn bị và nộp; Phòng TCTT tiếp nhận, kiểm tra và lưu hồ sơ.",
+    "prepare": [
+      "Danh mục hồ sơ nhân sự (tải trong mục Tài liệu)",
+      "Sơ yếu lý lịch theo mẫu, có ảnh",
+      "Bản sao văn bằng, chứng chỉ, giấy tờ tùy thân (số lượng theo quy định hiện hành của Trường – cần xác nhận)",
+      "Thông tin tài khoản ngân hàng, mã số thuế cá nhân (nếu có)"
+    ],
+    "steps": [
+      "Tải danh mục hồ sơ và đánh dấu các giấy tờ đã có.",
+      "Điền sơ yếu lý lịch, kiểm tra kỹ thông tin cá nhân.",
+      "Nộp hồ sơ trực tiếp tại Phòng TCTT trong giờ hành chính.",
+      "Ghi lại giấy tờ còn thiếu và hạn bổ sung do cán bộ tiếp nhận hướng dẫn."
+    ],
+    "formIds": [
+      "r-form-dossier-checklist",
+      "r-form-personal-record"
+    ],
+    "contactId": "ct-hr",
+    "keywords": [
+      "hồ sơ",
+      "hồ sơ nhân sự",
+      "sơ yếu lý lịch",
+      "giấy tờ",
+      "quyết định",
+      "hợp đồng",
+      "nộp hồ sơ"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-leave",
+    "category": "hr",
+    "title": "Xin nghỉ phép",
+    "situations": [
+      "Tôi muốn xin nghỉ phép",
+      "Tôi có việc gấp cần nghỉ đột xuất",
+      "Tôi muốn biết mình có bao nhiêu ngày phép"
+    ],
+    "purpose": "Giúp bạn xin nghỉ đúng thủ tục để công việc được sắp xếp người hỗ trợ và ngày nghỉ được ghi nhận.",
+    "whoDoes": "Bạn làm đơn; lãnh đạo đơn vị duyệt; Phòng TCTT theo dõi ngày phép.",
+    "prepare": [
+      "Mẫu đơn xin nghỉ phép",
+      "Thời gian nghỉ và lý do",
+      "Phương án bàn giao công việc trong thời gian nghỉ"
+    ],
+    "steps": [
+      "Trao đổi trước với lãnh đạo đơn vị hoặc quản lý trực tiếp.",
+      "Điền đơn xin nghỉ phép và ghi rõ người nhận bàn giao.",
+      "Gửi đơn để lãnh đạo đơn vị duyệt (thời hạn gửi trước theo quy định hiện hành của Trường – cần xác nhận).",
+      "Trường hợp nghỉ đột xuất: báo ngay cho quản lý trực tiếp, bổ sung đơn khi đi làm lại. Nếu nghỉ vì ốm, xem thêm hướng dẫn \"Nghỉ ốm và hưởng trợ cấp ốm đau (BHXH)\" để chuẩn bị giấy tờ hưởng BHXH.",
+      "Số ngày phép được hưởng: theo quy định hiện hành của Trường – cần xác nhận với Phòng TCTT."
+    ],
+    "formIds": [
+      "r-form-leave",
+      "r-reg-leave"
+    ],
+    "contactId": "ct-hr",
+    "keywords": [
+      "nghỉ phép",
+      "xin nghỉ",
+      "phép năm",
+      "đơn xin nghỉ",
+      "ngày phép"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-sick-leave",
+    "category": "hr",
+    "title": "Nghỉ ốm và hưởng trợ cấp ốm đau (BHXH)",
+    "situations": [
+      "Tôi bị ốm phải nghỉ làm",
+      "Tôi muốn hưởng trợ cấp ốm đau",
+      "Con tôi ốm, tôi phải nghỉ chăm con",
+      "Sau ốm đau tôi có được nghỉ dưỡng sức không?"
+    ],
+    "purpose": "Giúp bạn nghỉ ốm đúng thủ tục và chuẩn bị đủ giấy tờ để được hưởng trợ cấp ốm đau từ BHXH, kể cả khi nghỉ chăm con ốm hoặc nghỉ dưỡng sức sau ốm.",
+    "whoDoes": "Bạn báo nghỉ và nộp giấy tờ; Trường (qua Phòng TCTT) lập danh sách gửi cơ quan BHXH; cơ quan BHXH xét và giải quyết trợ cấp.",
+    "prepare": [
+      "Điều trị nội trú: giấy ra viện, bản tóm tắt hồ sơ bệnh án hoặc giấy tờ khác chứng minh quá trình điều trị nội trú (bản chính hoặc bản sao)",
+      "Điều trị ngoại trú: giấy chứng nhận nghỉ việc hưởng BHXH do cơ sở khám chữa bệnh cấp",
+      "Khám chữa bệnh ở nước ngoài: giấy tờ khám chữa bệnh kèm bản dịch tiếng Việt được công chứng/ chứng thực và hợp pháp hóa lãnh sự",
+      "Nghỉ chăm con ốm: giấy tờ khám chữa bệnh của con (cần xác nhận cụ thể với Phòng TCTT)"
+    ],
+    "steps": [
+      "Báo ngay cho quản lý trực tiếp/ lãnh đạo đơn vị khi bạn phải nghỉ ốm hoặc nghỉ chăm con ốm.",
+      "Khi đi khám, xin cơ sở y tế cấp đúng giấy tờ (giấy chứng nhận nghỉ việc hưởng BHXH, giấy ra viện hoặc tóm tắt hồ sơ bệnh án).",
+      "Khi đi làm lại, nộp giấy tờ cho Phòng TCTT trong thời hạn mà BHXH quy định (xem infographic bên dưới; hạn nội bộ của Trường – cần xác nhận).",
+      "Phòng TCTT lập danh sách đề nghị gửi cơ quan BHXH; cơ quan BHXH xét và giải quyết trợ cấp.",
+      "Nếu sau ốm đau sức khỏe chưa phục hồi, hỏi Phòng TCTT và Công đoàn về nghỉ dưỡng sức, phục hồi sức khỏe.",
+      "Mức hưởng và thời gian được tính theo số năm đóng BHXH – xem infographic của BHXH Việt Nam bên dưới và xác nhận với Phòng TCTT."
+    ],
+    "formIds": [
+      "r-manual-bhxh-sick"
+    ],
+    "contactId": "ct-hr",
+    "keywords": [
+      "ốm đau",
+      "nghỉ ốm",
+      "trợ cấp ốm đau",
+      "BHXH",
+      "dưỡng sức",
+      "chăm con ốm",
+      "bảo hiểm xã hội",
+      "giấy ra viện",
+      "giấy chứng nhận nghỉ việc"
+    ],
+    "images": [
+      {
+        "asset": "bhxh-tro-cap-om-dau",
+        "caption": "Trợ cấp ốm đau, dưỡng sức phục hồi sức khỏe và hồ sơ đề nghị hưởng",
+        "alt": "Infographic của Bảo hiểm xã hội Việt Nam gồm 4 phần. (1) Mức hưởng trợ cấp ốm đau: tính theo tiền lương làm căn cứ đóng BHXH của tháng gần nhất trước tháng nghỉ việc. Người lao động ốm đau hoặc nghỉ chăm con ốm hưởng bằng 75% tiền lương làm căn cứ đóng BHXH. Người tiếp tục điều trị bệnh cần chữa trị dài ngày hưởng 65% nếu đã đóng BHXH từ đủ 30 năm trở lên, 55% nếu đóng từ đủ 15 năm đến dưới 30 năm, 50% nếu đóng dưới 15 năm. Mức hưởng một ngày bằng mức hưởng theo tháng chia cho 24 ngày; nửa ngày bằng một nửa mức một ngày; nghỉ dưới nửa ngày tính là nửa ngày, từ nửa ngày đến dưới một ngày tính là một ngày. (2) Dưỡng sức, phục hồi sức khỏe sau ốm đau: người lao động đã nghỉ hưởng chế độ ốm đau từ đủ 30 ngày trở lên trong một năm, trong 30 ngày kể từ khi hết thời gian nghỉ ốm mà sức khỏe chưa phục hồi, được nghỉ dưỡng sức tối đa 10 ngày/năm; thời gian nghỉ do người sử dụng lao động và Ban Chấp hành công đoàn cơ sở quyết định. Tối đa 10 ngày với bệnh cần chữa trị dài ngày, 7 ngày sau phẫu thuật, 5 ngày với trường hợp khác; tính liên tục, gồm cả ngày lễ, Tết, ngày nghỉ hằng tuần. Mức hưởng một ngày bằng 30% mức tham chiếu, hiện bằng mức lương cơ sở 2.530.000 đồng, tức 759.000 đồng/ngày. (3) Hồ sơ đề nghị hưởng trợ cấp ốm đau: điều trị nội trú cần bản chính hoặc bản sao giấy ra viện, bản tóm tắt hồ sơ bệnh án hoặc giấy tờ khác chứng minh quá trình điều trị nội trú; điều trị ngoại trú cần giấy chứng nhận nghỉ việc hưởng BHXH, hoặc giấy ra viện/bản tóm tắt hồ sơ bệnh án có chỉ định thời gian điều trị ngoại trú; khám chữa bệnh ở nước ngoài cần giấy tờ khám chữa bệnh ghi tên bệnh và thời gian điều trị, kèm bản dịch tiếng Việt được công chứng/chứng thực và hợp pháp hóa lãnh sự. (4) Thời gian giải quyết: người lao động nộp hồ sơ cho đơn vị sử dụng lao động chậm nhất 45 ngày kể từ ngày trở lại làm việc; người sử dụng lao động lập danh sách nộp cơ quan BHXH trong 07 ngày làm việc kể từ khi nhận đủ hồ sơ; cơ quan BHXH giải quyết trong 07 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "source": "Bảo hiểm xã hội Việt Nam",
+        "sourceUrl": "https://baohiemxahoi.gov.vn"
+      }
+    ],
+    "source": "Bảo hiểm xã hội Việt Nam (infographic) + Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-document-signing",
+    "category": "admin",
+    "title": "Soạn và trình ký văn bản",
+    "situations": [
+      "Tôi cần trình ký một công văn",
+      "Tôi không biết dùng mẫu văn bản nào",
+      "Văn bản của tôi bị trả lại"
+    ],
+    "purpose": "Giúp văn bản của bạn đúng thể thức, đúng người ký và được phát hành nhanh.",
+    "whoDoes": "Bạn soạn thảo; lãnh đạo đơn vị duyệt; Phòng Hành chính – Tổng hợp kiểm tra thể thức, đóng dấu và phát hành.",
+    "prepare": [
+      "Bộ mẫu văn bản hành chính của Trường",
+      "Tài khoản eOffice",
+      "Tài liệu, căn cứ liên quan đến nội dung văn bản"
+    ],
+    "steps": [
+      "Chọn đúng mẫu văn bản trong bộ mẫu của Trường.",
+      "Soạn nội dung, nhờ Buddy hoặc đồng nghiệp xem trước.",
+      "Trình lãnh đạo đơn vị duyệt trên eOffice.",
+      "Chuyển Phòng Hành chính – Tổng hợp kiểm tra thể thức, trình ký và phát hành.",
+      "Theo dõi trạng thái văn bản trên eOffice đến khi hoàn tất."
+    ],
+    "formIds": [
+      "r-form-admin-templates",
+      "r-manual-eoffice"
+    ],
+    "contactId": "ct-admin",
+    "keywords": [
+      "trình ký",
+      "công văn",
+      "văn bản",
+      "thể thức",
+      "eOffice",
+      "đóng dấu",
+      "phát hành"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-safety",
+    "category": "admin",
+    "title": "An toàn PCCC và tình huống khẩn cấp",
+    "situations": [
+      "Tôi muốn biết lối thoát hiểm ở đâu",
+      "Tôi thấy có dấu hiệu cháy",
+      "Tôi cần số khẩn cấp của Trường"
+    ],
+    "purpose": "Giúp bạn biết phải làm gì để an toàn cho mình và mọi người khi có sự cố.",
+    "whoDoes": "Mọi cán bộ; Phòng Hành chính – Tổng hợp là đầu mối an ninh, PCCC của Trường (cần xác nhận).",
+    "prepare": [
+      "Tài liệu tập huấn an toàn PCCC",
+      "Số điện thoại khẩn cấp của Trường"
+    ],
+    "steps": [
+      "Xác định lối thoát hiểm và bình chữa cháy gần nơi làm việc.",
+      "Khi có sự cố: giữ bình tĩnh, báo động cho người xung quanh và gọi số khẩn cấp.",
+      "Di chuyển theo lối thoát hiểm, không dùng thang máy.",
+      "Báo lại cho Phòng Hành chính – Tổng hợp sau khi an toàn."
+    ],
+    "formIds": [
+      "r-training-pccc"
+    ],
+    "contactId": "ct-admin",
+    "keywords": [
+      "PCCC",
+      "cháy",
+      "an toàn",
+      "thoát hiểm",
+      "khẩn cấp",
+      "phòng cháy"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-incident",
+    "category": "admin",
+    "title": "Báo sự cố cơ sở vật chất",
+    "situations": [
+      "Phòng học bị hỏng điều hòa",
+      "Tôi cần báo mất điện, rò nước",
+      "Thiết bị tôi được giao bị hỏng"
+    ],
+    "purpose": "Giúp sự cố được tiếp nhận và xử lý nhanh, không ảnh hưởng tới giờ học, giờ làm.",
+    "whoDoes": "Bạn báo sự cố; Phòng Hành chính – Tổng hợp tiếp nhận và điều phối xử lý.",
+    "prepare": [
+      "Vị trí, thời gian và mô tả ngắn sự cố",
+      "Ảnh chụp (nếu có thể)",
+      "Mẫu báo cáo sự cố (với sự cố lớn)"
+    ],
+    "steps": [
+      "Nếu nguy hiểm: đảm bảo an toàn trước, báo quản lý trực tiếp ngay.",
+      "Gọi hoặc gửi email cho Phòng Hành chính – Tổng hợp kèm mô tả và ảnh.",
+      "Với sự cố lớn: điền mẫu báo cáo sự cố.",
+      "Theo dõi đến khi sự cố được xử lý xong."
+    ],
+    "formIds": [
+      "r-form-incident"
+    ],
+    "contactId": "ct-admin",
+    "keywords": [
+      "sự cố",
+      "hỏng",
+      "báo hỏng",
+      "điều hòa",
+      "mất điện",
+      "rò nước",
+      "sửa chữa"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-travel-allowance",
+    "category": "finance",
+    "title": "Thanh toán công tác phí",
+    "situations": [
+      "Tôi cần thanh toán công tác phí",
+      "Tôi muốn tạm ứng trước khi đi công tác",
+      "Tôi bị thiếu hóa đơn khi thanh toán"
+    ],
+    "purpose": "Giúp bạn chuẩn bị đủ chứng từ để được thanh toán nhanh, không phải bổ sung nhiều lần.",
+    "whoDoes": "Bạn lập hồ sơ; lãnh đạo đơn vị xác nhận; Phòng Kế hoạch – Tài chính kiểm tra và thanh toán.",
+    "prepare": [
+      "Giấy đi đường/ quyết định cử đi công tác (theo quy định hiện hành của Trường – cần xác nhận)",
+      "Hóa đơn, chứng từ hợp lệ",
+      "Mẫu giấy đề nghị thanh toán công tác phí",
+      "Mẫu giấy đề nghị tạm ứng (nếu cần tạm ứng trước)"
+    ],
+    "steps": [
+      "Trước chuyến đi: xin quyết định/ giấy cử đi công tác; nếu cần, làm đề nghị tạm ứng.",
+      "Trong chuyến đi: giữ đầy đủ hóa đơn, vé, xác nhận nơi đến.",
+      "Sau chuyến đi: điền giấy đề nghị thanh toán, đính kèm chứng từ.",
+      "Nộp hồ sơ cho Phòng Kế hoạch – Tài chính (thời hạn nộp theo quy định hiện hành của Trường – cần xác nhận).",
+      "Mức chi được áp dụng theo Quy chế chi tiêu nội bộ – cần xác nhận với Phòng Kế hoạch – Tài chính."
+    ],
+    "formIds": [
+      "r-form-travel-payment",
+      "r-form-advance",
+      "r-reg-internal-spending"
+    ],
+    "contactId": "ct-finance",
+    "keywords": [
+      "công tác phí",
+      "thanh toán",
+      "tạm ứng",
+      "đi công tác",
+      "hóa đơn",
+      "chứng từ",
+      "hoàn ứng"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-salary",
+    "category": "finance",
+    "title": "Lương, thu nhập và tài khoản nhận lương",
+    "situations": [
+      "Tôi muốn hỏi về lương tháng đầu",
+      "Tôi cần cập nhật tài khoản ngân hàng nhận lương",
+      "Tôi chưa nhận được lương"
+    ],
+    "purpose": "Giúp bạn biết hỏi ai và cần cung cấp gì để nhận lương, thu nhập đúng hạn.",
+    "whoDoes": "Phòng TCTT xác định chế độ lương; Phòng Kế hoạch – Tài chính chi trả (cần xác nhận phân công).",
+    "prepare": [
+      "Thông tin tài khoản ngân hàng chính chủ",
+      "Mã số thuế cá nhân (nếu có)",
+      "Quyết định tuyển dụng/ hợp đồng"
+    ],
+    "steps": [
+      "Đảm bảo hồ sơ nhân sự đã nộp đầy đủ cho Phòng TCTT.",
+      "Cung cấp thông tin tài khoản ngân hàng cho Phòng Kế hoạch – Tài chính.",
+      "Thời điểm chi trả và mức lương: theo quy định hiện hành của Trường – cần xác nhận.",
+      "Nếu chưa nhận được lương, liên hệ Phòng Kế hoạch – Tài chính kèm họ tên, đơn vị."
+    ],
+    "formIds": [],
+    "contactId": "ct-finance",
+    "keywords": [
+      "lương",
+      "thu nhập",
+      "tài khoản ngân hàng",
+      "chưa nhận lương",
+      "mã số thuế"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-email-account",
+    "category": "it",
+    "title": "Email công vụ và tài khoản hệ thống",
+    "situations": [
+      "Tôi chưa có email công vụ",
+      "Tôi quên mật khẩu email",
+      "Tôi chưa vào được eOffice/ LMS"
+    ],
+    "purpose": "Giúp bạn có đủ tài khoản để nhận thông báo và làm việc trên các hệ thống của Trường.",
+    "whoDoes": "Phòng TCTT gửi thông tin cán bộ mới; bộ phận CNTT tạo và hỗ trợ tài khoản.",
+    "prepare": [
+      "Họ tên, đơn vị, mã cán bộ (nếu có)",
+      "Số điện thoại để nhận mã xác thực",
+      "Hướng dẫn sử dụng email công vụ"
+    ],
+    "steps": [
+      "Kiểm tra email cá nhân/ tin nhắn để nhận thông tin tài khoản.",
+      "Đăng nhập lần đầu, đổi mật khẩu và bật xác thực hai bước.",
+      "Đăng nhập thử các hệ thống được cấp (eOffice, LMS…).",
+      "Nếu chưa có tài khoản sau ngày làm việc thứ 4, gửi phiếu yêu cầu hỗ trợ cho bộ phận CNTT."
+    ],
+    "formIds": [
+      "r-manual-email",
+      "r-form-it-request"
+    ],
+    "contactId": "ct-it",
+    "keywords": [
+      "email",
+      "email công vụ",
+      "tài khoản",
+      "mật khẩu",
+      "quên mật khẩu",
+      "eOffice",
+      "LMS",
+      "đăng nhập"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-it-support",
+    "category": "it",
+    "title": "Nhờ hỗ trợ CNTT: wifi, máy tính, máy chiếu",
+    "situations": [
+      "Tôi không kết nối được wifi của Trường",
+      "Máy chiếu phòng học không hoạt động",
+      "Tôi cần cài phần mềm cho công việc"
+    ],
+    "purpose": "Giúp vấn đề kỹ thuật của bạn được xử lý nhanh nhất.",
+    "whoDoes": "Bạn gửi yêu cầu; bộ phận CNTT tiếp nhận và xử lý.",
+    "prepare": [
+      "Mô tả lỗi, ảnh chụp màn hình (nếu có)",
+      "Vị trí phòng/ thiết bị",
+      "Phiếu yêu cầu hỗ trợ CNTT"
+    ],
+    "steps": [
+      "Thử khởi động lại thiết bị.",
+      "Nếu đang trong giờ dạy: gọi trực tiếp bộ phận CNTT.",
+      "Các trường hợp khác: gửi phiếu yêu cầu hỗ trợ qua email.",
+      "Xác nhận với bộ phận CNTT khi đã xử lý xong."
+    ],
+    "formIds": [
+      "r-form-it-request"
+    ],
+    "contactId": "ct-it",
+    "keywords": [
+      "wifi",
+      "mạng",
+      "máy tính",
+      "máy chiếu",
+      "phần mềm",
+      "lỗi",
+      "hỗ trợ kỹ thuật"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-teaching-start",
+    "category": "academic",
+    "title": "Chuẩn bị cho học kỳ giảng dạy đầu tiên",
+    "situations": [
+      "Tôi chưa nhận được phân công giảng dạy",
+      "Tôi muốn xem lịch giảng và phòng học",
+      "Tôi cần đề cương học phần"
+    ],
+    "purpose": "Giúp bạn sẵn sàng cho buổi lên lớp đầu tiên: có lớp, có lịch, có đề cương và tài khoản LMS.",
+    "whoDoes": "Khoa/ Bộ môn phân công; Phòng Đào tạo xếp lịch; bộ phận CNTT cấp tài khoản LMS.",
+    "prepare": [
+      "Phân công giảng dạy của Khoa/ Bộ môn",
+      "Tài khoản hệ thống quản lý đào tạo và LMS",
+      "Đề cương học phần, giáo trình"
+    ],
+    "steps": [
+      "Nhận phân công giảng dạy từ Khoa/ Bộ môn.",
+      "Xem thời khóa biểu và phòng học trên hệ thống quản lý đào tạo.",
+      "Xin đề cương học phần, đọc kỹ chuẩn đầu ra và cách đánh giá.",
+      "Tạo khóa học trên LMS và đăng tài liệu buổi đầu.",
+      "Đến xem trước phòng học và thử thiết bị trình chiếu."
+    ],
+    "formIds": [
+      "r-manual-lms",
+      "r-training-teaching"
+    ],
+    "contactId": "ct-academic",
+    "keywords": [
+      "giảng dạy",
+      "phân công giảng dạy",
+      "lịch giảng",
+      "thời khóa biểu",
+      "đề cương",
+      "LMS",
+      "phòng học"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-exam",
+    "category": "academic",
+    "title": "Coi thi và chấm thi",
+    "situations": [
+      "Tôi được phân công coi thi",
+      "Tôi cần nộp điểm học phần",
+      "Tôi gặp sinh viên vi phạm quy chế thi"
+    ],
+    "purpose": "Giúp bạn làm đúng trách nhiệm khi coi thi, chấm thi và nộp điểm đúng hạn.",
+    "whoDoes": "Giảng viên coi thi, chấm thi; Phòng Đào tạo tổ chức và quản lý điểm.",
+    "prepare": [
+      "Quy định coi thi, chấm thi",
+      "Lịch thi và phân công coi thi",
+      "Tài khoản hệ thống quản lý đào tạo để nhập điểm"
+    ],
+    "steps": [
+      "Đọc quy định coi thi, chấm thi trước kỳ thi đầu tiên.",
+      "Có mặt đúng giờ theo phân công, nhận đề và biên bản.",
+      "Xử lý vi phạm theo quy định và lập biên bản khi cần.",
+      "Chấm bài, nhập điểm trên hệ thống (thời hạn theo quy định hiện hành của Trường – cần xác nhận)."
+    ],
+    "formIds": [
+      "r-reg-exam"
+    ],
+    "contactId": "ct-academic",
+    "keywords": [
+      "coi thi",
+      "chấm thi",
+      "thi",
+      "nhập điểm",
+      "nộp điểm",
+      "vi phạm quy chế",
+      "lịch thi"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "g-emulation",
+    "category": "emulation",
+    "title": "Thi đua – khen thưởng cho cán bộ",
+    "situations": [
+      "Tôi muốn đăng ký danh hiệu thi đua",
+      "Tôi là cán bộ mới thì có được xét thi đua không",
+      "Tôi cần biết thời hạn nộp hồ sơ khen thưởng"
+    ],
+    "purpose": "Giúp bạn biết cách đăng ký và chuẩn bị hồ sơ để thành tích của mình được ghi nhận.",
+    "whoDoes": "Bạn đăng ký; đơn vị bình xét; Phòng TCTT tổng hợp trình Hội đồng thi đua – khen thưởng (cần xác nhận).",
+    "prepare": [
+      "Mẫu đăng ký danh hiệu thi đua cá nhân",
+      "Quy chế thi đua – khen thưởng",
+      "Minh chứng thành tích (nếu có)"
+    ],
+    "steps": [
+      "Đọc quy chế thi đua – khen thưởng để biết các danh hiệu và tiêu chí.",
+      "Đăng ký danh hiệu với đơn vị đầu năm học (thời điểm theo quy định hiện hành của Trường – cần xác nhận).",
+      "Cuối năm, nộp báo cáo thành tích và minh chứng cho đơn vị.",
+      "Điều kiện xét cho cán bộ mới: theo quy định hiện hành của Trường – cần xác nhận với Phòng TCTT."
+    ],
+    "formIds": [
+      "r-form-emulation",
+      "r-reg-emulation"
+    ],
+    "contactId": "ct-hr",
+    "keywords": [
+      "thi đua",
+      "khen thưởng",
+      "danh hiệu",
+      "đăng ký thi đua",
+      "bình xét",
+      "thành tích"
+    ],
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  }
+]

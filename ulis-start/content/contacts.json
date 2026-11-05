@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ct-hr",
+    "unit": "Phòng Tổ chức và Thanh tra (TCTT)",
+    "role": "Bộ phận tiếp nhận cán bộ mới",
+    "handles": [
+      "hồ sơ nhân sự",
+      "quyết định tuyển dụng",
+      "hợp đồng",
+      "nghỉ phép",
+      "chấm công",
+      "bảo hiểm xã hội",
+      "bảo hiểm y tế",
+      "lương",
+      "thi đua khen thưởng",
+      "kế hoạch phát triển cá nhân",
+      "vị trí việc làm"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-tctt@ulis.vnu.edu.vn",
+    "location": "Khu nhà hành chính (cần xác nhận số phòng)",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-admin",
+    "unit": "Phòng Hành chính – Tổng hợp",
+    "role": "Bộ phận văn thư – quản trị",
+    "handles": [
+      "trình ký văn bản",
+      "mẫu công văn",
+      "văn thư",
+      "con dấu",
+      "phòng họp",
+      "cơ sở vật chất",
+      "báo sự cố",
+      "an toàn PCCC",
+      "nội quy",
+      "trang thiết bị",
+      "gửi xe"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-hcth@ulis.vnu.edu.vn",
+    "location": "Khu nhà hành chính (cần xác nhận số phòng)",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-finance",
+    "unit": "Phòng Kế hoạch – Tài chính",
+    "role": "Bộ phận thanh toán",
+    "handles": [
+      "công tác phí",
+      "thanh toán",
+      "tạm ứng",
+      "hoàn ứng",
+      "chứng từ",
+      "tài khoản ngân hàng nhận lương",
+      "thu nhập",
+      "hóa đơn"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-khtc@ulis.vnu.edu.vn",
+    "location": "Khu nhà hành chính (cần xác nhận số phòng)",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-academic",
+    "unit": "Phòng Đào tạo",
+    "role": "Bộ phận quản lý đào tạo",
+    "handles": [
+      "lịch giảng",
+      "thời khóa biểu",
+      "phòng học",
+      "coi thi",
+      "chấm thi",
+      "nhập điểm",
+      "đề cương học phần",
+      "hệ thống quản lý đào tạo"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-daotao@ulis.vnu.edu.vn",
+    "location": "Khu nhà hành chính (cần xác nhận số phòng)",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-it",
+    "unit": "Trung tâm/ bộ phận Công nghệ thông tin",
+    "role": "Hỗ trợ kỹ thuật – tài khoản",
+    "handles": [
+      "email công vụ",
+      "mật khẩu",
+      "tài khoản",
+      "LMS",
+      "eOffice",
+      "wifi",
+      "máy tính",
+      "máy chiếu",
+      "sự cố CNTT",
+      "phần mềm"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-cntt@ulis.vnu.edu.vn",
+    "location": "Cần xác nhận địa điểm",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-union",
+    "unit": "Công đoàn Trường",
+    "role": "Ban chấp hành Công đoàn",
+    "handles": [
+      "công đoàn",
+      "đoàn viên",
+      "phúc lợi",
+      "hoạt động tập thể",
+      "thăm hỏi",
+      "văn nghệ thể thao"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-congdoan@ulis.vnu.edu.vn",
+    "location": "Cần xác nhận địa điểm",
+    "hours": "Theo lịch làm việc của Công đoàn (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-faculty-english",
+    "unit": "Khoa Tiếng Anh (đơn vị mẫu)",
+    "role": "Văn phòng Khoa",
+    "handles": [
+      "phân công giảng dạy",
+      "lịch họp khoa",
+      "bộ môn",
+      "nghiên cứu khoa học",
+      "dự giờ",
+      "ngày đầu tiên",
+      "lãnh đạo đơn vị"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-khoaanh@ulis.vnu.edu.vn",
+    "location": "Cần xác nhận địa điểm",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "ct-buddy",
+    "unit": "Đơn vị của bạn",
+    "role": "Người đồng hành (Buddy) – đồng nghiệp được đơn vị phân công",
+    "handles": [
+      "hỏi nhanh",
+      "làm quen",
+      "văn hóa đơn vị",
+      "phần mềm nghiệp vụ",
+      "dự giờ",
+      "góp ý văn bản",
+      "người đồng hành"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-buddy@ulis.vnu.edu.vn",
+    "location": "Cùng đơn vị với bạn",
+    "hours": "Hẹn trước qua tin nhắn",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  }
+]

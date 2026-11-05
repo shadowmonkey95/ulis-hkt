@@ -1,0 +1,353 @@
+{
+  "nghỉ phép": [
+    "xin nghỉ",
+    "phép năm",
+    "ngày phép",
+    "nghi phep",
+    "xin nghi",
+    "phep nam"
+  ],
+  "nghỉ ốm": [
+    "bị ốm",
+    "nghỉ bệnh",
+    "ốm đột xuất",
+    "nghi om",
+    "nghi benh"
+  ],
+  "công tác phí": [
+    "đi công tác",
+    "thanh toán đi công tác",
+    "chi phí công tác",
+    "cong tac phi",
+    "di cong tac"
+  ],
+  "tạm ứng": [
+    "ứng trước",
+    "ứng tiền",
+    "hoàn ứng",
+    "tam ung",
+    "ung truoc",
+    "hoan ung"
+  ],
+  "thanh toán": [
+    "quyết toán",
+    "chứng từ",
+    "hóa đơn",
+    "thanh toan",
+    "hoa don",
+    "chung tu"
+  ],
+  "lương": [
+    "thu nhập",
+    "tiền lương",
+    "trả lương",
+    "luong",
+    "thu nhap",
+    "tien luong"
+  ],
+  "tài khoản ngân hàng": [
+    "số tài khoản",
+    "stk",
+    "ngân hàng",
+    "tai khoan ngan hang",
+    "ngan hang"
+  ],
+  "hồ sơ nhân sự": [
+    "hồ sơ",
+    "giấy tờ",
+    "nộp hồ sơ",
+    "ho so",
+    "ho so nhan su",
+    "giay to",
+    "nop ho so"
+  ],
+  "sơ yếu lý lịch": [
+    "lý lịch",
+    "SYLL",
+    "so yeu ly lich",
+    "ly lich"
+  ],
+  "quyết định tuyển dụng": [
+    "quyết định",
+    "hợp đồng",
+    "hợp đồng lao động",
+    "quyet dinh",
+    "hop dong",
+    "tuyen dung"
+  ],
+  "email công vụ": [
+    "email",
+    "mail",
+    "thư điện tử",
+    "email trường",
+    "email cong vu",
+    "thu dien tu"
+  ],
+  "mật khẩu": [
+    "password",
+    "quên mật khẩu",
+    "đổi mật khẩu",
+    "mat khau",
+    "quen mat khau"
+  ],
+  "tài khoản": [
+    "account",
+    "đăng nhập",
+    "login",
+    "tai khoan",
+    "dang nhap"
+  ],
+  "eOffice": [
+    "quản lý văn bản",
+    "văn bản điện tử",
+    "e-office",
+    "eoffice",
+    "quan ly van ban"
+  ],
+  "LMS": [
+    "học trực tuyến",
+    "e-learning",
+    "elearning",
+    "lms",
+    "hoc truc tuyen"
+  ],
+  "hệ thống quản lý đào tạo": [
+    "phần mềm đào tạo",
+    "cổng đào tạo",
+    "he thong dao tao",
+    "quan ly dao tao"
+  ],
+  "trình ký": [
+    "ký duyệt",
+    "xin chữ ký",
+    "trình lãnh đạo",
+    "trinh ky",
+    "ky duyet"
+  ],
+  "công văn": [
+    "văn bản",
+    "tờ trình",
+    "giấy mời",
+    "cong van",
+    "van ban",
+    "to trinh"
+  ],
+  "biểu mẫu": [
+    "mẫu",
+    "form",
+    "mẫu đơn",
+    "bieu mau",
+    "mau don"
+  ],
+  "phân công giảng dạy": [
+    "phân công",
+    "lớp dạy",
+    "học phần được giao",
+    "phan cong giang day",
+    "phan cong"
+  ],
+  "lịch giảng": [
+    "thời khóa biểu",
+    "TKB",
+    "lịch dạy",
+    "lich giang",
+    "thoi khoa bieu",
+    "lich day"
+  ],
+  "phòng học": [
+    "giảng đường",
+    "lớp học",
+    "phong hoc",
+    "giang duong"
+  ],
+  "đề cương học phần": [
+    "đề cương",
+    "syllabus",
+    "đề cương môn học",
+    "de cuong",
+    "de cuong hoc phan"
+  ],
+  "coi thi": [
+    "gác thi",
+    "trông thi",
+    "coi kiểm tra",
+    "coi thi",
+    "gac thi"
+  ],
+  "chấm thi": [
+    "chấm bài",
+    "nhập điểm",
+    "nộp điểm",
+    "cham thi",
+    "cham bai",
+    "nhap diem"
+  ],
+  "nghiên cứu khoa học": [
+    "NCKH",
+    "đề tài",
+    "nghiên cứu",
+    "công bố",
+    "nghien cuu khoa hoc",
+    "de tai",
+    "nckh"
+  ],
+  "dự giờ": [
+    "thăm lớp",
+    "quan sát lớp",
+    "du gio"
+  ],
+  "buddy": [
+    "người đồng hành",
+    "người hướng dẫn",
+    "mentor",
+    "nguoi dong hanh",
+    "nguoi huong dan"
+  ],
+  "PCCC": [
+    "phòng cháy chữa cháy",
+    "cháy",
+    "chữa cháy",
+    "pccc",
+    "phong chay chua chay",
+    "chay"
+  ],
+  "sự cố": [
+    "hỏng",
+    "báo hỏng",
+    "hư hỏng",
+    "trục trặc",
+    "su co",
+    "bao hong",
+    "hong"
+  ],
+  "wifi": [
+    "mạng",
+    "internet",
+    "wi-fi",
+    "mang",
+    "ket noi mang"
+  ],
+  "máy chiếu": [
+    "projector",
+    "trình chiếu",
+    "may chieu",
+    "trinh chieu"
+  ],
+  "thi đua khen thưởng": [
+    "thi đua",
+    "khen thưởng",
+    "danh hiệu",
+    "bình xét",
+    "thi dua",
+    "khen thuong",
+    "danh hieu"
+  ],
+  "công đoàn": [
+    "đoàn viên",
+    "công đoàn trường",
+    "cong doan",
+    "doan vien"
+  ],
+  "bảo hiểm": [
+    "BHXH",
+    "BHYT",
+    "bảo hiểm xã hội",
+    "bảo hiểm y tế",
+    "bao hiem",
+    "bhxh",
+    "bhyt"
+  ],
+  "chấm công": [
+    "điểm danh",
+    "giờ làm",
+    "giờ làm việc",
+    "cham cong",
+    "gio lam viec"
+  ],
+  "ca làm": [
+    "ca",
+    "đổi ca",
+    "lịch ca",
+    "ca lam",
+    "doi ca"
+  ],
+  "nội quy": [
+    "quy định",
+    "quy tắc ứng xử",
+    "noi quy",
+    "quy dinh",
+    "quy tac ung xu"
+  ],
+  "Phòng Kế hoạch – Tài chính": [
+    "kế toán",
+    "tài chính",
+    "phòng tài vụ",
+    "KHTC",
+    "ke toan",
+    "tai chinh",
+    "khtc"
+  ],
+  "Phòng Hành chính – Tổng hợp": [
+    "hành chính",
+    "văn thư",
+    "HCTH",
+    "hanh chinh",
+    "van thu",
+    "hcth"
+  ],
+  "Phòng Đào tạo": [
+    "đào tạo",
+    "phòng giáo vụ",
+    "dao tao",
+    "giao vu"
+  ],
+  "kế hoạch phát triển cá nhân": [
+    "kế hoạch cá nhân",
+    "IDP",
+    "mục tiêu cá nhân",
+    "ke hoach phat trien",
+    "muc tieu"
+  ],
+  "hỏi ai": [
+    "gặp ai",
+    "liên hệ ai",
+    "đầu mối",
+    "hoi ai",
+    "gap ai",
+    "lien he"
+  ],
+  "ngày đầu": [
+    "ngày đầu tiên",
+    "ngày đầu đi làm",
+    "buổi đầu",
+    "hôm đầu",
+    "ngày làm việc đầu tiên"
+  ],
+  "ốm đau": [
+    "ốm",
+    "bị ốm",
+    "nghỉ ốm",
+    "om dau",
+    "bệnh"
+  ],
+  "dưỡng sức": [
+    "phục hồi sức khỏe",
+    "nghỉ dưỡng sức",
+    "DS-PHSK"
+  ],
+  "Phòng TCTT": [
+    "tổ chức và thanh tra",
+    "tổ chức thanh tra",
+    "phòng tổ chức",
+    "TCTT",
+    "tctt",
+    "to chuc va thanh tra",
+    "to chuc thanh tra",
+    "tổ chức nhân sự",
+    "phòng nhân sự",
+    "nhân sự",
+    "to chuc nhan su",
+    "tcns",
+    "nhan su"
+  ]
+}

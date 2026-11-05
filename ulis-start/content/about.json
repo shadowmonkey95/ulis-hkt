@@ -1,0 +1,144 @@
+{
+  "name": "Trường Đại học Ngoại ngữ – Đại học Quốc gia Hà Nội",
+  "englishName": "University of Languages and International Studies – Vietnam National University, Hanoi",
+  "shortName": "ULIS",
+  "parentOrg": "Đại học Quốc gia Hà Nội (ĐHQGHN)",
+  "foundedYear": 1955,
+  "address": "Đường Phạm Văn Đồng, quận Cầu Giấy, Hà Nội",
+  "website": "https://ulis.vnu.edu.vn",
+  "history": [
+    "Trường có truyền thống đào tạo ngoại ngữ bắt đầu từ năm 1955.",
+    "Hiện nay, Trường là một trường đại học thành viên của Đại học Quốc gia Hà Nội.",
+    "Các mốc lịch sử chi tiết: cần bổ sung từ trang thông tin chính thức của Trường."
+  ],
+  "mission": "Nội dung mẫu: Đào tạo nguồn nhân lực chất lượng cao về ngoại ngữ, nghiên cứu và chuyển giao tri thức, góp phần hội nhập quốc tế (cần thay bằng văn bản sứ mạng chính thức của Trường).",
+  "vision": "Nội dung mẫu: Trở thành cơ sở đào tạo và nghiên cứu ngoại ngữ uy tín trong nước và khu vực (cần thay bằng văn bản tầm nhìn chính thức của Trường).",
+  "values": [
+    {
+      "title": "Tận tâm",
+      "description": "Nội dung mẫu: đặt người học và đồng nghiệp ở trung tâm (cần xác nhận giá trị cốt lõi chính thức)."
+    },
+    {
+      "title": "Chất lượng",
+      "description": "Nội dung mẫu: làm việc chuyên nghiệp, không ngừng cải tiến (cần xác nhận)."
+    },
+    {
+      "title": "Hội nhập",
+      "description": "Nội dung mẫu: cởi mở, kết nối với cộng đồng quốc tế (cần xác nhận)."
+    }
+  ],
+  "units": [
+    {
+      "id": "u-hr",
+      "name": "Phòng Tổ chức và Thanh tra",
+      "kind": "office",
+      "description": "Tuyển dụng, hồ sơ nhân sự, chế độ chính sách, thi đua – khen thưởng.",
+      "contactId": "ct-hr"
+    },
+    {
+      "id": "u-admin",
+      "name": "Phòng Hành chính – Tổng hợp",
+      "kind": "office",
+      "description": "Văn thư, trình ký văn bản, cơ sở vật chất, an ninh, PCCC.",
+      "contactId": "ct-admin"
+    },
+    {
+      "id": "u-finance",
+      "name": "Phòng Kế hoạch – Tài chính",
+      "kind": "office",
+      "description": "Kế hoạch, thanh toán, tạm ứng, công tác phí, chi trả thu nhập.",
+      "contactId": "ct-finance"
+    },
+    {
+      "id": "u-academic",
+      "name": "Phòng Đào tạo",
+      "kind": "office",
+      "description": "Kế hoạch đào tạo, thời khóa biểu, tổ chức thi, quản lý điểm.",
+      "contactId": "ct-academic"
+    },
+    {
+      "id": "u-it",
+      "name": "Trung tâm/ bộ phận Công nghệ thông tin",
+      "kind": "center",
+      "description": "Email công vụ, tài khoản hệ thống, hạ tầng mạng, hỗ trợ kỹ thuật.",
+      "contactId": "ct-it"
+    },
+    {
+      "id": "u-union",
+      "name": "Công đoàn Trường",
+      "kind": "organization",
+      "description": "Chăm lo đời sống, quyền lợi và hoạt động tập thể của cán bộ.",
+      "contactId": "ct-union"
+    },
+    {
+      "id": "u-faculty-english",
+      "name": "Khoa Tiếng Anh (đơn vị mẫu)",
+      "kind": "faculty",
+      "description": "Đơn vị đào tạo mẫu dùng trong bản demo.",
+      "contactId": "ct-faculty-english"
+    }
+  ],
+  "dayAtUlis": [
+    {
+      "time": "Khoảng 7:30",
+      "title": "Đến Trường, gửi xe",
+      "description": "Đến sớm một chút để gửi xe và chuẩn bị cho ngày làm việc. Nơi gửi xe dành cho cán bộ: hỏi đơn vị của bạn."
+    },
+    {
+      "time": "Đầu buổi sáng",
+      "title": "Xem email công vụ và eOffice",
+      "description": "Lướt qua thông báo mới, văn bản cần xử lý và lịch họp trong ngày."
+    },
+    {
+      "time": "Buổi sáng",
+      "title": "Lên lớp hoặc xử lý công việc chuyên môn",
+      "description": "Giảng viên lên lớp theo thời khóa biểu; chuyên viên và người lao động làm việc theo phân công của đơn vị."
+    },
+    {
+      "time": "Khoảng giữa trưa",
+      "title": "Ăn trưa cùng đồng nghiệp",
+      "description": "Dịp tốt để làm quen mọi người – hãy rủ Buddy đi cùng trong những ngày đầu."
+    },
+    {
+      "time": "Buổi chiều",
+      "title": "Họp đơn vị, sinh hoạt chuyên môn",
+      "description": "Lịch họp do đơn vị thông báo; bạn nên ghi chú những việc được giao."
+    },
+    {
+      "time": "Khi có thời gian",
+      "title": "Ghé thư viện hoặc gặp Buddy",
+      "description": "Tìm tài liệu, giáo trình hoặc hỏi Buddy những điều còn chưa rõ."
+    },
+    {
+      "time": "Cuối ngày",
+      "title": "Cập nhật tiến độ trên ULIS START",
+      "description": "Đánh dấu việc đã xong và xem trước việc của ngày mai."
+    }
+  ],
+  "note": "Năm thành lập, trực thuộc ĐHQGHN và địa chỉ lấy từ thông tin công khai; sứ mạng, tầm nhìn, giá trị và danh sách đơn vị là nội dung mẫu – cần ULIS xác nhận.",
+  "source": "Website công khai của Trường (ulis.vnu.edu.vn) – thông tin chung; phần còn lại là Nội dung mẫu cho Hackathon",
+  "updatedAt": "2026-11-03",
+  "verified": false,
+  "staffUnits": [
+    "Phòng Tổ chức và Thanh tra",
+    "Phòng Kế hoạch - Tài chính",
+    "Phòng Đào tạo và người học",
+    "Phòng Quản trị chất lượng",
+    "Phòng Quản trị nguồn lực",
+    "Phòng Khoa học công nghệ và hợp tác phát triển",
+    "Phòng Văn phòng tổng hợp",
+    "Khoa Giáo dục quốc tế",
+    "Khoa Ngôn ngữ và Văn hóa Anh",
+    "Khoa Ngôn ngữ và Văn hóa Nga",
+    "Khoa Ngôn ngữ và Văn hóa Pháp",
+    "Khoa Ngôn ngữ và Văn hóa Trung Quốc",
+    "Khoa Ngôn ngữ và Văn hóa Đức",
+    "Khoa Ngôn ngữ và Văn hóa Nhật Bản",
+    "Khoa Ngôn ngữ và Văn hóa Hàn Quốc",
+    "Khoa Ngôn ngữ và Văn hóa Ả Rập",
+    "Khoa Tâm lý - Giáo dục khai phóng",
+    "Khoa Ngôn ngữ - Văn hóa Việt Nam và Đông Nam Á",
+    "Trường THPT Chuyên Ngoại ngữ",
+    "Trường THCS Ngoại ngữ"
+  ]
+}

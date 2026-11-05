@@ -1,0 +1,104 @@
+[
+  {
+    "id": "b-insurance",
+    "category": "insurance",
+    "title": "Bảo hiểm xã hội, bảo hiểm y tế",
+    "summary": "Bạn được tham gia bảo hiểm xã hội, bảo hiểm y tế theo quy định của pháp luật và của Trường.",
+    "details": [
+      "Thủ tục được thực hiện sau khi bạn nộp đủ hồ sơ nhân sự.",
+      "Mức đóng, nơi đăng ký khám chữa bệnh ban đầu: theo quy định hiện hành của Trường – cần xác nhận.",
+      "Khi ốm đau hoặc nghỉ chăm con ốm, bạn có thể được hưởng trợ cấp ốm đau từ BHXH – xem hướng dẫn \"Nghỉ ốm và hưởng trợ cấp ốm đau (BHXH)\"."
+    ],
+    "contactId": "ct-hr",
+    "guideId": "g-sick-leave",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "b-leave",
+    "category": "leave",
+    "title": "Nghỉ phép năm và nghỉ lễ",
+    "summary": "Bạn được nghỉ phép năm và nghỉ lễ, Tết theo quy định.",
+    "details": [
+      "Số ngày phép: theo quy định hiện hành của Trường – cần xác nhận.",
+      "Với giảng viên, lịch nghỉ có thể gắn với kế hoạch năm học – cần xác nhận."
+    ],
+    "contactId": "ct-hr",
+    "guideId": "g-leave",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "b-health-check",
+    "category": "health",
+    "title": "Khám sức khỏe định kỳ",
+    "summary": "Trường tổ chức khám sức khỏe định kỳ cho cán bộ (theo quy định hiện hành của Trường – cần xác nhận).",
+    "details": [
+      "Thời gian và địa điểm khám được thông báo qua email công vụ.",
+      "Đối tượng và tần suất: cần xác nhận với Phòng TCTT."
+    ],
+    "contactId": "ct-hr",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "b-union",
+    "category": "union",
+    "title": "Hoạt động và phúc lợi Công đoàn",
+    "summary": "Là đoàn viên, bạn được tham gia hoạt động tập thể và các chế độ thăm hỏi của Công đoàn.",
+    "details": [
+      "Hoạt động văn nghệ, thể thao, tham quan theo kế hoạch của Công đoàn.",
+      "Chế độ thăm hỏi, hỗ trợ: theo quy định hiện hành của Công đoàn Trường – cần xác nhận."
+    ],
+    "contactId": "ct-union",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "b-development",
+    "category": "development",
+    "title": "Đào tạo, bồi dưỡng chuyên môn",
+    "summary": "Bạn có cơ hội tham gia các khóa bồi dưỡng nghiệp vụ, phương pháp giảng dạy và kỹ năng.",
+    "details": [
+      "Nhu cầu bồi dưỡng nên được ghi vào kế hoạch phát triển cá nhân.",
+      "Chính sách hỗ trợ học tập: theo quy định hiện hành của Trường – cần xác nhận."
+    ],
+    "contactId": "ct-hr",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "b-recognition",
+    "category": "recognition",
+    "title": "Thi đua – khen thưởng",
+    "summary": "Thành tích của bạn được ghi nhận qua các danh hiệu thi đua và hình thức khen thưởng.",
+    "details": [
+      "Đăng ký danh hiệu thi đua với đơn vị theo kế hoạch năm học.",
+      "Tiêu chí và điều kiện xét: theo quy chế thi đua – khen thưởng hiện hành – cần xác nhận."
+    ],
+    "contactId": "ct-hr",
+    "guideId": "g-emulation",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  },
+  {
+    "id": "b-facility",
+    "category": "facility",
+    "title": "Thư viện và tiện ích trong khuôn viên",
+    "summary": "Bạn có thể dùng thư viện và các tiện ích chung của Trường.",
+    "details": [
+      "Danh sách tiện ích và quy định sử dụng: cần xác nhận.",
+      "Gửi xe: hỏi Phòng Hành chính – Tổng hợp (cần xác nhận)."
+    ],
+    "contactId": "ct-admin",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-03",
+    "verified": false
+  }
+]
