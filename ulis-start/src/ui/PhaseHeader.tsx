@@ -7,7 +7,6 @@ import { AppText } from './AppText';
 import { ProgressBar } from './ProgressBar';
 import { useTheme } from './ThemeProvider';
 import { focusRing, pointer } from './interaction';
-import { formatDay } from './labels';
 
 /** `behind` = a past phase that still has overdue required tasks. */
 export type PhaseState = 'done' | 'current' | 'upcoming' | 'behind';
@@ -29,14 +28,10 @@ export interface PhaseHeaderProps {
 /** Timeline item: dot + vertical line on the left, phase title/goal/progress on the right. */
 export function PhaseHeader({ phase, state, progress, expanded, onPress, isLast, children }: PhaseHeaderProps) {
   const { colors, spacing } = useTheme();
-  const range =
-    phase.endDay <= 0
-      ? 'Trước ngày đầu'
-      : `${formatDay(Math.max(1, phase.startDay))}–${phase.endDay}`;
   // Derived from done/total so it works whether the engine's `pct` is 0..1 or 0..100.
   const pct = progress && progress.total > 0 ? Math.round((progress.done / progress.total) * 100) : null;
   const stateLabel =
-    state === 'done' ? 'Đã hoàn thành' : state === 'current' ? 'Giai đoạn hiện tại' : state === 'behind' ? 'Còn việc quá hạn' : 'Sắp tới';
+    state === 'done' ? 'Đã hoàn thành' : state === 'current' ? 'Giai đoạn hiện tại' : state === 'behind' ? 'Còn việc cần làm' : 'Sắp tới';
 
   const dot =
     state === 'done' ? (
@@ -66,7 +61,7 @@ export function PhaseHeader({ phase, state, progress, expanded, onPress, isLast,
           onPress={onPress}
           disabled={!onPress}
           accessibilityRole={onPress ? 'button' : 'header'}
-          accessibilityLabel={`${phase.title}. ${range}. ${stateLabel}${pct !== null ? `. ${pct}%` : ''}`}
+          accessibilityLabel={`${phase.title}. ${stateLabel}${pct !== null ? `. ${pct}%` : ''}`}
           accessibilityState={onPress ? { expanded: !!expanded } : undefined}
           style={(state) => [styles.header, { opacity: state.pressed ? 0.7 : 1 }, onPress ? pointer : null, focusRing(state, colors.primary)]}
         >
@@ -76,7 +71,7 @@ export function PhaseHeader({ phase, state, progress, expanded, onPress, isLast,
               color={state === 'current' ? 'primary' : state === 'behind' ? 'warning' : 'textMuted'}
               weight="700"
             >
-              {`${range.toUpperCase()}${state === 'current' ? ' · ĐANG DIỄN RA' : state === 'behind' ? ' · CÒN VIỆC QUÁ HẠN' : ''}`}
+              {stateLabel.toUpperCase()}
             </AppText>
             <AppText variant="h2" color={state === 'upcoming' ? 'textMuted' : 'text'}>
               {phase.title}

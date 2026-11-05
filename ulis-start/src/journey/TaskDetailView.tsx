@@ -133,7 +133,7 @@ export function TaskDetailView({ task, inlineAction, onResult }: TaskDetailViewP
 
       {status === 'locked' ? (
         <AppText variant="caption" color="textMuted">
-          {`Giai đoạn này mở vào ngày ${phase?.startDay ?? task.dueDay}. ${mine ? 'Bạn vẫn có thể làm trước nếu muốn.' : ''}`}
+          {`Giai đoạn này chưa mở. ${mine ? 'Bạn vẫn có thể làm trước nếu muốn.' : ''}`}
         </AppText>
       ) : null}
 

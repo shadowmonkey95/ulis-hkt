@@ -60,7 +60,7 @@ export function TaskRow({
     prevDone.current = done;
   }, [done, scale]);
 
-  const due = getDueInfo(status, task.dueDay, currentDay, phaseStartDay);
+  const due = getDueInfo(status);
   const verb = isMine ? 'Đã làm' : 'Đã nhận';
   const checkLabel = done ? `Bỏ đánh dấu "${task.title}"` : `${verb}: ${task.title}`;
 
@@ -111,7 +111,7 @@ export function TaskRow({
         onPress={onPress}
         disabled={!onPress}
         accessibilityRole={onPress ? 'button' : undefined}
-        accessibilityLabel={`${task.title}. ${OWNER_LABELS[task.owner]}. ${due.text}`}
+        accessibilityLabel={`${task.title}. ${OWNER_LABELS[task.owner]}${due ? `. ${due.text}` : ''}`}
         accessibilityHint={onPress ? 'Mở chi tiết việc' : undefined}
         style={(state) => [
           styles.main,

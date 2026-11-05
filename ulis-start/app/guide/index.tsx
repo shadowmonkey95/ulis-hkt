@@ -22,7 +22,6 @@ import {
   SourceFooter,
   aggregateMeta,
   focusRing,
-  formatDay,
   pointer,
   pressState,
   useLayout,
@@ -200,7 +199,7 @@ function TaskHitRow({ task, divider }: { task: Task; divider: boolean }) {
     <Pressable
       onPress={() => router.push({ pathname: '/task/[id]', params: { id: task.id } })}
       accessibilityRole="button"
-      accessibilityLabel={`Việc: ${task.title}. ${formatDay(task.dueDay)}`}
+      accessibilityLabel={`Việc: ${task.title}`}
       style={(state) => [
         styles.taskRow,
         pointer,
@@ -218,9 +217,6 @@ function TaskHitRow({ task, divider }: { task: Task; divider: boolean }) {
         <AppText variant="bodyStrong">{task.title}</AppText>
         <View style={[styles.wrap, { gap: spacing.sm, alignItems: 'center' }]}>
           <OwnerChip owner={task.owner} />
-          <AppText variant="small" color="textMuted">
-            {formatDay(task.dueDay)}
-          </AppText>
         </View>
       </View>
       <Feather name="chevron-right" size={20} color={colors.textMuted} />

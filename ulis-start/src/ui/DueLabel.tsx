@@ -15,10 +15,11 @@ export interface DueLabelProps {
   phaseStartDay?: number;
 }
 
-/** "Ngày 5" · "Hạn hôm nay" · "Quá hạn 2 ngày" · "Mở vào ngày 8" … */
-export function DueLabel({ status, dueDay, currentDay, phaseStartDay }: DueLabelProps) {
+/** "Đã xong" · "Chưa mở" – no deadlines or day counts (see getDueInfo). Renders nothing otherwise. */
+export function DueLabel({ status }: DueLabelProps) {
   const { colors } = useTheme();
-  const info = getDueInfo(status, dueDay, currentDay, phaseStartDay);
+  const info = getDueInfo(status);
+  if (!info) return null;
   const color = { success: colors.success, muted: colors.textMuted, warning: colors.warning, danger: colors.danger }[info.tone];
   const icon: FeatherName =
     status === 'done' ? 'check' : status === 'locked' ? 'lock' : status === 'overdue' ? 'alert-circle' : 'calendar';

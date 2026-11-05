@@ -266,7 +266,7 @@
   {
     "id": "t-welcome-checkin-d3",
     "phaseId": "welcome",
-    "title": "Trả lời check-in ngày 3",
+    "title": "Trả lời check-in lần 1",
     "why": "Một câu trả lời ngắn giúp đơn vị biết sớm nếu bạn cần hỗ trợ thêm.",
     "dueDay": 3,
     "owner": "me",
@@ -449,7 +449,7 @@
   {
     "id": "t-ready-checkin-d7",
     "phaseId": "ready",
-    "title": "Trả lời check-in ngày 7",
+    "title": "Trả lời check-in lần 2",
     "why": "Cho đơn vị biết bạn đã tìm được đầu mối hỗ trợ hay chưa để được giúp kịp thời.",
     "dueDay": 7,
     "owner": "me",
@@ -479,7 +479,7 @@
   {
     "id": "t-integrate-checkin-d15",
     "phaseId": "integrate",
-    "title": "Trả lời check-in ngày 15",
+    "title": "Trả lời check-in lần 3",
     "why": "Phản hồi giữa chặng giúp đơn vị điều chỉnh hỗ trợ chuyên môn phù hợp với bạn.",
     "dueDay": 15,
     "owner": "me",

@@ -10,7 +10,6 @@ import {
   CHECKINS,
   MEDIUM_COLUMN_MAX_WIDTH,
   ProgressSummary,
-  dayCounterLabel,
   givenName,
   sliceTodayTasks,
   useJourney,
@@ -124,7 +123,7 @@ export default function TodayScreen() {
 
   const demoChip = isDemoDay ? (
     <Chip
-      label={`Chế độ trình diễn · ${dayCounterLabel(currentDay)}`}
+      label="Chế độ trình diễn"
       icon="sliders"
       onPress={() => router.push('/demo')}
       accessibilityLabel="Đang ở chế độ trình diễn, mở bảng điều khiển"
@@ -135,11 +134,11 @@ export default function TodayScreen() {
     health !== 'onTrack' ? (
       <Banner
         variant={health === 'needsHelp' ? 'danger' : 'warning'}
-        title={health === 'needsHelp' ? `Bạn đang có ${overdueTasks.length} việc quá hạn – cần hỗ trợ?` : undefined}
+        title={health === 'needsHelp' ? `Bạn còn ${overdueTasks.length} việc nên làm sớm – cần hỗ trợ?` : undefined}
         message={
           health === 'needsHelp'
             ? 'Đừng lo, ai cũng cần thời gian. Liên hệ đầu mối để được hỗ trợ.'
-            : `Bạn có ${overdueTasks.length} việc quá hạn. Hãy xử lý sớm nhé.`
+            : `Bạn còn ${overdueTasks.length} việc nên làm sớm. Hãy xử lý khi có thể nhé.`
         }
         actionLabel={health === 'needsHelp' ? 'Liên hệ hỗ trợ' : 'Xem hành trình'}
         onAction={() =>
@@ -176,12 +175,12 @@ export default function TodayScreen() {
       <Card
         tone="accent"
         onPress={() => router.push({ pathname: '/checkin/[day]', params: { day: String(pendingCheckin) } })}
-        accessibilityLabel={`Trả lời khảo sát nhanh ngày ${pendingCheckin}: ${CHECKINS[pendingCheckin].question}`}
+        accessibilityLabel={`Trả lời khảo sát nhanh: ${CHECKINS[pendingCheckin].question}`}
       >
         <View style={[styles.row, { gap: spacing.md }]}>
           <Feather name="smile" size={28} color={colors.warning} />
           <View style={styles.flex}>
-            <AppText variant="caption" color="textMuted">{`Khảo sát nhanh · Ngày ${pendingCheckin}`}</AppText>
+            <AppText variant="caption" color="textMuted">Khảo sát nhanh</AppText>
             <AppText variant="bodyStrong">{CHECKINS[pendingCheckin].question}</AppText>
             <AppText variant="caption" color="primary">
               Trả lời trong 5 giây →

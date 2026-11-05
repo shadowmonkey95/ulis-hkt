@@ -76,28 +76,19 @@ export interface DueInfo {
   tone: 'success' | 'muted' | 'warning' | 'danger';
 }
 
-/** Human due label for a task row (see JOURNEY_SPEC "Task states"). */
-export function getDueInfo(status: TaskStatus, dueDay: number, currentDay: number, phaseStartDay?: number): DueInfo {
-  const diff = dueDay - currentDay;
+/**
+ * Status label for a task row. The journey is not tied to a fixed number of days, so no deadlines or
+ * day counts are shown ("Quá hạn 3 ngày", "Còn 2 ngày" …) – only whether the task is done or not open yet.
+ * Returns null when there is nothing to show.
+ */
+export function getDueInfo(status: TaskStatus): DueInfo | null {
   switch (status) {
     case 'done':
       return { text: 'Đã xong', tone: 'success' };
     case 'locked':
-      return { text: phaseStartDay !== undefined && phaseStartDay >= 1 ? `Mở vào ngày ${phaseStartDay}` : formatDay(dueDay), tone: 'muted' };
-    case 'overdue':
-      return { text: `Quá hạn ${Math.max(1, -diff)} ngày`, tone: 'danger' };
-    case 'skipped':
-      return { text: 'Không bắt buộc · đã qua', tone: 'muted' };
-    case 'dueSoon':
-      // Pre-boarding (Day ≤ 0): don't show "Trễ N ngày" before the person has even started.
-      if (diff < 0 && currentDay <= 0) return { text: 'Nên làm ngay', tone: 'warning' };
-      if (diff < 0) return { text: `Trễ ${-diff} ngày`, tone: 'warning' };
-      if (diff === 0) return { text: 'Hạn hôm nay', tone: 'warning' };
-      if (diff === 1) return { text: 'Hạn ngày mai', tone: 'warning' };
-      return { text: `Còn ${diff} ngày`, tone: 'warning' };
-    case 'upcoming':
+      return { text: 'Chưa mở', tone: 'muted' };
     default:
-      return { text: formatDay(dueDay), tone: 'muted' };
+      return null;
   }
 }
 
