@@ -54,7 +54,8 @@ npm start                # → http://0.0.0.0:8787
 | `ADMIN_TOKEN` | – | Password for `/admin`. Uploads are disabled while empty. 10 wrong attempts lock an IP for 15 min. |
 | `VOYAGE_API_KEY` | – | Optional semantic search ([voyageai.com](https://www.voyageai.com), free tier). Applies to files uploaded **after** it is set — re-upload older files to embed them. |
 | `VOYAGE_MODEL` | `voyage-3.5` | |
-| `DATA_DIR` | `server/data` | Uploaded files + `index.json`. Must be a persistent disk in production. |
+| `DATA_DIR` | `server/data` | Uploaded files + `index.json`. Without a persistent disk, /admin uploads are lost on redeploy (use `default_docs/`). |
+| `DEFAULT_DOCS_DIR` | `server/default_docs` | Documents committed to the repo, indexed automatically on every boot. |
 | `ALLOWED_ORIGINS` | any | Comma-separated web origins allowed to call `/ask` (browsers only; the phone app is not affected). |
 | `MAX_UPLOAD_MB` | `20` | |
 | `PORT` | `8787` | |
@@ -63,6 +64,15 @@ npm start                # → http://0.0.0.0:8787
 
 Document tips: PDFs must have a text layer (scanned images are rejected with a clear message). Give each upload a
 clear title — it is what users see as the source. Delete and re-upload to replace a document.
+
+## Default documents (no disk needed)
+
+Put documents in `server/default_docs/` and commit them. On every boot the server indexes them after it starts
+listening (new or changed files only, by SHA-256; files removed from the folder are dropped from the index).
+Optional `default_docs/titles.json` sets display titles: `{ "file.pdf": "Quy chế chi tiêu ĐHNN 2026" }`.
+They appear on `/admin` as "Mặc định" and cannot be deleted there — delete the file and redeploy instead.
+This is what makes the Render **free** plan usable: its disk is wiped on every deploy and restart, and the
+documents are simply re-indexed from the repo. The repository is public, so only commit documents that may be published.
 
 ## Deploy on Render
 
@@ -82,7 +92,7 @@ clear title — it is what users see as the source. Delete and re-upload to repl
    ```
    For Expo Go: `EXPO_PUBLIC_ASSISTANT_URL=https://<service>.onrender.com npx expo start -c`.
 
-Persistent disks need a paid instance on Render. On Railway the same setup works: start command
+Persistent disks need a paid instance on Render; on the free plan use `default_docs/` (above) instead. On Railway the same setup works: start command
 `cd server && npm start`, a volume mounted at `/var/data`, and the same variables.
 
 ## Local network / tunnel (no hosting)

@@ -17,6 +17,10 @@ export interface DocMeta {
   chunkCount: number;
   /** True when every chunk has an embedding (semantic search available for this doc). */
   embedded: boolean;
+  /** Synced from default_docs/ in the repo (re-indexed on boot; delete the file there to remove it). */
+  builtin?: boolean;
+  /** Content hash of a built-in file, so unchanged files are not re-indexed. */
+  sha256?: string;
 }
 
 export interface DocChunk {

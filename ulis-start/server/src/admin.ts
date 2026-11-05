@@ -6,9 +6,9 @@ import express, { type NextFunction, type Request, type Response, type Router } 
 import multer from 'multer';
 
 import { config } from './config';
-import { ACCEPTED_EXTENSIONS, UnsupportedFileError, chunkPages, extractText } from './docs/extract';
-import { embed } from './docs/search';
-import { addDoc, listDocs, newDocId, removeDoc, type DocChunk } from './docs/store';
+import { ACCEPTED_EXTENSIONS, UnsupportedFileError } from './docs/extract';
+import { ingestDocument, NoTextError } from './docs/ingest';
+import { getDoc, listDocs, removeDoc } from './docs/store';
 
 function tokenOk(header: string | undefined): boolean {
   if (!config.adminToken || !header?.startsWith('Bearer ')) return false;
@@ -65,32 +65,16 @@ export function adminRouter(): Router {
     const filename = Buffer.from(file.originalname, 'latin1').toString('utf8');
     const titleField = typeof req.body?.title === 'string' ? req.body.title.trim().slice(0, 160) : '';
     try {
-      const pages = await extractText(filename, file.buffer);
-      const pieces = chunkPages(pages);
-      if (pieces.length === 0) {
+      const doc = await ingestDocument({ filename, data: file.buffer, mime: file.mimetype, title: titleField });
+      res.status(201).json({ doc });
+    } catch (err) {
+      if (err instanceof NoTextError) {
         res.status(422).json({
           error: 'no_text',
           message: 'Không đọc được chữ trong tệp (có thể là PDF dạng ảnh scan). Hãy dùng bản có lớp chữ hoặc chuyển sang DOCX/TXT.',
         });
         return;
       }
-      const id = newDocId();
-      const vectors = await embed(pieces.map((p) => p.text), 'document');
-      const chunks: DocChunk[] = pieces.map((p, i) => ({ id: `${id}-${i + 1}`, docId: id, ord: i, page: p.page, text: p.text, vec: vectors?.[i] }));
-      const meta = {
-        id,
-        title: titleField || path.basename(filename, path.extname(filename)),
-        filename,
-        mime: file.mimetype,
-        size: file.size,
-        uploadedAt: new Date().toISOString(),
-        pages: pages.some((p) => p.page) ? pages.length : undefined,
-        chunkCount: chunks.length,
-        embedded: Boolean(vectors),
-      };
-      addDoc(meta, chunks, file.buffer);
-      res.status(201).json({ doc: meta });
-    } catch (err) {
       if (err instanceof UnsupportedFileError) {
         res.status(415).json({ error: 'unsupported', message: err.message });
         return;
@@ -101,6 +85,13 @@ export function adminRouter(): Router {
   });
 
   r.delete('/api/docs/:id', requireAdmin, (req, res) => {
+    if (getDoc(String(req.params.id))?.builtin) {
+      res.status(409).json({
+        error: 'builtin',
+        message: 'Đây là tài liệu mặc định trong mã nguồn (default_docs/). Hãy xóa tệp khỏi thư mục đó rồi triển khai lại.',
+      });
+      return;
+    }
     if (!removeDoc(String(req.params.id))) {
       res.status(404).json({ error: 'not_found', message: 'Không tìm thấy tài liệu.' });
       return;
@@ -180,7 +171,7 @@ async function refresh() {
   $('hint').textContent = 'PDF, DOCX, TXT, MD, CSV · tối đa ' + data.maxUploadMb + ' MB · PDF dạng ảnh scan không đọc được';
   $('mode').textContent = data.semantic ? 'Tìm kiếm: từ khóa + ngữ nghĩa (Voyage)' : 'Tìm kiếm: từ khóa';
   $('empty').hidden = data.docs.length > 0;
-  $('list').innerHTML = data.docs.map((d) => '<tr><td><strong>' + esc(d.title) + '</strong><br><small>' + esc(d.filename) + (d.pages ? ' · ' + d.pages + ' trang' : '') + '</small></td><td>' + d.chunkCount + '</td><td><small>' + fmtDate(d.uploadedAt) + '</small></td><td><button class="ghost" data-del="' + d.id + '" data-title="' + esc(d.title) + '">Xóa</button></td></tr>').join('');
+  $('list').innerHTML = data.docs.map((d) => '<tr><td><strong>' + esc(d.title) + '</strong>' + (d.builtin ? ' <small class="muted">· Mặc định</small>' : '') + '<br><small>' + esc(d.filename) + (d.pages ? ' · ' + d.pages + ' trang' : '') + '</small></td><td>' + d.chunkCount + '</td><td><small>' + fmtDate(d.uploadedAt) + '</small></td><td>' + (d.builtin ? '<small title="Xóa tệp trong default_docs/ rồi triển khai lại">Từ mã nguồn</small>' : '<button class="ghost" data-del="' + d.id + '" data-title="' + esc(d.title) + '">Xóa</button>') + '</td></tr>').join('');
 }
 
 $('loginBtn').onclick = () => { token = $('tok').value.trim(); sessionStorage.setItem('ulisAdmin', token); refresh(); };

@@ -22,6 +22,8 @@ export const config = {
   /** Optional semantic search (Voyage AI, Anthropic's recommended embeddings provider). */
   voyageKey: env('VOYAGE_API_KEY'),
   voyageModel: env('VOYAGE_MODEL') ?? 'voyage-3.5',
+  /** Documents committed to the repo; indexed automatically on boot (see docs/defaults.ts). */
+  defaultDocsDir: path.resolve(env('DEFAULT_DOCS_DIR') ?? path.join(__dirname, '..', 'default_docs')),
   /** Where uploaded files and the search index live (a persistent disk in production). */
   dataDir: path.resolve(env('DATA_DIR') ?? path.join(__dirname, '..', 'data')),
   /** Comma-separated origins allowed to call /ask; empty = any (the app has no secrets to protect). */

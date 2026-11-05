@@ -10,6 +10,7 @@ import type { Track } from '../../src/types';
 import { adminRouter } from './admin';
 import { answerQuestion, hasModel } from './answer';
 import { config } from './config';
+import { syncDefaultDocs } from './docs/defaults';
 import { allChunks, listDocs, loadStore } from './docs/store';
 
 loadStore();
@@ -94,4 +95,18 @@ app.listen(config.port, '0.0.0.0', () => {
   if (!hasModel()) console.warn('ANTHROPIC_API_KEY is not set – /ask answers 503 and the app falls back to local mode.');
   if (!config.adminToken) console.warn('ADMIN_TOKEN is not set – /admin uploads are disabled.');
   if (!config.voyageKey) console.log('VOYAGE_API_KEY not set – document search is keyword-only.');
+
+  // Index the documents committed under default_docs/. Runs after listen so the host's health check
+  // passes meanwhile; /ask answers with whatever is indexed so far.
+  const started = Date.now();
+  void syncDefaultDocs()
+    .then((r) => {
+      const secs = ((Date.now() - started) / 1000).toFixed(1);
+      console.log(
+        `Default docs: ${r.added.length} added, ${r.updated.length} updated, ${r.unchanged.length} unchanged, ${r.removed.length} removed, ${r.failed.length} failed (${secs}s)`,
+      );
+      for (const f of r.failed) console.warn(`  ! ${f.file}: ${f.reason}`);
+      console.log(`Documents: ${listDocs().length} (${allChunks().length} chunks)`);
+    })
+    .catch((err: unknown) => console.error('[default-docs] sync failed', err));
 });
