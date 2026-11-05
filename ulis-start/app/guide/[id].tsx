@@ -115,6 +115,7 @@ export default function GuideDetailScreen() {
   const sideContent = (
     <>
       <SectionHeader index={5} title="Biểu mẫu" style={isWide ? { marginTop: 0 } : undefined} />
+      {guide.formsNote && forms.length > 0 ? <AppText style={{ marginBottom: spacing.sm }}>{guide.formsNote}</AppText> : null}
       {forms.length > 0 ? (
         <Card padding={spacing.md}>
           {forms.map((r, i) => (

@@ -1,6 +1,6 @@
 import Feather from '@expo/vector-icons/Feather';
 import { useCallback } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, View } from 'react-native';
 
 import type { Resource, ResourceType } from '../types';
 import { AppText } from './AppText';
@@ -19,6 +19,18 @@ export const RESOURCE_TYPE_ICONS: Record<ResourceType, FeatherName> = {
   training: 'award',
 };
 
+/** Where the web build is hosted; files in public/ (e.g. "/files/x.pdf") are served from there. */
+const WEB_ORIGIN = 'https://ulis-start.expo.app';
+
+/** A file bundled in public/files (opened/downloaded in the browser). */
+export const isHostedFile = (url: string) => url.startsWith('/files/');
+
+/** Site-relative URLs work as-is on web; native apps open them from the hosted web build. */
+export function resolveResourceUrl(url: string): string {
+  if (!url.startsWith('/')) return url;
+  return Platform.OS === 'web' ? url : `${WEB_ORIGIN}${url}`;
+}
+
 /** Opens a resource link; placeholder links ("#") show a toast instead. */
 export function useOpenResource(): (resource: Resource) => void {
   const toast = useToast();
@@ -28,7 +40,7 @@ export function useOpenResource(): (resource: Resource) => void {
         toast.show('Tài liệu mẫu – Trường sẽ bổ sung đường dẫn chính thức', 'info');
         return;
       }
-      void openUrlSafe(resource.url).then((ok) => {
+      void openUrlSafe(resolveResourceUrl(resource.url)).then((ok) => {
         if (!ok) toast.show('Không mở được liên kết', 'warning');
       });
     },
@@ -85,7 +97,7 @@ export function ResourceRow({ resource, supersededByTitle, onPress, divider = fa
           </AppText>
         ) : null}
       </View>
-      {onPress ? <Feather name={placeholder ? 'info' : 'external-link'} size={18} color={colors.textMuted} /> : null}
+      {onPress ? <Feather name={placeholder ? 'info' : isHostedFile(resource.url) ? 'download' : 'external-link'} size={18} color={colors.textMuted} /> : null}
     </Pressable>
   );
 }

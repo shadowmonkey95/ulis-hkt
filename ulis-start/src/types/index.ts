@@ -23,6 +23,8 @@ export interface Guide extends Meta {           // the draft's 6-part structure
   title: string; situations: string[];          // "Tôi muốn xin nghỉ phép" – drives situation search
   purpose: string; whoDoes: string; prepare: string[]; steps: string[];
   formIds: string[]; contactId: string; keywords: string[];
+  /** Optional intro line above the forms list ("Bạn có thể tham khảo mẫu ở đây"). */
+  formsNote?: string;
   /** Bundled images (key registered in src/content/assets.ts), e.g. an official infographic. */
   images?: GuideImage[];
 }

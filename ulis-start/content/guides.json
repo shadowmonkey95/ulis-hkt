@@ -19,7 +19,10 @@
       "Trình hợp đồng để xin ý kiến của lãnh đạo đơn vị tiếp nhận.",
       "Nộp hợp đồng đã có ý kiến của lãnh đạo đơn vị tiếp nhận tại Phòng Tổ chức và Thanh tra."
     ],
-    "formIds": [],
+    "formsNote": "Bạn có thể tham khảo mẫu ở đây",
+    "formIds": [
+      "r-form-labor-contract"
+    ],
     "contactId": "ct-hr",
     "keywords": [
       "hợp đồng",
@@ -118,7 +121,10 @@
       "Cung cấp thông tin theo hướng dẫn.",
       "Đăng nhập VNU-email và HRM, sau đó thực hiện các thao tác ban đầu theo hướng dẫn."
     ],
-    "formIds": [],
+    "formsNote": "Bạn có thể tham khảo mẫu ở đây",
+    "formIds": [
+      "r-manual-hrm"
+    ],
     "contactId": "ct-hr",
     "keywords": [
       "email",
@@ -154,7 +160,10 @@
       "Đến địa điểm được hướng dẫn để thực hiện đăng ký nhận diện.",
       "Kiểm tra việc nhận diện và thực hiện chấm công theo hướng dẫn."
     ],
-    "formIds": [],
+    "formsNote": "Bạn có thể tham khảo mẫu ở đây",
+    "formIds": [
+      "r-reg-attendance"
+    ],
     "contactId": "ct-admin",
     "keywords": [
       "chấm công",
@@ -219,7 +228,10 @@
       "Chuẩn bị và nộp hồ sơ theo hướng dẫn.",
       "Bổ sung hồ sơ nếu được yêu cầu và theo dõi kết quả tiếp nhận."
     ],
-    "formIds": [],
+    "formsNote": "Bạn có thể tham khảo đường dẫn:",
+    "formIds": [
+      "r-link-party-procedures"
+    ],
     "contactId": "ct-admin",
     "keywords": [
       "đảng",

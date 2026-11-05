@@ -263,5 +263,49 @@
     "source": "Bảo hiểm xã hội Việt Nam (infographic) + Nội dung mẫu cho Hackathon",
     "updatedAt": "2026-11-03",
     "verified": false
+  },
+  {
+    "id": "r-form-labor-contract",
+    "title": "Mẫu hợp đồng lao động xác định thời hạn (theo Thông tư 05/2023, áp dụng từ 01/06/2026)",
+    "type": "form",
+    "url": "/files/hop-dong-lao-dong-xac-dinh-thoi-han.docx",
+    "status": "active",
+    "field": "Tổ chức – Nhân sự",
+    "source": "Tài liệu do Trường cung cấp",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "r-manual-hrm",
+    "title": "Hướng dẫn kê khai thông tin trên HRM",
+    "type": "manual",
+    "url": "/files/huong-dan-ke-khai-hrm.jpg",
+    "status": "active",
+    "field": "Tổ chức – Nhân sự",
+    "source": "Tài liệu do Trường cung cấp",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "r-reg-attendance",
+    "title": "Quy định tạm thời về chấm công Trường ĐHNN",
+    "type": "regulation",
+    "url": "/files/quy-dinh-tam-thoi-cham-cong.pdf",
+    "status": "active",
+    "field": "Hành chính",
+    "source": "Tài liệu do Trường cung cấp",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "r-link-party-procedures",
+    "title": "Văn kiện – biểu mẫu, quy trình (Đảng bộ ULIS): https://dangbo.ulis.vnu.edu.vn/vankien-bieumau/quy-trinh/",
+    "type": "form",
+    "url": "https://dangbo.ulis.vnu.edu.vn/vankien-bieumau/quy-trinh/",
+    "status": "active",
+    "field": "Công tác Đảng",
+    "source": "Tài liệu do Trường cung cấp",
+    "updatedAt": "2026-11-05",
+    "verified": false
   }
 ]
