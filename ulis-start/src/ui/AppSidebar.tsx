@@ -32,17 +32,17 @@ const startsWith = (path: string, ...prefixes: string[]) => prefixes.some((p) =>
 // App structure (navigation), not content.
 const MAIN: NavItem[] = [
   { label: 'Hôm nay', icon: 'sun', href: '/', match: (p) => p === '/' || p === '' || startsWith(p, '/checkin') },
-  { label: 'Hành trình', icon: 'map', href: '/journey', match: (p) => startsWith(p, '/journey', '/task') },
-  { label: 'Trợ lý', icon: 'message-circle', href: '/assistant', match: (p) => startsWith(p, '/assistant') },
-  { label: 'Khám phá', icon: 'grid', href: '/more', match: (p) => startsWith(p, '/more') },
+  { label: 'Hành trình hội nhập', icon: 'map', href: '/journey', match: (p) => startsWith(p, '/journey', '/task') },
+  { label: 'Trợ lý thông minh', icon: 'message-circle', href: '/assistant', match: (p) => startsWith(p, '/assistant') },
+  { label: 'Khám phá ULIS', icon: 'grid', href: '/more', match: (p) => startsWith(p, '/more') },
 ];
 
 const QUICK: NavItem[] = [
-  { label: 'Cẩm nang', icon: 'book-open', href: '/guide', match: (p) => startsWith(p, '/guide') },
+  { label: 'Cẩm nang hội nhập', icon: 'book-open', href: '/guide', match: (p) => startsWith(p, '/guide') },
   { label: 'Danh bạ', icon: 'users', href: '/contacts', match: (p) => startsWith(p, '/contacts') },
-  { label: 'Tài liệu', icon: 'folder', href: '/library', match: (p) => startsWith(p, '/library') },
-  { label: 'Phúc lợi', icon: 'gift', href: '/benefits', match: (p) => startsWith(p, '/benefits') },
-  { label: 'Về ULIS', icon: 'info', href: '/about', match: (p) => startsWith(p, '/about') },
+  { label: 'Văn bản, biểu mẫu', icon: 'folder', href: '/library', match: (p) => startsWith(p, '/library') },
+  { label: 'Chế độ và phúc lợi', icon: 'gift', href: '/benefits', match: (p) => startsWith(p, '/benefits') },
+  { label: 'Giới thiệu ULIS', icon: 'info', href: '/about', match: (p) => startsWith(p, '/about') },
   { label: 'Góp ý', icon: 'edit-3', href: '/feedback', match: (p) => startsWith(p, '/feedback') },
   { label: 'Cài đặt demo', icon: 'sliders', href: '/demo', match: (p) => startsWith(p, '/demo') },
 ];
@@ -312,7 +312,7 @@ const EXTRA_SECTIONS: { label: string; match: (path: string) => boolean }[] = [
 /** Section name for the current route ("Cẩm nang", "Hành trình" …). */
 export function sectionForPath(path: string): string {
   const all = [...MAIN, ...QUICK, MANAGER, ...EXTRA_SECTIONS];
-  return all.find((i) => i.match(path))?.label ?? 'Khám phá';
+  return all.find((i) => i.match(path))?.label ?? 'Khám phá ULIS';
 }
 
 /** 64px desktop top bar: "ULIS START / <section>" + "✦ BẢN DEMO" pill. */
