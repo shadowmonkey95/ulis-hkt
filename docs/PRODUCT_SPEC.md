@@ -12,7 +12,7 @@ people "cần làm gì – làm ở đâu – hỏi ai". Onboarding is slow, men
 |---|---|---|
 | Website, 8 modules, 6-item menu | Mobile app, **4 bottom tabs** + home shortcuts | Demo is on a phone; 6 menu items don't fit a tab bar |
 | Journey = static list grouped by days | Journey = **engine** with a "today" pointer, deadlines, owners, overdue logic | Turns a handbook into an assistant — the hackathon differentiator |
-| One journey for everyone | **3 role tracks** (Giảng viên / Chuyên viên / Người lao động) sharing a common core | Answers the draft's own open question; personalisation is visible in 1 tap |
+| One journey for everyone | **2 role tracks at onboarding** (VC, NLĐ Khối đào tạo – Giảng viên / GVTH; VC, NLĐ Khối phục vụ đào tạo; the legacy `staff` track stays in data) sharing a common core | Answers the draft's own open question; personalisation is visible in 1 tap |
 | Starts at Day 1 | Adds **"Trước ngày đầu" (pre-boarding)** phase | Most anxiety and missing paperwork happen before Day 1 |
 | Tasks only for the new hire | Each task has an **owner**: Bạn / Đơn vị / Phòng TCTT / Buddy | Shows the institution's side; supports the "đơn vị quản lý" value |
 | Feedback after 30 days | **Pulse check-ins** at Day 3, 7, 15, 30 (1 tap emoji + optional note) | Catches problems early; gives HR data for the pitch |
@@ -58,7 +58,7 @@ Milestone badges · Remote AI mode via proxy.
   "Trợ lý chỉ hướng dẫn, vui lòng kiểm tra văn bản hiện hành."
 
 ## Demo script (3 minutes) – qa-demo rehearses this
-1. Fresh launch → onboarding: "Nguyễn Minh An", Giảng viên, Khoa Tiếng Anh, start = **Ngày mai** (the default — makes today Day 0; don't pick "Hôm nay", that is Day 1 with overdue tasks) (20s)
+1. Fresh launch → onboarding: "Nguyễn Minh An", VC, NLĐ Khối đào tạo, pick a unit from the dropdown (e.g. Khoa Ngôn ngữ và Văn hóa Anh). The start date is always **today** (Day 1, no date picker); for the pre-boarding view use Khám phá → Cài đặt demo → start = Ngày mai (Day 0) (20s)
 2. Hôm nay (Day 0 – pre-boarding): 3 tasks + "+1 việc khác cần làm" (Hôm nay shows max 3), one owned by Phòng TCTT shown as "đang chờ đơn vị" (20s)
 3. Tick 2 tasks → haptic + progress ring animates → badge "Khởi động" (20s)
 4. Open a task → guide steps → "Hỏi trợ lý về việc này" → cited answer (40s)
