@@ -27,6 +27,7 @@ export { EmptyState, type EmptyStateProps } from './EmptyState';
 export { BadgeModal, type BadgeModalProps } from './BadgeModal';
 export { Toast, ToastProvider, useToast, type ToastProps, type ToastVariant } from './Toast';
 export { BoldText, stripBold } from './BoldText';
+export { BrandLogo, type BrandLogoProps } from './BrandLogo';
 export { ChatBubble, type ChatBubbleProps } from './ChatBubble';
 export { SearchBar, type SearchBarProps } from './SearchBar';
 export { ContactCard, openUrlSafe, type ContactCardProps } from './ContactCard';

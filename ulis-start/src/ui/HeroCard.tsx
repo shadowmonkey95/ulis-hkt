@@ -38,7 +38,7 @@ export function HeroCard({ children, eyebrow, noGlyph, padding, style, testID }:
             importantForAccessibility="no"
             style={[
               styles.glyph,
-              { color: isDark ? colors.secondary : '#E8D9F5', opacity: isDark ? 0.18 : 0.55, fontSize: hasSidebar ? 190 : 140, lineHeight: hasSidebar ? 220 : 170 },
+              { color: isDark ? colors.secondary : '#D3DDF0', opacity: isDark ? 0.18 : 0.55, fontSize: hasSidebar ? 190 : 140, lineHeight: hasSidebar ? 220 : 170 },
               hasSidebar ? { right: 35, top: -70 } : { right: -40, top: -50 },
             ]}
           >

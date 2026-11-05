@@ -4,6 +4,7 @@ import { createContext, useContext, useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { AppText } from './AppText';
+import { BrandLogo } from './BrandLogo';
 import { Gradient } from './Gradient';
 import type { FeatherName } from './Button';
 import { useTheme } from './ThemeProvider';
@@ -62,7 +63,7 @@ export interface AppSidebarProps {
 
 /** Left navigation for medium/wide web (replaces the bottom tab bar). */
 export function AppSidebar({ profile, onLogout }: AppSidebarProps) {
-  const { colors, gradients, spacing } = useTheme();
+  const { colors, spacing } = useTheme();
   const pathname = usePathname();
 
   return (
@@ -77,11 +78,7 @@ export function AppSidebar({ profile, onLogout }: AppSidebarProps) {
         accessibilityLabel="ULIS START – về trang Hôm nay"
         style={(s) => [styles.brand, { padding: spacing.lg, gap: spacing.md }, pointer, focusRing(s, colors.primary, -2)]}
       >
-        <Gradient colors={gradients.brand} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.logo}>
-          <AppText variant="h2" color="#FFFFFF" weight="900" maxFontSizeMultiplier={1.2}>
-            U
-          </AppText>
-        </Gradient>
+        <BrandLogo size={44} />
         <View style={styles.flex}>
           <AppText variant="h2" weight="800" style={styles.brandName}>
             ULIS START
@@ -406,7 +403,6 @@ const styles = StyleSheet.create({
   shell: { flex: 1, flexDirection: 'row' },
   bar: { borderRightWidth: StyleSheet.hairlineWidth, height: '100%' },
   brand: { flexDirection: 'row', alignItems: 'center' },
-  logo: { width: 44, height: 44, borderRadius: 15, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' },
   brandName: { fontSize: 20, lineHeight: 28, letterSpacing: 0.3 },
   brandSub: { fontSize: 11, lineHeight: 15, letterSpacing: 0.6 },
   flex: { flex: 1 },

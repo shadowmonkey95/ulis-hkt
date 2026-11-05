@@ -140,6 +140,6 @@ const styles = StyleSheet.create({
     padding: 8,
     maxWidth: 760,
   },
-  searchShadow: { shadowColor: '#9C7793', shadowOpacity: 0.1, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 1 },
+  searchShadow: { shadowColor: '#3A4E7A', shadowOpacity: 0.1, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 1 },
   input: { flex: 1, minWidth: 0, minHeight: 44, paddingVertical: 8 },
 });

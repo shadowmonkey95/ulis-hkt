@@ -12,7 +12,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#B94E79",
+        "backgroundColor": "#223C77",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -23,14 +23,14 @@
       "output": "single",
       "favicon": "./assets/images/favicon.png",
       "name": "ULIS START",
-      "themeColor": "#B94E79"
+      "themeColor": "#223C77"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#B94E79",
+          "backgroundColor": "#223C77",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
@@ -40,7 +40,7 @@
       "typedRoutes": true,
       "reactCompiler": true
     },
-    "primaryColor": "#B94E79",
+    "primaryColor": "#223C77",
     "extra": {
       "router": {
         "asyncRoutes": {

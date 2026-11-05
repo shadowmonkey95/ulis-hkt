@@ -68,7 +68,7 @@ export function SearchBar({
 const styles = StyleSheet.create({
   box: { flexDirection: 'row', alignItems: 'center', borderWidth: 1, minHeight: 48, gap: 8 },
   // `.searchbox` box-shadow: 0 8px 26px #9c77931a
-  shadow: { shadowColor: '#9C7793', shadowOpacity: 0.1, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 1 },
+  shadow: { shadowColor: '#3A4E7A', shadowOpacity: 0.1, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 1 },
   input: { flex: 1, paddingVertical: 10, minHeight: 44 },
   clear: { minWidth: 32, minHeight: 32, alignItems: 'center', justifyContent: 'center' },
 });

@@ -23,7 +23,7 @@ import { TypingIndicator } from '@/assistant/components/TypingIndicator';
 import { getGuide, getTask } from '@/content';
 import { addFeedback } from '@/feedback/storage';
 import { useJourney, useTaskToggle } from '@/journey';
-import { AppText, ChatBubble, Chip, Gradient, HIT_MIN, Screen, useLayout, useTheme, useToast } from '@/ui';
+import { AppText, BrandLogo, ChatBubble, Chip, HIT_MIN, Screen, useLayout, useTheme, useToast } from '@/ui';
 
 interface ChatContext {
   taskId?: string;
@@ -64,7 +64,7 @@ export default function AssistantScreen() {
   const { profile, tasks, state } = useJourney();
   const toggleTask = useTaskToggle();
   const toast = useToast();
-  const { colors, gradients, spacing, radius, type } = useTheme();
+  const { colors, spacing, radius, type } = useTheme();
   // Native (Expo Go) is always compact, so the phone layout is unchanged.
   const { isCompact, isWide } = useLayout();
 
@@ -214,17 +214,7 @@ export default function AssistantScreen() {
         { marginBottom: spacing.md, gap: spacing.md, backgroundColor: colors.primarySoft, borderRadius: radius.card, padding: spacing.md },
       ]}
     >
-      <Gradient
-        colors={gradients.brand}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={[styles.avatarTile, { borderRadius: radius.card }]}
-        pointerEvents="none"
-      >
-        <AppText variant="h2" color="primaryFg" weight="800" maxFontSizeMultiplier={1.2} accessible={false}>
-          U
-        </AppText>
-      </Gradient>
+      <BrandLogo size={48} radius={radius.card - 4} />
       <View style={styles.flex}>
         <AppText variant="h2" accessibilityRole="header">
           Trợ lý hội nhập ULIS
@@ -501,5 +491,4 @@ const styles = StyleSheet.create({
   desktopRow: { width: '82%' },
   alignTop: { alignItems: 'flex-start' },
   infoIcon: { marginTop: 2 },
-  avatarTile: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
 });
