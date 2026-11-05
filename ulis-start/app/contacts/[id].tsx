@@ -61,12 +61,17 @@ export default function ContactDetailScreen() {
             {contact.unit}
           </AppText>
           <AppText color="textMuted">{contact.role}</AppText>
+          {contact.person ? (
+            <AppText variant="bodyStrong" color="primary" style={{ marginTop: spacing.xs }}>
+              {contact.person}
+            </AppText>
+          ) : null}
         </View>
       </View>
 
       <View style={{ gap: spacing.sm, marginTop: spacing.lg }}>
-        {call ? <Button label="Gọi điện" icon="phone" onPress={call} accessibilityLabel={`Gọi ${contact.unit}: ${contact.phone}`} /> : null}
-        {email ? <Button label="Gửi email" icon="mail" variant="secondary" onPress={email} accessibilityLabel={`Gửi email cho ${contact.unit}`} /> : null}
+        {call ? <Button label="Gọi điện" icon="phone" onPress={call} accessibilityLabel={`Gọi ${contact.person ?? contact.unit}: ${contact.phone}`} /> : null}
+        {email ? <Button label="Gửi email" icon="mail" variant="secondary" onPress={email} accessibilityLabel={`Gửi email cho ${contact.person ?? contact.unit}`} /> : null}
       </View>
 
       <SectionHeader title="Thông tin liên hệ" />

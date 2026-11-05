@@ -34,6 +34,8 @@ export interface GuideImage { asset: string; caption: string; alt: string; sourc
 export interface Contact extends Meta {
   id: string; unit: string; role: string; handles: string[];   // topics → "Tôi cần gặp ai?"
   phone?: string; email?: string; location?: string; hours?: string;
+  /** Named person to contact in the unit, e.g. "Thầy …". */
+  person?: string;
 }
 
 export type ResourceType = 'form' | 'regulation' | 'manual' | 'video' | 'training';

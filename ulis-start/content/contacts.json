@@ -16,12 +16,13 @@
       "kế hoạch phát triển cá nhân",
       "vị trí việc làm"
     ],
-    "phone": "024 0000 0000",
-    "email": "example-tctt@ulis.vnu.edu.vn",
-    "location": "Khu nhà hành chính (cần xác nhận số phòng)",
+    "phone": "0913029715",
+    "email": "nghict@vnu.edu.vn",
+    "location": "Phòng 302 - A1",
     "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "updatedAt": "2026-11-05",
+    "person": "Thầy Cù Thanh Nghị",
     "source": "Nội dung mẫu cho Hackathon",
-    "updatedAt": "2026-11-03",
     "verified": false
   },
   {

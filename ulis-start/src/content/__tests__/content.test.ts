@@ -73,7 +73,9 @@ describe('content validation', () => {
   });
 
   it('uses only placeholder phone numbers and example emails', () => {
-    for (const c of contacts) {
+    // Contacts whose real details the project owner supplied and approved for the demo.
+    const approvedReal = new Set(['ct-hr']);
+    for (const c of contacts.filter((x) => !approvedReal.has(x.id))) {
       if (c.phone) expect(c.phone).toBe('024 0000 0000');
       if (c.email) expect(c.email).toMatch(/^example-[a-z]+@ulis\.vnu\.edu\.vn$/);
     }
