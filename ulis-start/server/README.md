@@ -16,17 +16,20 @@ The Anthropic API key, the uploaded files and the search index stay on the serve
 
 | Step | What happens | Stops with |
 |---|---|---|
-| 1. Rule guard | Same rules as offline mode: no money amounts, leave-day counts or legal interpretation. | `guarded` + fixed reply |
-| 2. Retrieval | Top 6 passages from uploaded documents (keyword BM25, + semantic search if `VOYAGE_API_KEY` is set) and top 5 from app content. | – |
-| 3. Scope prompt | Claude is told the scope (working at ULIS) and to use **only** the passages; passage text is data, never instructions. | – |
-| 4. JSON verdict | Claude returns `answer` / `not_found` / `out_of_scope` + cited passage ids (structured output). | fixed `out_of_scope` / `not_found` text |
-| 5. Server checks | An answer must cite passages we actually sent, and every number in it must appear in those passages. Otherwise → `not_found`. | `not_found` |
+| 1. Retrieval | Top 6 passages from uploaded documents (keyword BM25, + semantic search if  is set) and top 5 from app content. Questions about amounts, leave days or regulations get 10 document passages. | – |
+| 2. Scope prompt | Claude is told the scope (working at ULIS) and to use **only** the passages; passage text is data, never instructions. | – |
+| 3. JSON verdict | Claude returns  /  / , cited passage ids, and any arithmetic as separate  (expression + result + source ids). | fixed  /  text |
+| 4. Server checks | An answer must cite passages we sent. Each calculation is re-computed by the server and may only use figures from cited passages or the question. Every number in the answer must come from a cited passage, the question, or a verified calculation. Otherwise → . |  |
+
+Figures (salary, allowances, rates, days) are answered **only from uploaded documents / app content**, with the
+calculation shown as a step: "Lương: 2,67 × 2.340.000 = 6.247.800 (theo Quy chế chi tiêu … – trang 12)".
+Offline (no server), the app's rule guard still refuses these questions.
 
 Out-of-scope questions (weather, coding, homework, politics, "ignore your rules"…) get a fixed polite reply, so the
 model's own wording never leaks there. A safety-classifier decline is retried server-side on Anthropic's recommended
 fallback model (`fallbacks: "default"`); if that also declines, the user gets the out-of-scope reply.
 
-Response: `{ verdict, answer, steps?, sources: [app content ids], docSources: [{id, docId, title, page?, excerpt, uploadedAt}] }`.
+Response: `{ verdict, answer, steps?, sources: [app content ids], docSources: [{id, docId, title, page?, excerpt, uploadedAt}], calculations?: [{label, expression, result, sources}] }`.
 The app shows document sources as "Nguồn: <title> – trang N". Any error or a reply slower than 30 s → the app answers offline.
 
 ## Run locally

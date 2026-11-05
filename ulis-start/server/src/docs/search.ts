@@ -23,6 +23,10 @@ interface Index {
   docs: { chunk: DocChunk; tf: Map<string, number>; len: number; norm: string }[];
 }
 
+/** Vietnamese writes final -y and -i interchangeably (thạc sỹ/sĩ, kỹ/kĩ, quy/qui, lý/lí); index both as -i. */
+const canon = (word: string) => word.replace(/^(qu|[bcdghklmnpstv]|ch|gh|kh|nh|ph|th|tr)y$/, '$1i');
+const canonTerm = (term: string) => term.split(' ').map(canon).join(' ');
+
 let cache: { chunks: readonly DocChunk[]; index: Index } | null = null;
 
 /** Rebuilt lazily when the chunk list changes (upload/delete replaces the array). */
@@ -31,7 +35,7 @@ function getIndex(): Index {
   if (cache?.chunks === chunks) return cache.index;
   const df = new Map<string, number>();
   const docs = chunks.map((chunk) => {
-    const tokens = tokenize(chunk.text);
+    const tokens = tokenize(chunk.text).map(canon);
     const tf = new Map<string, number>();
     for (const t of tokens) tf.set(t, (tf.get(t) ?? 0) + 1);
     for (const t of tf.keys()) df.set(t, (df.get(t) ?? 0) + 1);
@@ -50,7 +54,8 @@ function bm25(query: string): { chunk: DocChunk; score: number }[] {
   const scored: { chunk: DocChunk; score: number }[] = [];
   for (const d of index.docs) {
     let score = 0;
-    for (const { term, weight, phrase } of terms) {
+    for (const { term: rawTerm, weight, phrase } of terms) {
+      const term = canonTerm(rawTerm);
       // Multi-word terms ("nghỉ phép") score as a phrase; their rarity is approximated by their first word.
       const words = term.split(' ');
       const tf = phrase ? d.norm.split(` ${term} `).length - 1 : (d.tf.get(term) ?? 0);

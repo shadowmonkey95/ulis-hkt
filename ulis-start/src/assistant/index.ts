@@ -1,5 +1,4 @@
 // Public API of the assistant module.
-import { detectOutOfScope } from './guard';
 import { answerLocal } from './local';
 import { ASSISTANT_URL, askRemote } from './remote';
 import type { AskContext, AssistantMode, AssistantReply } from './types';
@@ -8,11 +7,13 @@ import type { AskContext, AssistantMode, AssistantReply } from './types';
 export const assistantMode: AssistantMode = ASSISTANT_URL ? 'remote' : 'local';
 
 /**
- * Answer a question. Remote mode is tried only when configured; guarded (out-of-scope) questions are
- * always answered locally; any remote failure or the 30s timeout (REMOTE_TIMEOUT_MS) falls back to the local answer.
+ * Answer a question. Remote mode is tried only when configured. Figure/regulation questions also go to the
+ * server, which may answer them from uploaded regulations (with verified calculations); offline, the
+ * rule guard in answerLocal still refuses them. Any remote failure or the 30s timeout (REMOTE_TIMEOUT_MS)
+ * falls back to the local answer.
  */
 export async function ask(question: string, ctx: AskContext = {}): Promise<AssistantReply> {
-  if (assistantMode === 'local' || detectOutOfScope(question)) return answerLocal(question, ctx);
+  if (assistantMode === 'local') return answerLocal(question, ctx);
   try {
     return await askRemote(question, ctx);
   } catch {
