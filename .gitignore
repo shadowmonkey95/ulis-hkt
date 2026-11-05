@@ -1,0 +1,7 @@
+# Claude Code configuration and agent instructions (local only)
+.claude/
+**/.claude/
+CLAUDE.md
+**/CLAUDE.md
+CLAUDE.local.md
+**/CLAUDE.local.md
