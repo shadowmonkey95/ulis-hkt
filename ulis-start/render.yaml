@@ -4,9 +4,9 @@ services:
     runtime: node
     plan: free
     region: singapore
-    rootDir: ulis-start
-    buildCommand: cd server && npm ci
-    startCommand: cd server && npm start
+    rootDir: ulis-start/server
+    buildCommand: npm ci
+    startCommand: npm start
     healthCheckPath: /health
     envVars:
       - key: NODE_VERSION
