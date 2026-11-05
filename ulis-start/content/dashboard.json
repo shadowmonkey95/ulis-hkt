@@ -1,0 +1,32 @@
+{
+  "source": "Dữ liệu giả định cho bản trình diễn – không phải thống kê nhân sự của Nhà trường",
+  "updatedAt": "2026-11-05",
+  "verified": false,
+  "staff": [
+    { "id": "S01", "name": "Nguyễn Minh Hòa", "track": "lecturer", "unit": "Khoa Tiếng Anh", "done": 8, "total": 9 },
+    { "id": "S02", "name": "Trần Phương Linh", "track": "lecturer", "unit": "Khoa Tiếng Trung Quốc", "done": 5, "total": 9 },
+    { "id": "S03", "name": "Lê Hoàng Nam", "track": "specialist", "unit": "Phòng Đào tạo", "done": 7, "total": 8 },
+    { "id": "S04", "name": "Phạm Thu Hà", "track": "specialist", "unit": "Phòng Kế hoạch – Tài chính", "done": 4, "total": 8 },
+    { "id": "S05", "name": "Đỗ Mai Anh", "track": "lecturer", "unit": "Khoa Tiếng Nhật", "done": 9, "total": 9 },
+    { "id": "S06", "name": "Vũ Quang Huy", "track": "specialist", "unit": "Trung tâm hỗ trợ", "done": 2, "total": 8 },
+    { "id": "S07", "name": "Bùi Thanh Mai", "track": "lecturer", "unit": "Khoa Tiếng Hàn Quốc", "done": 6, "total": 9 },
+    { "id": "S08", "name": "Ngô Đức Long", "track": "specialist", "unit": "Phòng chức năng", "done": 8, "total": 8 }
+  ],
+  "issues": [
+    { "id": "B01", "name": "Trần Phương Linh", "track": "lecturer", "topic": "VNU-email và HRM", "detail": "Chưa xác định đầu mối hỗ trợ kích hoạt tài khoản", "status": "open" },
+    { "id": "B02", "name": "Phạm Thu Hà", "track": "specialist", "topic": "Chấm công nhận diện", "detail": "Cần hỗ trợ thao tác đăng ký nhận diện", "status": "inProgress" },
+    { "id": "B03", "name": "Vũ Quang Huy", "track": "specialist", "topic": "Tài khoản BIDV", "detail": "Cần hướng dẫn cung cấp thông tin tài khoản", "status": "open" }
+  ],
+  "questions": [
+    { "id": "q-attendance", "question": "Tôi muốn đăng ký chấm công thì liên hệ ai?", "count": 18, "keywords": ["cham cong", "nhan dien"] },
+    { "id": "q-email", "question": "Khi nào được cấp VNU-email và HRM?", "count": 15, "keywords": ["email", "hrm"] },
+    { "id": "q-salary", "question": "Cách tính lương và phụ cấp như thế nào?", "count": 12, "keywords": ["luong", "phu cap"] },
+    { "id": "q-bank", "question": "Tôi cần cung cấp thông tin BIDV ở đâu?", "count": 9, "keywords": ["bidv", "ngan hang"] },
+    { "id": "q-workload", "question": "Định mức giờ giảng và NCKH là bao nhiêu?", "count": 7, "keywords": ["nckh", "gio giang", "gio day", "dinh muc"] }
+  ],
+  "tips": [
+    { "icon": "trending-up", "title": "Nhận diện điểm nghẽn", "body": "Ưu tiên chuẩn hóa quy trình có nhiều yêu cầu hỗ trợ." },
+    { "icon": "check-square", "title": "Theo dõi tiến độ", "body": "Phân biệt tự xác nhận và xác nhận của đơn vị khi triển khai thật." },
+    { "icon": "file-text", "title": "Cập nhật câu hỏi thường gặp", "body": "Bổ sung hướng dẫn, văn bản và nguồn tra cứu đã được thẩm định." }
+  ]
+}

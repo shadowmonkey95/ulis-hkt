@@ -11,6 +11,7 @@ import type {
   PhaseId,
   Resource,
   Synonyms,
+  DashboardData,
   Task,
 } from '../types';
 import { isContentImageKey } from './imageKeys';
@@ -24,6 +25,7 @@ import faqJson from '../../content/faq.json';
 import aboutJson from '../../content/about.json';
 import benefitsJson from '../../content/benefits.json';
 import synonymsJson from '../../content/synonyms.json';
+import dashboardJson from '../../content/dashboard.json';
 
 // JSON imports infer `string` for literal unions; enum values are checked at runtime by validateContent().
 export const phases = phasesJson as unknown as Phase[];
@@ -35,6 +37,8 @@ export const faq = faqJson as unknown as FaqItem[];
 export const about = aboutJson as unknown as About;
 export const benefits = benefitsJson as unknown as Benefit[];
 export const synonyms = synonymsJson as unknown as Synonyms;
+/** Sample data for the manager dashboard (Dashboard TC&TT). */
+export const dashboard = dashboardJson as unknown as DashboardData;
 
 export interface ContentBundle {
   phases: Phase[];

@@ -20,6 +20,7 @@ const ENTRIES: Entry[] = [
   { title: 'Tài liệu', description: 'Biểu mẫu, quy định, hướng dẫn', icon: 'folder', href: '/library' },
   { title: 'Phúc lợi', description: 'Quyền lợi của cán bộ', icon: 'gift', href: '/benefits' },
   { title: 'Góp ý', description: 'Gửi câu hỏi, góp ý cho Trường', icon: 'edit-3', href: '/feedback' },
+  { title: 'Dashboard TC&TT', description: 'Trang dành riêng cho quản lý', icon: 'bar-chart-2', href: '/dashboard' },
   { title: 'Cài đặt demo', description: 'Đổi ngày, vai trò, đặt lại', icon: 'sliders', href: '/demo' },
 ];
 

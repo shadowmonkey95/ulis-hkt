@@ -132,3 +132,49 @@ export interface Benefit extends Meta {
 // ---------------------------------------------------------------------------
 
 export type Synonyms = Record<string, string[]>;
+
+// ---------------------------------------------------------------------------
+// dashboard.json – sample data for the "Dashboard TC&TT" manager page
+// ---------------------------------------------------------------------------
+
+export type IssueStatus = 'open' | 'inProgress' | 'resolved';
+
+export interface DashboardStaff {
+  id: string;
+  name: string;
+  track: Track;
+  unit: string;
+  done: number;
+  total: number;
+}
+
+export interface DashboardIssue {
+  id: string;
+  name: string;
+  track: Track;
+  topic: string;
+  detail: string;
+  status: IssueStatus;
+}
+
+export interface DashboardQuestion {
+  id: string;
+  question: string;
+  /** Sample count before the user's own chat questions are added. */
+  count: number;
+  /** Unaccented lowercase keywords; a chat question containing one counts for this topic. */
+  keywords: string[];
+}
+
+export interface DashboardTip {
+  icon: string;
+  title: string;
+  body: string;
+}
+
+export interface DashboardData extends Meta {
+  staff: DashboardStaff[];
+  issues: DashboardIssue[];
+  questions: DashboardQuestion[];
+  tips: DashboardTip[];
+}

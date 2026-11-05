@@ -96,6 +96,7 @@ function RootNavigator() {
           <Stack.Screen name="library" />
           <Stack.Screen name="benefits" />
           <Stack.Screen name="feedback" />
+          <Stack.Screen name="dashboard" />
         </Stack.Protected>
         <Stack.Protected guard={!hasProfile}>
           <Stack.Screen name="onboarding" />

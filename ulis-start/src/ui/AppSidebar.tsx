@@ -46,6 +46,14 @@ const QUICK: NavItem[] = [
   { label: 'Cài đặt demo', icon: 'sliders', href: '/demo', match: (p) => startsWith(p, '/demo') },
 ];
 
+// Manager-only area (reference: "TIỆN ÍCH MỞ RỘNG" group + top-bar button).
+const MANAGER: NavItem = {
+  label: 'Dashboard TC&TT',
+  icon: 'bar-chart-2',
+  href: '/dashboard',
+  match: (p) => startsWith(p, '/dashboard'),
+};
+
 export interface AppSidebarProps {
   profile?: SidebarProfile | null;
   /** Clears the local profile + progress ("Đăng xuất"). The profile menu shows the logout item only when set. */
@@ -95,6 +103,11 @@ export function AppSidebar({ profile, onLogout }: AppSidebarProps) {
         {QUICK.map((item) => (
           <SidebarItem key={item.label} item={item} active={item.match(pathname)} small />
         ))}
+        <View style={[styles.divider, { backgroundColor: colors.border, marginVertical: spacing.md }]} />
+        <AppText variant="eyebrow" color="textMuted" style={{ paddingHorizontal: spacing.md, marginBottom: spacing.xs }}>
+          Dành cho quản lý
+        </AppText>
+        <SidebarItem item={MANAGER} active={MANAGER.match(pathname)} small />
       </ScrollView>
 
       <AppText variant="small" color="textMuted" style={{ paddingHorizontal: spacing.lg + 2, paddingVertical: spacing.sm, fontSize: 12, lineHeight: 17 }}>
@@ -301,7 +314,7 @@ const EXTRA_SECTIONS: { label: string; match: (path: string) => boolean }[] = [
 
 /** Section name for the current route ("Cẩm nang", "Hành trình" …). */
 export function sectionForPath(path: string): string {
-  const all = [...MAIN, ...QUICK, ...EXTRA_SECTIONS];
+  const all = [...MAIN, ...QUICK, MANAGER, ...EXTRA_SECTIONS];
   return all.find((i) => i.match(path))?.label ?? 'Khám phá';
 }
 
@@ -323,10 +336,32 @@ export function AppTopBar() {
           {section}
         </AppText>
       </View>
-      <View style={[styles.pill, { backgroundColor: colors.pillBg, marginLeft: spacing.md }]}>
-        <AppText variant="small" color={colors.pillText} weight="700" style={{ fontSize: 12, lineHeight: 17 }}>
-          ✦ BẢN DEMO
-        </AppText>
+      <View style={[styles.topRight, { gap: spacing.sm, marginLeft: spacing.md }]}>
+        <View style={[styles.pill, { backgroundColor: colors.pillBg }]}>
+          <AppText variant="small" color={colors.pillText} weight="700" style={{ fontSize: 12, lineHeight: 17 }}>
+            ✦ BẢN DEMO
+          </AppText>
+        </View>
+        <Pressable
+          onPress={() => router.navigate(MANAGER.href)}
+          accessibilityRole="link"
+          accessibilityLabel="Dashboard TC&TT – trang dành riêng cho quản lý"
+          style={(state) => [
+            styles.topButton,
+            {
+              gap: spacing.sm,
+              borderColor: MANAGER.match(pathname) ? colors.primary : colors.border,
+              backgroundColor: MANAGER.match(pathname) || pressState(state).hovered ? colors.navActiveBg : colors.surface,
+            },
+            pointer,
+            focusRing(state, colors.primary),
+          ]}
+        >
+          <Feather name="bar-chart-2" size={16} color={MANAGER.match(pathname) ? colors.navActiveText : colors.navText} />
+          <AppText variant="caption" weight="700" color={MANAGER.match(pathname) ? colors.navActiveText : colors.navText}>
+            Dashboard TC&TT
+          </AppText>
+        </Pressable>
       </View>
     </View>
   );
@@ -386,4 +421,6 @@ const styles = StyleSheet.create({
   topBar: { height: 64, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', borderBottomWidth: 1 },
   crumb: { flexDirection: 'row', alignItems: 'center', gap: 8, flexShrink: 1 },
   pill: { borderRadius: 999, paddingHorizontal: 13, paddingVertical: 6 },
+  topRight: { flexDirection: 'row', alignItems: 'center' },
+  topButton: { flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderRadius: 12, paddingHorizontal: 14, paddingVertical: 8 },
 });
