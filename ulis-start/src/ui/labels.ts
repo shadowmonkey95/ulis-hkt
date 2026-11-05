@@ -30,6 +30,7 @@ export const GUIDE_CATEGORY_LABELS: Record<GuideCategory, string> = {
   it: 'CNTT',
   academic: 'Đào tạo',
   emulation: 'Đánh giá thi đua',
+  research: 'Khoa học công nghệ',
 };
 
 export const RESOURCE_TYPE_LABELS: Record<ResourceType, string> = {

@@ -56,12 +56,12 @@ describe('content validation', () => {
     for (const item of all) expect(item.verified).toBe(false);
   });
 
-  it('every guide has 2–4 situations and all 6 categories are covered', () => {
+  it('every guide has 2–4 situations and all 7 categories are covered', () => {
     for (const g of guides) {
       expect(g.situations.length).toBeGreaterThanOrEqual(2);
       expect(g.situations.length).toBeLessThanOrEqual(4);
     }
-    expect(new Set(guides.map((g) => g.category)).size).toBe(6);
+    expect(new Set(guides.map((g) => g.category)).size).toBe(7);
   });
 
   it('lookup helpers resolve ids', () => {

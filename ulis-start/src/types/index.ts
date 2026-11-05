@@ -16,7 +16,7 @@ export interface Task extends Meta {
   guideId?: string; contactId?: string; formIds: string[]; keywords: string[];
 }
 
-export type GuideCategory = 'hr' | 'admin' | 'finance' | 'it' | 'academic' | 'emulation';
+export type GuideCategory = 'hr' | 'admin' | 'finance' | 'it' | 'academic' | 'emulation' | 'research';
 
 export interface Guide extends Meta {           // the draft's 6-part structure
   id: string; category: GuideCategory;

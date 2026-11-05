@@ -94,6 +94,27 @@
     "verified": false
   },
   {
+    "id": "ct-research",
+    "unit": "Phòng Khoa học Công nghệ và Hợp tác Phát triển",
+    "role": "Đầu mối hướng dẫn hoạt động khoa học, công nghệ",
+    "handles": [
+      "nghiên cứu khoa học",
+      "đề tài",
+      "nhóm nghiên cứu",
+      "nhiệm vụ khoa học và công nghệ",
+      "hội thảo",
+      "tập huấn",
+      "hỗ trợ nghiên cứu"
+    ],
+    "phone": "024 0000 0000",
+    "email": "example-khcn@ulis.vnu.edu.vn",
+    "location": "Khu nhà hành chính (cần xác nhận số phòng)",
+    "hours": "Giờ hành chính các ngày làm việc (cần xác nhận)",
+    "source": "Nội dung mẫu cho Hackathon",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
     "id": "ct-it",
     "unit": "Trung tâm/ bộ phận Công nghệ thông tin",
     "role": "Hỗ trợ kỹ thuật – tài khoản",

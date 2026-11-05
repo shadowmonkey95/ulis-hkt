@@ -90,7 +90,7 @@ export const phasesInOrder: Phase[] = [...phases].sort((a, b) => a.order - b.ord
 const PHASE_IDS = ['preboard', 'welcome', 'ready', 'integrate', 'grow'];
 const OWNERS = ['me', 'unit', 'hr', 'it', 'buddy'];
 const TRACK_TAGS = ['all', 'lecturer', 'specialist', 'staff'];
-const GUIDE_CATEGORIES = ['hr', 'admin', 'finance', 'it', 'academic', 'emulation'];
+const GUIDE_CATEGORIES = ['hr', 'admin', 'finance', 'it', 'academic', 'emulation', 'research'];
 const RESOURCE_TYPES = ['form', 'regulation', 'manual', 'video', 'training'];
 const RESOURCE_STATUSES = ['active', 'superseded'];
 const FAQ_LINK_KINDS = ['guide', 'contact', 'task', 'resource'];

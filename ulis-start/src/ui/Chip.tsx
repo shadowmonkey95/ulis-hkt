@@ -72,6 +72,6 @@ export function Chip({ label, selected, onPress, icon, color, accessibilityLabel
 const styles = StyleSheet.create({
   base: { borderWidth: 1, paddingVertical: 4, alignSelf: 'flex-start', justifyContent: 'center' },
   touchable: { minHeight: 36, paddingVertical: 6 },
-  row: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 6, flexShrink: 1 },
   label: { flexShrink: 1 },
 });

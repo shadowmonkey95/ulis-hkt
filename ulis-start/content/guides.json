@@ -689,5 +689,43 @@
     "source": "Nội dung mẫu cho Hackathon",
     "updatedAt": "2026-11-03",
     "verified": false
+  },
+  {
+    "id": "g-research",
+    "category": "research",
+    "title": "Tìm hiểu và đăng ký hoạt động khoa học, công nghệ",
+    "situations": [
+      "Tôi muốn tham gia nhóm nghiên cứu",
+      "Tôi muốn đăng ký đề tài nghiên cứu khoa học",
+      "Tôi có ý tưởng cải tiến quy trình, ứng dụng công nghệ"
+    ],
+    "purpose": "Giúp giảng viên, chuyên viên mới biết có thể tham gia hoạt động nghiên cứu nào, liên hệ ai và bắt đầu từ đâu.",
+    "whoDoes": "• Giảng viên mới có nhu cầu tham gia nhóm nghiên cứu, thực hiện đề tài hoặc phát triển hướng nghiên cứu chuyên môn.\n• Chuyên viên mới có ý tưởng nghiên cứu, cải tiến quy trình hoặc ứng dụng công nghệ để giải quyết vấn đề trong công việc.\n• Đầu mối hướng dẫn đề xuất là Phòng Khoa học Công nghệ và Hợp tác Phát triển. Khoa hoặc đơn vị tiếp nhận hỗ trợ kết nối với nhóm nghiên cứu, đồng nghiệp và đề tài phù hợp.",
+    "prepare": [
+      "Chuẩn bị tên dự kiến đề tài, vấn đề cần giải quyết, mục tiêu, sản phẩm đầu ra, khả năng ứng dụng và thời gian thực hiện."
+    ],
+    "steps": [
+      "Chọn hình thức tham gia.",
+      "Tra cứu thông tin. Tìm thông báo về đăng ký nhiệm vụ khoa học và công nghệ, hội thảo, tập huấn và chính sách hỗ trợ nghiên cứu trên các trang thông tin của Trường.",
+      "Trao đổi với đơn vị tiếp nhận và đầu mối phụ trách.",
+      "Thực hiện theo hình thức đã chọn. Thống nhất nhiệm vụ với nhóm nghiên cứu hoặc hoàn thiện và nộp hồ sơ đề xuất theo thông báo của đợt đăng ký.",
+      "Theo dõi kết quả. Bổ sung thông tin khi được yêu cầu."
+    ],
+    "formIds": [],
+    "contactId": "ct-research",
+    "keywords": [
+      "khoa học công nghệ",
+      "nghiên cứu khoa học",
+      "nckh",
+      "đề tài",
+      "nhóm nghiên cứu",
+      "nhiệm vụ khoa học",
+      "hội thảo",
+      "đề xuất",
+      "khcn"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
   }
 ]

@@ -74,7 +74,7 @@ export default function GuideListScreen() {
       </AppText>
       <View style={[styles.wrap, { gap: spacing.sm }]}>
         {suggestions.map((s) => (
-          <Chip key={s} label={s} icon="message-square" onPress={() => setQuery(s)} accessibilityLabel={`Tìm: ${s}`} />
+          <Chip key={s} label={s} icon="message-square" onPress={() => setQuery(s)} accessibilityLabel={`Tìm: ${s}`} style={styles.sideChip} />
         ))}
       </View>
     </>
@@ -264,5 +264,6 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   italic: { fontStyle: 'italic' },
   split: { flexDirection: 'row', alignItems: 'flex-start' },
-  side: { width: 240 },
+  side: { width: 240, flexShrink: 0 },
+  sideChip: { maxWidth: '100%' },
 });
