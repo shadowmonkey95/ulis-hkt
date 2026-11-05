@@ -29,7 +29,7 @@ export const GUIDE_CATEGORY_LABELS: Record<GuideCategory, string> = {
   finance: 'Tài chính',
   it: 'CNTT',
   academic: 'Đào tạo',
-  emulation: 'Thi đua',
+  emulation: 'Đánh giá thi đua',
 };
 
 export const RESOURCE_TYPE_LABELS: Record<ResourceType, string> = {

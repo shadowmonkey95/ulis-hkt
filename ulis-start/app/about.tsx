@@ -18,7 +18,6 @@ export default function AboutScreen() {
   const { isCompact } = useLayout();
   const gap = isCompact ? spacing.md : spacing.lg;
   const data = about;
-  const day = data.dayAtUlis ?? [];
 
   return (
     <Screen
@@ -130,36 +129,6 @@ export default function AboutScreen() {
         })}
       </Columns>
 
-      <SectionHeader title="Một ngày tại ULIS" />
-      {day.length > 0 ? (
-        <Card>
-          {day.map((d, i) => (
-            <View key={`${d.time}-${d.title}`} style={[styles.dayRow, { paddingTop: i ? spacing.md : 0 }]}>
-              <AppText variant="caption" color="primary" weight="700" style={styles.dayTime}>
-                {d.time}
-              </AppText>
-              <View style={styles.flex}>
-                <AppText variant="bodyStrong">{d.title}</AppText>
-                {d.description ? (
-                  <AppText variant="caption" color="textMuted">
-                    {d.description}
-                  </AppText>
-                ) : null}
-              </View>
-            </View>
-          ))}
-        </Card>
-      ) : (
-        <Card tone="muted">
-          <View style={styles.infoRow}>
-            <Feather name="clock" size={16} color={colors.textMuted} style={styles.infoIcon} />
-            <AppText color="textMuted" style={styles.flex}>
-              Nội dung “Một ngày tại ULIS” đang được Trường bổ sung. Trong lúc chờ, hãy hỏi Người đồng hành của bạn về nhịp làm việc của đơn vị.
-            </AppText>
-          </View>
-        </Card>
-      )}
-
       <AppText variant="caption" color="textMuted" style={{ marginTop: spacing.xl }}>
         {data.note}
       </AppText>
@@ -194,6 +163,4 @@ const styles = StyleSheet.create({
   dot: { width: 6, height: 6, borderRadius: 3, marginTop: 8 },
   unitRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   unitIcon: { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center' },
-  dayRow: { flexDirection: 'row', gap: 12 },
-  dayTime: { width: 56 },
 });
