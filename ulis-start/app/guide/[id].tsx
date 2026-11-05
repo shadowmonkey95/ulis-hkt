@@ -79,14 +79,11 @@ export default function GuideDetailScreen() {
       <AppText>{guide.whoDoes}</AppText>
 
       <SectionHeader index={3} title="Cần chuẩn bị" />
-      <Card>
-        {guide.prepare.map((p, i) => (
-          <View key={p} style={[styles.item, { marginTop: i ? spacing.sm : 0 }]}>
-            <View style={[styles.checkbox, { borderColor: colors.primary }]} />
-            <AppText style={styles.flex}>{p}</AppText>
-          </View>
+      <View style={{ gap: spacing.sm }}>
+        {guide.prepare.map((p) => (
+          <AppText key={p}>{guide.prepare.length > 1 ? `• ${p}` : p}</AppText>
         ))}
-      </Card>
+      </View>
 
       <SectionHeader index={4} title="Các bước" />
       <View style={{ gap: spacing.md }}>
@@ -245,6 +242,5 @@ const styles = StyleSheet.create({
   split: { flexDirection: 'row', alignItems: 'flex-start' },
   item: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
   flex: { flex: 1 },
-  checkbox: { width: 18, height: 18, borderRadius: 4, borderWidth: 2, marginTop: 2 },
   step: { minWidth: 28, minHeight: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 4 },
 });
