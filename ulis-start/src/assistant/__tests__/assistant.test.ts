@@ -64,7 +64,7 @@ describe('answerLocal', () => {
   it('cites the context task and offers to mark it done', () => {
     const r = answerLocal('Mình cần làm gì cho việc “Chuẩn bị hồ sơ nhân sự theo danh mục”?', { taskId: 't-preboard-dossier', track: 'lecturer' });
     expect(r.confidence).toBe('high');
-    expect(r.sources.map((s) => s.id)).toEqual(expect.arrayContaining(['g-hr-dossier', 't-preboard-dossier']));
+    expect(r.sources.map((s) => s.id)).toEqual(expect.arrayContaining(['g-labor-contract', 't-preboard-dossier']));
     expect(r.actions[0]).toMatchObject({ kind: 'complete-task', taskId: 't-preboard-dossier' });
     expect(r.steps?.length).toBeGreaterThan(0);
   });
@@ -78,9 +78,9 @@ describe('answerLocal', () => {
     const q = 'cần chuẩn bị giấy tờ gì';
     const plain = retrieve(q);
     const boosted = retrieve(q, { taskId: 't-preboard-dossier' });
-    expect(boosted.contextIds).toEqual(['t-preboard-dossier', 'g-hr-dossier', 'ct-hr']);
+    expect(boosted.contextIds).toEqual(['t-preboard-dossier', 'g-labor-contract', 'ct-hr']);
     const score = (r: typeof plain, id: string) => r.hits.find((h) => h.id === id)?.score ?? 0;
-    expect(score(boosted, 'g-hr-dossier')).toBeGreaterThan(score(plain, 'g-hr-dossier'));
+    expect(score(boosted, 'g-labor-contract')).toBeGreaterThan(score(plain, 'g-labor-contract'));
   });
 
   it('every source carries title, date and verified flag; routes point to real screens', () => {
@@ -178,7 +178,7 @@ describe('remote mode', () => {
   it('retrieveChunks gives the server ≤6 chunks with context first-class', () => {
     const chunks = retrieveChunks('sơ yếu lý lịch', { taskId: 't-preboard-dossier' });
     expect(chunks.length).toBeLessThanOrEqual(6);
-    expect(chunks.map((c) => c.id)).toEqual(expect.arrayContaining(['t-preboard-dossier', 'g-hr-dossier']));
+    expect(chunks.map((c) => c.id)).toEqual(expect.arrayContaining(['t-preboard-dossier', 'r-form-personal-record']));
     expect(chunks[0]?.text).toContain('cập nhật');
   });
 });

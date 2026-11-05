@@ -22,7 +22,7 @@
         "text": "Nếu có thông tin chưa đúng, phản hồi ngay cho Phòng TCTT trước ngày đầu tiên."
       }
     ],
-    "guideId": "g-hr-dossier",
+    "guideId": "g-labor-contract",
     "contactId": "ct-hr",
     "formIds": [],
     "keywords": [
@@ -60,7 +60,7 @@
         "text": "Điền sơ yếu lý lịch, dán ảnh và để sẵn trong một túi hồ sơ."
       }
     ],
-    "guideId": "g-hr-dossier",
+    "guideId": "g-labor-contract",
     "contactId": "ct-hr",
     "formIds": [
       "r-form-dossier-checklist",
@@ -209,7 +209,7 @@
         "text": "Hỏi cán bộ tiếp nhận về các giấy tờ còn thiếu (nếu có) và hạn bổ sung."
       }
     ],
-    "guideId": "g-hr-dossier",
+    "guideId": "g-labor-contract",
     "contactId": "ct-hr",
     "formIds": [
       "r-form-dossier-checklist",
@@ -317,7 +317,7 @@
         "text": "Bật xác thực hai bước và cài email trên điện thoại."
       }
     ],
-    "guideId": "g-email-account",
+    "guideId": "g-vnu-email-hrm",
     "contactId": "ct-it",
     "formIds": [
       "r-manual-email"
@@ -855,7 +855,7 @@
         "text": "Xem hướng dẫn sử dụng eOffice."
       }
     ],
-    "guideId": "g-email-account",
+    "guideId": "g-it-support",
     "contactId": "ct-it",
     "formIds": [
       "r-manual-eoffice"

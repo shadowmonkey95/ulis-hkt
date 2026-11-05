@@ -1,43 +1,235 @@
 [
   {
-    "id": "g-hr-dossier",
+    "id": "g-labor-contract",
     "category": "hr",
-    "title": "Hoàn thiện hồ sơ nhân sự ban đầu",
+    "title": "Tìm hiểu và hoàn thiện hợp đồng lao động",
     "situations": [
-      "Tôi cần nộp hồ sơ nhân sự",
-      "Tôi chưa biết cần chuẩn bị giấy tờ gì",
-      "Tôi chưa nhận được quyết định/ hợp đồng"
+      "Tôi cần ký hợp đồng lao động",
+      "Tôi chưa có mẫu hợp đồng",
+      "Tôi cần nộp hồ sơ nhân sự"
     ],
-    "purpose": "Giúp bạn nộp đủ hồ sơ một lần để Trường kịp làm thủ tục lương, bảo hiểm và các quyền lợi.",
-    "whoDoes": "Bạn chuẩn bị và nộp; Phòng TCTT tiếp nhận, kiểm tra và lưu hồ sơ.",
+    "purpose": "Hoàn thiện hợp đồng lao động theo hướng dẫn của Phòng Tổ chức và Thanh tra và lấy ý kiến của lãnh đạo đơn vị tiếp nhận.",
+    "whoDoes": "Người lao động mới. Phòng Tổ chức và Thanh tra hướng dẫn, tiếp nhận hợp đồng. Lãnh đạo đơn vị tiếp nhận cho ý kiến.",
     "prepare": [
-      "Danh mục hồ sơ nhân sự (tải trong mục Tài liệu)",
-      "Sơ yếu lý lịch theo mẫu, có ảnh",
-      "Bản sao văn bằng, chứng chỉ, giấy tờ tùy thân (số lượng theo quy định hiện hành của Trường – cần xác nhận)",
-      "Thông tin tài khoản ngân hàng, mã số thuế cá nhân (nếu có)"
+      "Thông tin cá nhân và thông tin công tác để điền vào mẫu hợp đồng lao động do Phòng Tổ chức và Thanh tra cung cấp."
     ],
     "steps": [
-      "Tải danh mục hồ sơ và đánh dấu các giấy tờ đã có.",
-      "Điền sơ yếu lý lịch, kiểm tra kỹ thông tin cá nhân.",
-      "Nộp hồ sơ trực tiếp tại Phòng TCTT trong giờ hành chính.",
-      "Ghi lại giấy tờ còn thiếu và hạn bổ sung do cán bộ tiếp nhận hướng dẫn."
+      "Đến Phòng Tổ chức và Thanh tra để nhận mẫu hợp đồng lao động.",
+      "Điền thông tin vào hợp đồng theo hướng dẫn của Phòng.",
+      "Trình hợp đồng để xin ý kiến của lãnh đạo đơn vị tiếp nhận.",
+      "Nộp hợp đồng đã có ý kiến của lãnh đạo đơn vị tiếp nhận tại Phòng Tổ chức và Thanh tra."
     ],
-    "formIds": [
-      "r-form-dossier-checklist",
-      "r-form-personal-record"
-    ],
+    "formIds": [],
     "contactId": "ct-hr",
     "keywords": [
+      "hợp đồng",
+      "hợp đồng lao động",
+      "ký hợp đồng",
+      "mẫu hợp đồng",
       "hồ sơ",
       "hồ sơ nhân sự",
-      "sơ yếu lý lịch",
-      "giấy tờ",
-      "quyết định",
-      "hợp đồng",
-      "nộp hồ sơ"
+      "quyết định"
     ],
-    "source": "Nội dung mẫu cho Hackathon",
-    "updatedAt": "2026-11-03",
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "g-social-insurance",
+    "category": "hr",
+    "title": "Thực hiện thủ tục về sổ bảo hiểm xã hội",
+    "situations": [
+      "Tôi cần làm sổ bảo hiểm xã hội",
+      "Tôi đã có mã số BHXH ở nơi làm cũ",
+      "Tôi chưa tham gia BHXH bao giờ"
+    ],
+    "purpose": "Được hướng dẫn thực hiện thủ tục về sổ bảo hiểm xã hội khi bắt đầu làm việc tại Trường.",
+    "whoDoes": "Người lao động mới. Đầu mối hướng dẫn là thầy Trần Thế Sơn, Phòng Tổ chức và Thanh tra, số điện thoại 0963 936 866.",
+    "prepare": [
+      "Thông tin cá nhân và mã số bảo hiểm xã hội nếu đã có. Giấy tờ cụ thể chuẩn bị theo hướng dẫn của đầu mối."
+    ],
+    "steps": [
+      "Liên hệ thầy Trần Thế Sơn để được hướng dẫn theo tình trạng tham gia bảo hiểm xã hội của mình.",
+      "Cung cấp thông tin và hoàn thiện hồ sơ theo hướng dẫn."
+    ],
+    "formIds": [],
+    "contactId": "ct-hr",
+    "keywords": [
+      "bảo hiểm xã hội",
+      "BHXH",
+      "sổ bảo hiểm",
+      "sổ BHXH",
+      "mã số BHXH",
+      "bảo hiểm"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "g-unit-intro",
+    "category": "hr",
+    "title": "Làm quen với đơn vị tiếp nhận",
+    "situations": [
+      "Tôi chưa gặp lãnh đạo đơn vị",
+      "Tôi chưa biết nhiệm vụ của mình",
+      "Tôi muốn tìm hiểu về đơn vị mới"
+    ],
+    "purpose": "Nắm thông tin về đơn vị, trao đổi về công việc và tiếp nhận nhiệm vụ ban đầu.",
+    "whoDoes": "Người lao động mới và lãnh đạo đơn vị tiếp nhận.",
+    "prepare": [
+      "Thông tin về vị trí công tác và những nội dung cần trao đổi khi nhận nhiệm vụ."
+    ],
+    "steps": [
+      "Liên hệ lãnh đạo đơn vị tiếp nhận để hẹn gặp.",
+      "Gặp lãnh đạo đơn vị để trao đổi về công việc.",
+      "Tiếp nhận nhiệm vụ và ghi lại những nội dung cần thực hiện."
+    ],
+    "formIds": [],
+    "contactId": "ct-hr",
+    "keywords": [
+      "đơn vị",
+      "lãnh đạo đơn vị",
+      "nhận nhiệm vụ",
+      "làm quen",
+      "trưởng đơn vị",
+      "công việc"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "g-vnu-email-hrm",
+    "category": "hr",
+    "title": "Đăng ký tài khoản VNU-email và sử dụng HRM",
+    "situations": [
+      "Tôi chưa có email công vụ",
+      "Tôi chưa vào được HRM",
+      "Tôi cần đăng ký VNU-email"
+    ],
+    "purpose": "Thiết lập thư điện tử công vụ và tiếp cận hệ thống quản lý nhân sự HRM.",
+    "whoDoes": "Người lao động mới. Đầu mối hướng dẫn là thầy Cù Thanh Nghị, Phòng Tổ chức và Thanh tra, số điện thoại 0913 230 297.",
+    "prepare": [
+      "Thông tin cá nhân, đơn vị công tác và thông tin liên hệ để cung cấp theo hướng dẫn."
+    ],
+    "steps": [
+      "Liên hệ thầy Cù Thanh Nghị để được hướng dẫn đăng ký tài khoản VNU-email và truy cập HRM.",
+      "Cung cấp thông tin theo hướng dẫn.",
+      "Đăng nhập VNU-email và HRM, sau đó thực hiện các thao tác ban đầu theo hướng dẫn."
+    ],
+    "formIds": [],
+    "contactId": "ct-hr",
+    "keywords": [
+      "email",
+      "email công vụ",
+      "VNU-email",
+      "vnu mail",
+      "HRM",
+      "tài khoản",
+      "đăng nhập",
+      "mật khẩu",
+      "quản lý nhân sự"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "g-attendance",
+    "category": "hr",
+    "title": "Đăng ký nhận diện chấm công",
+    "situations": [
+      "Tôi cần đăng ký chấm công",
+      "Máy chấm công chưa nhận diện tôi",
+      "Tôi chưa biết chấm công ở đâu"
+    ],
+    "purpose": "Đăng ký thông tin nhận diện để sử dụng hệ thống chấm công của Trường.",
+    "whoDoes": "Người lao động mới. Đầu mối hướng dẫn là thầy Nguyễn Tiến Dũng, Phòng Văn phòng Tổng hợp, số điện thoại 0904 378 479.",
+    "prepare": [
+      "Thông tin cá nhân và đơn vị công tác. Liên hệ đầu mối để biết thời gian, địa điểm đăng ký."
+    ],
+    "steps": [
+      "Liên hệ thầy Nguyễn Tiến Dũng để được hướng dẫn đăng ký.",
+      "Đến địa điểm được hướng dẫn để thực hiện đăng ký nhận diện.",
+      "Kiểm tra việc nhận diện và thực hiện chấm công theo hướng dẫn."
+    ],
+    "formIds": [],
+    "contactId": "ct-admin",
+    "keywords": [
+      "chấm công",
+      "nhận diện",
+      "khuôn mặt",
+      "vân tay",
+      "máy chấm công",
+      "điểm danh"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "g-bank-account",
+    "category": "hr",
+    "title": "Đăng ký, cung cấp thông tin tài khoản ngân hàng",
+    "situations": [
+      "Tôi cần cung cấp số tài khoản nhận lương",
+      "Tôi chưa có tài khoản ngân hàng",
+      "Tôi muốn đổi tài khoản nhận lương"
+    ],
+    "purpose": "Cung cấp thông tin tài khoản phục vụ việc chi trả tiền lương và các khoản thu nhập.",
+    "whoDoes": "Người lao động mới. Đầu mối hướng dẫn là thầy Lê Văn Tuyển, Phòng Kế hoạch – Tài chính, số điện thoại 0929 909 299.",
+    "prepare": [
+      "Họ tên chủ tài khoản, số tài khoản và tên ngân hàng nếu đã có tài khoản. Trường hợp cần mở tài khoản, chuẩn bị thông tin và giấy tờ theo hướng dẫn."
+    ],
+    "steps": [
+      "Liên hệ thầy Lê Văn Tuyển để được hướng dẫn về tài khoản sử dụng cho việc chi trả.",
+      "Thực hiện đăng ký tài khoản nếu cần.",
+      "Kiểm tra và cung cấp thông tin tài khoản cho Phòng Kế hoạch – Tài chính theo hướng dẫn."
+    ],
+    "formIds": [],
+    "contactId": "ct-finance",
+    "keywords": [
+      "tài khoản ngân hàng",
+      "số tài khoản",
+      "ngân hàng",
+      "nhận lương",
+      "chi trả",
+      "lương"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
+    "verified": false
+  },
+  {
+    "id": "g-party-transfer",
+    "category": "hr",
+    "title": "Chuyển sinh hoạt Đảng (nếu có)",
+    "situations": [
+      "Tôi là đảng viên cần chuyển sinh hoạt Đảng",
+      "Tôi chưa biết nộp giấy chuyển Đảng ở đâu"
+    ],
+    "purpose": "Hoàn thiện thủ tục chuyển sinh hoạt Đảng khi về công tác tại Trường.",
+    "whoDoes": "Người lao động mới là đảng viên có nhu cầu chuyển sinh hoạt Đảng. Đầu mối hướng dẫn là cô Bùi Thuý Nga, Phòng Văn phòng Tổng hợp, số điện thoại 0912 231 587.",
+    "prepare": [
+      "Thông tin về tổ chức Đảng nơi đang sinh hoạt và giấy tờ chuyển sinh hoạt Đảng đã được cấp, nếu có. Thành phần hồ sơ cụ thể thực hiện theo hướng dẫn của đầu mối."
+    ],
+    "steps": [
+      "Liên hệ cô Bùi Thuý Nga để được hướng dẫn về hồ sơ và nơi tiếp nhận.",
+      "Chuẩn bị và nộp hồ sơ theo hướng dẫn.",
+      "Bổ sung hồ sơ nếu được yêu cầu và theo dõi kết quả tiếp nhận."
+    ],
+    "formIds": [],
+    "contactId": "ct-admin",
+    "keywords": [
+      "đảng",
+      "đảng viên",
+      "sinh hoạt đảng",
+      "chuyển đảng",
+      "chuyển sinh hoạt đảng"
+    ],
+    "source": "Phòng Tổ chức và Thanh tra – hướng dẫn cho người lao động mới",
+    "updatedAt": "2026-11-05",
     "verified": false
   },
   {
@@ -323,47 +515,6 @@
       "tài khoản ngân hàng",
       "chưa nhận lương",
       "mã số thuế"
-    ],
-    "source": "Nội dung mẫu cho Hackathon",
-    "updatedAt": "2026-11-03",
-    "verified": false
-  },
-  {
-    "id": "g-email-account",
-    "category": "it",
-    "title": "Email công vụ và tài khoản hệ thống",
-    "situations": [
-      "Tôi chưa có email công vụ",
-      "Tôi quên mật khẩu email",
-      "Tôi chưa vào được eOffice/ LMS"
-    ],
-    "purpose": "Giúp bạn có đủ tài khoản để nhận thông báo và làm việc trên các hệ thống của Trường.",
-    "whoDoes": "Phòng TCTT gửi thông tin cán bộ mới; bộ phận CNTT tạo và hỗ trợ tài khoản.",
-    "prepare": [
-      "Họ tên, đơn vị, mã cán bộ (nếu có)",
-      "Số điện thoại để nhận mã xác thực",
-      "Hướng dẫn sử dụng email công vụ"
-    ],
-    "steps": [
-      "Kiểm tra email cá nhân/ tin nhắn để nhận thông tin tài khoản.",
-      "Đăng nhập lần đầu, đổi mật khẩu và bật xác thực hai bước.",
-      "Đăng nhập thử các hệ thống được cấp (eOffice, LMS…).",
-      "Nếu chưa có tài khoản sau ngày làm việc thứ 4, gửi phiếu yêu cầu hỗ trợ cho bộ phận CNTT."
-    ],
-    "formIds": [
-      "r-manual-email",
-      "r-form-it-request"
-    ],
-    "contactId": "ct-it",
-    "keywords": [
-      "email",
-      "email công vụ",
-      "tài khoản",
-      "mật khẩu",
-      "quên mật khẩu",
-      "eOffice",
-      "LMS",
-      "đăng nhập"
     ],
     "source": "Nội dung mẫu cho Hackathon",
     "updatedAt": "2026-11-03",
