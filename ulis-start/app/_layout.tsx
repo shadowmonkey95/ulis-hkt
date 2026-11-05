@@ -3,7 +3,7 @@ import { Stack, usePathname } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 
-import { BADGES, JourneyProvider, dayCounterLabel, useJourney } from '@/journey';
+import { BADGES, JourneyProvider, useJourney } from '@/journey';
 import type { BadgeId } from '@/types';
 import { AppShell, BadgeModal, TRACK_LABELS, ThemeProvider, ToastProvider, WebFrame, useLayout, useTheme } from '@/ui';
 
@@ -51,7 +51,7 @@ function BadgeHost() {
 }
 
 function RootNavigator() {
-  const { hydrated, profile, currentDay, actions } = useJourney();
+  const { hydrated, profile, actions } = useJourney();
   const { colors, isDark } = useTheme();
   // Desktop web (≥ 768): check-in is a centered dialog over the current page (transparentModal keeps the
   // previous screen visible on web). Phones / narrow web keep the native modal sheet.
@@ -72,7 +72,7 @@ function RootNavigator() {
       onLogout={actions.reset}
       profile={
         profile
-          ? { name: profile.name, subtitle: `${TRACK_LABELS[profile.track]} · ${profile.unit}`, dayLabel: dayCounterLabel(currentDay) }
+          ? { name: profile.name, subtitle: `${TRACK_LABELS[profile.track]} · ${profile.unit}` }
           : null
       }
     >

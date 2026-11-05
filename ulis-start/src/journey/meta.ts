@@ -28,7 +28,7 @@ export const BADGES: Record<BadgeId, BadgeMeta> = {
   journey30: {
     id: 'journey30',
     title: 'Thành viên ULIS',
-    description: 'Chúc mừng! Bạn đã hoàn thành hành trình 30 ngày.',
+    description: 'Chúc mừng! Bạn đã hoàn thành hành trình hội nhập.',
     icon: 'award',
   },
 };

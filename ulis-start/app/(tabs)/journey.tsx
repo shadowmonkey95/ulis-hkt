@@ -7,7 +7,6 @@ import {
   MEDIUM_COLUMN_MAX_WIDTH,
   ProgressSummary,
   TaskDetailView,
-  dayCounterLabel,
   filterTasks,
   resolveSelectedTask,
   getPhaseState,
@@ -136,9 +135,9 @@ export default function JourneyScreen() {
   const listHeader = (
     <View style={{ gap: spacing.md, marginBottom: spacing.lg }}>
       <AppText variant="title" accessibilityRole="header">
-        Hành trình 30 ngày
+        Hành trình
       </AppText>
-      <AppText variant="eyebrow">{`${dayCounterLabel(currentDay)} · ${currentPhase.title}`}</AppText>
+      <AppText variant="eyebrow">{currentPhase.title}</AppText>
       <ProgressSummary progress={progress} track={profile?.track} />
       <View style={[styles.filters, { gap: spacing.sm }]}>
         {FILTERS.map((f) => (

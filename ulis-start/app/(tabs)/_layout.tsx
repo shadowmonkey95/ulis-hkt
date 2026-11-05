@@ -2,14 +2,14 @@ import Feather from '@expo/vector-icons/Feather';
 import { Tabs } from 'expo-router/js-tabs';
 import type { ComponentProps } from 'react';
 
-import { dayCounterLabel, useJourney } from '@/journey';
+import { useJourney } from '@/journey';
 import { AppSidebar, TRACK_LABELS, useInShell, useLayout, useTheme } from '@/ui';
 
 type FeatherName = ComponentProps<typeof Feather>['name'];
 
 const TABS: { name: string; title: string; icon: FeatherName; a11y: string }[] = [
   { name: 'index', title: 'Hôm nay', icon: 'sun', a11y: 'Hôm nay – việc cần làm hôm nay' },
-  { name: 'journey', title: 'Hành trình', icon: 'map', a11y: 'Hành trình 30 ngày' },
+  { name: 'journey', title: 'Hành trình', icon: 'map', a11y: 'Hành trình' },
   { name: 'assistant', title: 'Trợ lý', icon: 'message-circle', a11y: 'Trợ lý hội nhập' },
   { name: 'more', title: 'Khám phá', icon: 'grid', a11y: 'Khám phá – cẩm nang, danh bạ, tài liệu' },
 ];
@@ -18,7 +18,7 @@ export default function TabsLayout() {
   const { colors } = useTheme();
   const { hasSidebar } = useLayout();
   const inShell = useInShell();
-  const { profile, currentDay } = useJourney();
+  const { profile } = useJourney();
 
   // Desktop web: the root AppShell already shows the sidebar → hide the tab bar.
   // If the shell isn't mounted, render the sidebar as a left "tab bar" instead.
@@ -30,7 +30,7 @@ export default function TabsLayout() {
           <AppSidebar
             profile={
               profile
-                ? { name: profile.name, subtitle: `${TRACK_LABELS[profile.track]} · ${profile.unit}`, dayLabel: dayCounterLabel(currentDay) }
+                ? { name: profile.name, subtitle: `${TRACK_LABELS[profile.track]} · ${profile.unit}` }
                 : null
             }
           />

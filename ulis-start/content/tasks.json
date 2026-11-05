@@ -547,7 +547,7 @@
   {
     "id": "t-grow-checkin-d30",
     "phaseId": "grow",
-    "title": "Hoàn thành check-in 30 ngày và góp ý",
+    "title": "Hoàn thành check-in cuối hành trình và góp ý",
     "why": "Góp ý của bạn giúp hành trình của người đến sau suôn sẻ hơn.",
     "dueDay": 30,
     "owner": "me",
@@ -558,7 +558,7 @@
     "estimatedMinutes": 5,
     "steps": [
       {
-        "text": "Trả lời câu hỏi check-in ngày 30."
+        "text": "Trả lời câu hỏi check-in cuối hành trình."
       },
       {
         "text": "Chia sẻ một điều nên cải thiện cho người đến sau."
