@@ -1,29 +1,21 @@
-# Render Blueprint for the ULIS START assistant server (server/).
-# Render dashboard → New → Blueprint → pick this repo. It asks for the secret values marked sync:false.
-# The persistent disk keeps uploaded documents across deploys; Render disks need a paid instance (Starter).
 services:
   - type: web
     name: ulis-start-assistant
     runtime: node
-    plan: starter
+    plan: free
     region: singapore
-    # server/ imports the app's content and search code from ../src and ../content, so build from the repo root.
+    rootDir: ulis-start
     buildCommand: cd server && npm ci
     startCommand: cd server && npm start
     healthCheckPath: /health
-    disk:
-      name: assistant-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: NODE_VERSION
         value: "22"
       - key: DATA_DIR
-        value: /var/data
+        value: /tmp/data
       - key: ANTHROPIC_API_KEY
         sync: false
       - key: ADMIN_TOKEN
-        # Random password for /admin; read it in the Render dashboard → Environment.
         generateValue: true
       - key: VOYAGE_API_KEY
         sync: false
