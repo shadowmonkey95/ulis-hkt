@@ -14,9 +14,14 @@ import { AppText, Button, Chip, Gradient, Screen, Select, TRACK_LABELS, useLayou
 
 // Only two tracks are offered at onboarding; 'staff' stays in the data model for old profiles.
 const TRACKS: { id: Track; sub?: string; desc: string }[] = [
-  { id: 'lecturer', sub: '(Giảng viên / GVTH)', desc: 'Giảng dạy, đề cương, lịch giảng, coi thi' },
-  { id: 'specialist', desc: 'Văn bản, trình ký, phần mềm nghiệp vụ' },
+  { id: 'lecturer', sub: '(Giảng viên / Giáo viên)', desc: 'Giảng dạy, đề cương, lịch giảng, coi thi' },
+  { id: 'specialist', sub: '(Chuyên viên và tương đương / Nhân viên)', desc: 'Văn bản, trình ký, phần mềm nghiệp vụ' },
 ];
+
+const WELCOME_HEADLINE = 'BẮT ĐẦU HÀNH TRÌNH – VỮNG BƯỚC CÙNG ULIS';
+const WELCOME_GREETING = 'Chào mừng bạn đến với ULIS!';
+const WELCOME_BODY =
+  'Nền tảng hội nhập thông minh đồng hành cùng viên chức, người lao động mới trong quá trình tìm hiểu Nhà trường, tiếp cận thông tin, hoàn thiện thủ tục và thích nghi với môi trường làm việc.';
 
 const BRAND_POINTS: { icon: 'map' | 'users' | 'message-circle'; text: string }[] = [
   { icon: 'map', text: 'Lộ trình theo vị trí: khối đào tạo và khối phục vụ đào tạo' },
@@ -172,11 +177,13 @@ export default function OnboardingScreen() {
             ULIS START
           </AppText>
           <AppText variant="h2" color="primaryFg" weight="500">
-            Một nơi để BIẾT – một nơi để LÀM – một nơi để HỎI
+            {WELCOME_HEADLINE}
           </AppText>
-          <AppText color="primaryFg" style={{ opacity: 0.85, marginTop: spacing.lg }}>
-            Hành trình 30 ngày đồng hành cùng cán bộ mới của Trường Đại học Ngoại ngữ – ĐHQGHN: biết cần làm gì, làm ở
-            đâu và hỏi ai.
+          <AppText color="primaryFg" weight="600" style={{ marginTop: spacing.lg }}>
+            {WELCOME_GREETING}
+          </AppText>
+          <AppText color="primaryFg" style={{ opacity: 0.85, marginTop: spacing.xs }}>
+            {WELCOME_BODY}
           </AppText>
           <View style={{ gap: spacing.md, marginTop: spacing.xl }}>
             {BRAND_POINTS.map((p) => (
@@ -220,8 +227,8 @@ export default function OnboardingScreen() {
   return (
     <Screen
       keyboard
-      title="Chào mừng đến ULIS START"
-      subtitle="Hành trình 30 ngày đồng hành cùng cán bộ mới. Chỉ mất 30 giây để bắt đầu."
+      title={WELCOME_GREETING}
+      subtitle={`${WELCOME_HEADLINE}\n\n${WELCOME_BODY}`}
       footer={submitButton}
       contentContainerStyle={isCompact ? undefined : { width: '100%', maxWidth: ONBOARDING_CARD_MAX_WIDTH, alignSelf: 'center' }}
     >

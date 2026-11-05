@@ -74,26 +74,18 @@ export default function TodayScreen() {
   const { visible: todayTasks, hidden: hiddenCount } = sliceTodayTasks(dueTasks, isWide);
 
   const name = profile ? givenName(profile.name) : '';
-  const greeting =
-    currentDay >= 1 && currentDay <= 30
-      ? `hôm nay là ngày ${currentDay}/30 của bạn`
-      : currentDay > 30
-        ? 'bạn đã đi hết hành trình 30 ngày'
-        : currentDay === 0
-          ? 'ngày mai là ngày đầu tiên của bạn'
-          : `còn ${1 - currentDay} ngày nữa là ngày đầu của bạn`;
   const nextPhase = phases.find((p) => p.order === currentPhase.order + 1);
 
-  // Soft gradient hero (reference `.hero`): rose eyebrow, ink greeting with the name in rose, ring on the right.
+  // Soft gradient hero (reference `.hero`): ink greeting with the name in rose, ring on the right.
   const hero = (
-    <HeroCard eyebrow={`${dayCounterLabel(currentDay)} · ${currentPhase.title}`}>
+    <HeroCard>
       <View style={[styles.hero, { gap: spacing.lg }]}>
         <View style={styles.flex}>
           <Pressable
             onLongPress={() => router.push('/demo')}
             delayLongPress={600}
             accessibilityRole="header"
-            accessibilityLabel={`Chào ${name}, ${greeting}`}
+            accessibilityLabel={`Chào ${name}`}
             accessibilityHint="Nhấn giữ để mở chế độ trình diễn"
             accessibilityActions={[{ name: 'longpress', label: 'Mở chế độ trình diễn' }]}
             onAccessibilityAction={(e) => {
@@ -105,10 +97,7 @@ export default function TodayScreen() {
               <AppText color="primary" style={isWide ? styles.greetWide : styles.greet}>
                 {name}
               </AppText>
-              {','}
-            </AppText>
-            <AppText variant={isWide ? 'h2' : 'body'} weight="500" color="textMuted" style={{ marginTop: spacing.xs }}>
-              {greeting}
+              {'!'}
             </AppText>
           </Pressable>
           {isWide ? (
