@@ -152,6 +152,18 @@ describe('remote mode', () => {
     expect(r.actions.every((a) => a.kind !== 'route' || a.label !== 'Quy chế nội bộ')).toBe(true);
   });
 
+  it('cites each uploaded document once, merging pages of the same document', () => {
+    const doc = (id: string, page?: number) => ({ id, docId: 'd1', title: 'Quy chế chi tiêu ĐHNN 2026', page, uploadedAt: '2026-11-05T00:00:00Z' });
+    const noPages = replyFromRemote({ answer: 'a', sources: [], docSources: [doc('d1-1'), doc('d1-2'), doc('d1-3')] }, 'q', {});
+    expect(noPages.sources.map((s) => s.title)).toEqual(['Quy chế chi tiêu ĐHNN 2026']);
+    const paged = replyFromRemote(
+      { answer: 'a', sources: [], docSources: [doc('d1-5', 5), doc('d1-3', 3), doc('d1-6', 5), { ...doc('d2-1', 2), docId: 'd2', title: 'Quy định chấm công' }] },
+      'q',
+      {},
+    );
+    expect(paged.sources.map((s) => s.title)).toEqual(['Quy chế chi tiêu ĐHNN 2026 – trang 3, 5', 'Quy định chấm công – trang 2']);
+  });
+
   it('out-of-scope verdict: no sources, no actions; not_found offers the TCTT action', () => {
     const out = replyFromRemote({ verdict: 'out_of_scope', answer: 'Mình chỉ hỗ trợ câu hỏi về ULIS.', sources: [] }, 'thời tiết?', {});
     expect(out).toMatchObject({ confidence: 'none', sources: [], actions: [] });

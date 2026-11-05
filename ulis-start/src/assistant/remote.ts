@@ -13,6 +13,8 @@ export type RemoteVerdict = 'answer' | 'not_found' | 'out_of_scope' | 'guarded';
 
 export interface RemoteDocSource {
   id: string;
+  /** Uploaded document id; several passages of one document share it. */
+  docId?: string;
   title: string;
   page?: number;
   uploadedAt?: string;
@@ -44,16 +46,16 @@ function isRemoteAnswer(x: unknown): x is RemoteAnswer {
   return true;
 }
 
-function docSource(d: RemoteDocSource): ReplySource {
+function docSource(d: RemoteDocSource, pages: number[] = d.page ? [d.page] : []): ReplySource {
   return {
     kind: 'document',
-    id: d.id,
-    title: d.page ? `${d.title} – trang ${d.page}` : d.title,
+    id: d.docId ?? d.id,
+    title: pages.length > 0 ? `${d.title} – trang ${pages.join(', ')}` : d.title,
     updatedAt: d.uploadedAt ?? new Date().toISOString(),
     // Uploaded by ULIS staff through the admin page, so not "sample content".
     verified: true,
     source: 'Tài liệu tải lên',
-    page: d.page,
+    page: pages[0],
   };
 }
 
@@ -62,10 +64,17 @@ export function replyFromRemote(data: RemoteAnswer, question: string, ctx: AskCo
   const verdict = data.verdict ?? 'answer';
   const seen = new Set<string>();
   const sources: ReplySource[] = [];
+  // One source line per document: passages of the same document are merged ("… – trang 3, 5").
+  const byDoc = new Map<string, { first: RemoteDocSource; pages: number[] }>();
   for (const d of data.docSources ?? []) {
-    if (seen.has(d.id)) continue;
-    seen.add(d.id);
-    sources.push(docSource(d));
+    const key = d.docId ?? d.title;
+    const entry = byDoc.get(key);
+    if (!entry) byDoc.set(key, { first: d, pages: d.page ? [d.page] : [] });
+    else if (d.page && !entry.pages.includes(d.page)) entry.pages.push(d.page);
+  }
+  for (const [key, { first, pages }] of byDoc) {
+    seen.add(key);
+    sources.push(docSource(first, pages.sort((a, b) => a - b)));
   }
   for (const id of data.sources) {
     const found = findItemById(id);

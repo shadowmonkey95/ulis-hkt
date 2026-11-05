@@ -214,7 +214,7 @@ $('askBtn').onclick = async () => {
   const res = await fetch('/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question: q }) });
   const j = await res.json().catch(() => ({}));
   if (!res.ok) { box.textContent = j.message || 'Lỗi ' + res.status; return; }
-  const srcs = [...(j.docSources || []).map((s) => s.title + (s.page ? ' – trang ' + s.page : '')), ...(j.sources || [])];
+  const srcs = [...new Set([...(j.docSources || []).map((s) => s.title + (s.page ? ' – trang ' + s.page : '')), ...(j.sources || [])])];
   box.textContent = '[' + j.verdict + '] ' + j.answer + (j.steps ? '\\n\\n' + j.steps.map((s, i) => (i + 1) + '. ' + s).join('\\n') : '') + (srcs.length ? '\\n\\nNguồn: ' + srcs.join('; ') : '');
 };
 $('q').onkeydown = (e) => { if (e.key === 'Enter') $('askBtn').click(); };
