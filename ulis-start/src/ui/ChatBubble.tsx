@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { AppText } from './AppText';
+import { BoldText, stripBold } from './BoldText';
 import { useTheme } from './ThemeProvider';
 
 export interface ChatBubbleProps {
@@ -29,7 +30,7 @@ export function ChatBubble({ role, text, children, meta, showAvatar = true }: Ch
       <View style={[styles.col, { alignItems: mine ? 'flex-end' : 'flex-start' }]}>
         <View
           accessible={!children}
-          accessibilityLabel={`${mine ? 'Bạn' : 'Trợ lý'}: ${text}`}
+          accessibilityLabel={`${mine ? 'Bạn' : 'Trợ lý'}: ${stripBold(text)}`}
           style={[
             styles.bubble,
             {
@@ -42,9 +43,15 @@ export function ChatBubble({ role, text, children, meta, showAvatar = true }: Ch
             },
           ]}
         >
-          <AppText color={mine ? '#FFFFFF' : colors.text} selectable>
-            {text}
-          </AppText>
+          {mine ? (
+            <AppText color="#FFFFFF" selectable>
+              {text}
+            </AppText>
+          ) : (
+            <BoldText color={colors.text} selectable>
+              {text}
+            </BoldText>
+          )}
           {children}
         </View>
         {meta ? (

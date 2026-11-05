@@ -1,7 +1,7 @@
 import Feather from '@expo/vector-icons/Feather';
 import { StyleSheet, View } from 'react-native';
 
-import { AppText, Chip, UNVERIFIED_LABEL, formatDate, useTheme } from '../../ui';
+import { AppText, BoldText, Chip, stripBold, UNVERIFIED_LABEL, formatDate, useTheme } from '../../ui';
 import type { AssistantAction, AssistantReply } from '../types';
 
 export interface ReplyBodyProps {
@@ -21,7 +21,7 @@ export function ReplyBody({ reply, onAction, isTaskDone, sentToHr }: ReplyBodyPr
   return (
     <View style={{ gap: spacing.sm }}>
       {reply.steps && reply.steps.length > 0 ? (
-        <View style={{ gap: spacing.xs }} accessibilityLabel={`Các bước: ${reply.steps.map((s, i) => `${i + 1}. ${s}`).join(' ')}`}>
+        <View style={{ gap: spacing.xs }} accessibilityLabel={`Các bước: ${reply.steps.map((s, i) => `${i + 1}. ${stripBold(s)}`).join(' ')}`}>
           {reply.steps.map((step, i) => (
             <View key={i} style={styles.stepRow}>
               <View style={[styles.stepNum, { backgroundColor: colors.primarySoft }]}>
@@ -29,9 +29,9 @@ export function ReplyBody({ reply, onAction, isTaskDone, sentToHr }: ReplyBodyPr
                   {i + 1}
                 </AppText>
               </View>
-              <AppText variant="caption" style={styles.flex} selectable>
+              <BoldText variant="caption" style={styles.flex} selectable>
                 {step}
-              </AppText>
+              </BoldText>
             </View>
           ))}
         </View>
